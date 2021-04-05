@@ -1,0 +1,4 @@
+#Mon Apr 05 15:25:05 IST 2021
+base.0=D\:\\Maizic\\V380_SDK_V6.0\\Android\\demo\\demo\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/font_color_white" >
+  
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null">
+    
+    <!-- title -->
+ <RelativeLayout android:layout_width="match_parent" android:layout_height="40dip" android:background="@drawable/background_title" >
+     
+     <ImageView
+         android:id="@+id/btnRelecance"
+         android:layout_width="25dip"
+         android:layout_height="25dip"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         android:contentDescription="@null"
+         android:src="@drawable/back_btn" />
+     
+     <TextView android:id="@+id/tvRelecance" android:layout_width="wrap_content" android:layout_height="40dip" android:layout_centerHorizontal="true"
+         android:text="@string/relecanceDeviceList" android:textColor="@color/font_color_white" android:textSize="16sp" android:gravity="center" />   
+         
+     <Button android:id="@+id/btnRelecanceSave" android:visibility="gone" android:layout_width="70dip" android:layout_height="32dip" android:layout_alignParentRight="true"
+         android:layout_centerVertical="true" android:layout_marginRight="5dip" android:background="@drawable/netword_save_btn"
+         android:text="@string/btn_save" android:textColor="@color/font_color_white" android:textSize="14sp" android:gravity="center" />
+ </RelativeLayout>   
+ <!-- end title -->
+ 
+ <!--alarm device list-->
+ <ListView android:id="@+id/lvRelecance" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" />
+ <!-- end alarm device list -->
+ <!-- add device -->
+ <LinearLayout android:id="@+id/llRelecanceAdd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" 
+     android:background="@null" android:gravity="top|center" >
+ <TextView android:id="@+id/tvRelecanceAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relecanceDeviceAdd"
+     android:textColor="@color/font_color_red" android:textSize="16sp" android:layout_marginTop="20dip" />
+ <ListView android:id="@+id/lvRelecanceAdd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+ </LinearLayout>
+ <!-- end add device -->
+ 
+ <!-- alter device -->
+  <RelativeLayout android:id="@+id/llRelecanceAlter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" >
+
+  
+  <!-- alarm device address -->
+  <TextView android:id="@+id/tvAddress" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecanceAddressCode" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="10dip" />
+  <TextView android:id="@+id/tvAlarmDeviceAddress" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_gray" 
+      android:layout_toRightOf="@id/tvAddress" android:gravity="center" android:layout_marginTop="15dip" android:layout_marginLeft="5dip"
+      android:textSize="14sp" android:textColor="@color/font_color_black" />
+  
+  <TextView android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/background_gray" android:layout_below="@id/tvAddress" android:layout_marginTop="2dip" /> 
+  <!-- end alarm device address -->
+  
+  	<!-- alarm device name -->
+  <TextView android:id="@+id/tvName" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecanceName" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="5dip" android:layout_below="@id/tvAddress"/>
+  <EditText android:id="@+id/etAlarmDeviceName" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_blue" 
+      android:layout_toRightOf="@id/tvName" android:gravity="center" android:layout_marginTop="15dip" android:layout_marginLeft="5dip"
+      android:hint="@string/relecanceInputName" android:textSize="14sp" android:textColor="@color/font_color_black" android:layout_below="@id/tvAlarmDeviceAddress"/>
+  
+  <TextView android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/background_gray" android:layout_below="@id/tvName" android:layout_marginTop="2dip"
+      android:layout_marginBottom="2dip" />
+  <!-- end alarm device name -->
+  
+  
+   <!-- alarm off or on -->
+ <TextView android:id="@+id/tvAlarmOffOrOn" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecanceAlarmOffOrOn" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="5dip" android:layout_below="@id/tvName"/>
+  <TextView android:id="@+id/tvAlarmDeviceOffOrOn" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_gray" 
+      android:layout_toRightOf="@id/tvAlarmOffOrOn" android:gravity="center" android:layout_marginTop="15dip" android:layout_marginLeft="5dip"
+      android:textSize="14sp" android:textColor="@color/font_color_black" android:layout_below="@id/etAlarmDeviceName"  />
+  <ImageView android:id="@+id/ivAlarmDeviceOffOrOn" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/play_back_video_back_2" android:layout_toRightOf="@id/tvAlarmDeviceOffOrOn"
+       android:layout_alignTop="@id/tvAlarmDeviceOffOrOn" android:layout_marginLeft="10dip" android:contentDescription="@null"/>
+ 
+  <LinearLayout android:id="@+id/llAlarmDeviceAlarmOffOrOn" android:layout_width="match_parent" android:layout_height="wrap_content"  android:gravity="center" android:orientation="vertical"
+      android:layout_below="@id/tvAlarmDeviceOffOrOn" > 
+  
+  <RadioGroup android:id="@+id/rgAlarmDeviceOffOrOn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center"
+       android:orientation="horizontal"  android:background="@color/background_gray_light" android:layout_marginTop="5dip"> 
+		<RadioButton android:id="@+id/rBtnOn"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/record_record_open"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp" android:layout_marginLeft="30dip"/>		
+		<RadioButton android:id="@+id/rBtnOff"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/record_record_close"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp"/>			
+		
+</RadioGroup>
+<TextView android:id="@+id/lineAlarmOffOrOn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/background_gray" android:layout_marginTop="5dip" /> 
+</LinearLayout>
+ 
+ <!-- end alarm off or on -->
+  
+  
+  <!-- alarm device level -->
+  <TextView android:id="@+id/tvLevel" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecanceLevel" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="3dip" android:layout_below="@id/llAlarmDeviceAlarmOffOrOn"/>
+  <TextView android:id="@+id/tvAlarmDeviceLevel" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_gray" 
+      android:layout_toRightOf="@id/tvLevel" android:gravity="center" android:layout_marginTop="7dip" android:layout_marginLeft="5dip"
+      android:textSize="14sp" android:textColor="@color/font_color_black" android:layout_below="@id/llAlarmDeviceAlarmOffOrOn"/>
+  <ImageView android:id="@+id/ivAlarmDeviceLevel" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/play_back_video_back_2" android:layout_toRightOf="@id/tvAlarmDeviceLevel"
+       android:layout_alignTop="@id/tvAlarmDeviceLevel" android:layout_marginLeft="10dip" android:contentDescription="@null"/>
+   <TextView android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/background_gray" android:layout_below="@id/tvAlarmDeviceLevel" android:layout_marginTop="5dip" /> 
+  
+  <LinearLayout android:id="@+id/llAlarmDeviceLevel" android:layout_width="match_parent" android:layout_height="wrap_content"  android:gravity="center" android:orientation="vertical"
+      android:layout_below="@id/tvAlarmDeviceLevel" > 
+  <RadioGroup android:id="@+id/rgAlarmDeviceLevel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center"
+       android:orientation="horizontal"  android:background="@color/background_gray_light" android:layout_marginTop="5dip"> 
+		<RadioButton android:id="@+id/rBtnHigh"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceLevelHigh"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp" android:layout_marginLeft="30dip"/>	
+		<RadioButton android:id="@+id/rBtnMedium"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceLevelMedium"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp"/>	
+		<RadioButton android:id="@+id/rBtnLow"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceLevelLow"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp"/>			
+		
+</RadioGroup>
+
+</LinearLayout>
+<!-- end alarm device level -->
+  
+ <!-- alarm device type --> 
+ <TextView android:id="@+id/tvType" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecanceType" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="5dip" android:layout_below="@id/llAlarmDeviceLevel"/>
+  <TextView android:id="@+id/tvAlarmDeviceType" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_gray" 
+      android:layout_toRightOf="@id/tvLevel" android:gravity="center" android:layout_marginTop="10dip" android:layout_marginLeft="5dip"
+      android:textSize="14sp" android:textColor="@color/font_color_black" android:layout_below="@id/llAlarmDeviceLevel"/>
+  <ImageView android:id="@+id/ivAlarmDeviceType" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/play_back_video_back_2" android:layout_toRightOf="@id/tvAlarmDeviceType"
+       android:layout_alignTop="@id/tvAlarmDeviceType" android:layout_marginLeft="10dip" android:contentDescription="@null"/>
+  
+  <TextView android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/background_gray" android:layout_below="@id/tvType" android:layout_marginTop="2dip" /> 
+  
+   <RadioGroup android:id="@+id/rgAlarmDevice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center"
+       android:orientation="horizontal"  android:background="@color/background_gray_light" android:layout_marginTop="5dip" android:layout_below="@id/tvType">
+		
+		<RadioButton android:id="@+id/rBtnRKE"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceTypeRKE"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="true" android:textSize="14sp" android:layout_marginLeft="30dip"/>	
+		<RadioButton android:id="@+id/rBtnSmoke"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceTypeSmoke"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="false" android:textSize="14sp"/>	
+		<RadioButton android:id="@+id/rBtnGAS"  android:layout_width="0dip" android:layout_weight="1" 
+			android:layout_height="35dip" android:text="@string/relecanceGAS"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+			android:checked="false" android:textSize="14sp"/>			
+		
+</RadioGroup>  
+
+<RadioGroup android:id="@+id/rgAlarmDevice2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center"
+    android:orientation="horizontal"  android:background="@color/background_gray_light" android:layout_below="@id/rgAlarmDevice"> 
+	<RadioButton android:id="@+id/rBtnFeeling"  android:layout_width="0dip" android:layout_weight="1" 
+		android:layout_height="35dip" android:text="@string/relecanceFeeling"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+		android:checked="false" android:textSize="14sp" android:layout_marginLeft="30dip"/>	
+	<RadioButton android:id="@+id/rBtnOther"  android:layout_width="0dip" android:layout_weight="1" 
+		android:layout_height="35dip" android:text="@string/relecanceOther"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+		android:checked="false" android:textSize="14sp"/>	
+	<RadioButton android:id="@+id/rBtn"  android:layout_width="0dip" android:layout_weight="1" android:visibility="invisible"
+		android:layout_height="35dip" android:text="@string/relecanceTypeMove"  android:textColor="@color/font_color_black" android:button="@drawable/radio_button_style"
+		android:checked="false" android:textSize="14sp"/>			
+		
+</RadioGroup>  
+
+<!-- end alarm device type -->
+
+<!-- alarm preset -->
+  <TextView android:id="@+id/tvPreset" android:layout_width="80dip" android:layout_height="50dip" android:text="@string/relecancePreset" android:textColor="@color/font_color_black"
+      android:textSize="14sp" android:gravity="right|center" android:layout_alignParentLeft="true" android:layout_marginTop="5dip" android:layout_below="@id/rgAlarmDevice2"/>
+  <TextView android:id="@+id/tvAlarmDevicePreset" android:layout_width="200dip" android:layout_height="40dip" android:background="@drawable/edittext_input_gray" 
+      android:layout_toRightOf="@id/tvLevel" android:gravity="center" android:layout_marginTop="10dip" android:layout_marginLeft="5dip"
+      android:textSize="14sp" android:textColor="@color/font_color_black" android:layout_below="@id/rgAlarmDevice2"  />
+  <ImageView android:id="@+id/ivAlarmDevicePreset" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/play_back_video_back_2" android:layout_toRightOf="@id/tvAlarmDevicePreset"
+       android:layout_alignTop="@id/tvAlarmDevicePreset" android:layout_marginLeft="10dip" android:contentDescription="@null"/>
+ <!-- end alarm preset -->
+  
+ <Button android:id="@+id/btnRelecanceAlter" android:visibility="visible" android:layout_width="80dip" android:layout_height="40dip" android:layout_below="@id/tvPreset"
+     android:layout_marginTop="60dip" android:layout_marginLeft="60dip" android:layout_alignParentLeft="true" android:gravity="center"
+     android:text="@string/editingDevice" android:textColor="@color/font_color_white" android:textSize="14sp" android:background="@drawable/delete_save_btn"
+     /> 
+ 
+ <Button android:id="@+id/btnRelecanceDelete" android:visibility="visible" android:layout_width="80dip" android:layout_height="40dip" android:layout_below="@id/tvPreset"
+     android:layout_marginTop="60dip" android:layout_marginRight="60dip" android:layout_alignParentRight="true" android:gravity="center"
+     android:text="@string/deleteDevice" android:textColor="@color/font_color_white" android:textSize="14sp" android:background="@drawable/delete_save_btn"
+     /> 
+  
+ <Button android:id="@+id/btnRelecanceAdd" android:visibility="gone" android:layout_width="80dip" android:layout_height="40dip" android:layout_below="@id/tvPreset"
+     android:layout_marginTop="60dip" android:layout_centerHorizontal="true" android:gravity="center"
+     android:text="@string/title_add_device" android:textColor="@color/font_color_white" android:textSize="14sp" android:background="@drawable/delete_save_btn"
+     /> 
+  
+ </RelativeLayout>
+ <!-- end alter device -->
+ </LinearLayout>
+ 
+    <ProgressBar android:id="@+id/progressBarRelecance" style="?android:attr/progressBarStyleLarge" android:layout_width="80dip"  android:layout_height="80dip"   android:visibility="visible"
+      android:layout_gravity="center" />
+    
+</FrameLayout>

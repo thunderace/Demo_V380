@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/background_title"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnDeviceSelectCancel"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/pop_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:paddingRight="35dp"
+                android:text="@string/lblSelectDevice"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="@drawable/server_bg"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listViewDeviceSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

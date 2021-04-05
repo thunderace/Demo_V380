@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llTopTitle"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:background="@null" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/presetTitle"
+                android:textColor="@color/font_color_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@null" >
+
+            <ListView
+                android:id="@+id/lvPreset"
+                android:layout_width="200dip"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnPresetCancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/delete_save_btn"
+            android:gravity="center"
+            android:text="@string/alert_btn_Cancel"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarPresetConfig"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

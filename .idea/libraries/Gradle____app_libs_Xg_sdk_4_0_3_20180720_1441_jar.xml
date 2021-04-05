@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/Xg_sdk_4.0.3_20180720_1441.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/Xg_sdk_4.0.3_20180720_1441.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llViewContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/server_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivDeviceAddBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tvDeviceTitleName"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_add_device"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <!--
+             <Button
+            android:id="@+id/btnDeviceManageAdd"
+            android:layout_width="70dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/netword_save_btn"
+            android:contentDescription="@string/desc"
+            android:text="@string/btn_ok"
+            android:textColor="@color/font_color_white"
+            android:textSize="15sp"
+            android:visibility="visible" />-->
+
+        <Button
+            android:layout_width="70dip"
+            android:layout_height="35dip"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="20dip"
+       android:background="@color/background_gray" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dip"
+            android:text="@string/deviceID"
+            android:textColor="@color/font_color_gray"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="7" >
+
+            <EditText
+                android:id="@+id/etDeviceIDAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/inputDeviceID"
+                android:inputType="number"
+                android:paddingLeft="10dip"
+                android:textSize="16sp"
+                android:textColor="@color/font_color_black" />
+
+            <ImageView
+                android:id="@+id/ivQRButton"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_qr_scan" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dip"
+       android:background="@color/background_gray" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dip"
+            android:text="@string/username"
+            android:textColor="@color/font_color_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etUserNameAdd"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="7"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:hint="@string/usernameHint"
+            android:paddingLeft="10dip"
+            android:maxLength="30"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_black" />
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dip"
+       android:background="@color/background_gray" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dip"
+            android:text="@string/password"
+            android:textColor="@color/font_color_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPasswordAdd"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="7"
+            android:background="@null"
+            android:digits="@string/rule_password"
+            android:hint="@string/passwordHint"
+            android:paddingLeft="10dip"
+            android:maxLength="30"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_black" />
+    </LinearLayout>
+    
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/background_gray" />
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/llLocalNetWorkSeek"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnLocalNetWordSeek"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/scan_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_scanText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/LANSeek"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout> -->
+
+    <Button
+            android:id="@+id/btnLocalNetWordSeek"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/new_btn_bg_selector2"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/LANSeek"
+            android:textColor="@color/font_color_blue"
+            android:textSize="16sp" />
+    
+        <Button
+            android:id="@+id/btnDeviceManageAdd"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/new_btn_bg_selector"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/alert_add_btn_OK"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" />
+        
+         <!-- <Button
+            android:id="@+id/btn_server_device"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/new_btn_bg_selector"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="导入用户设备"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" /> -->
+
+ <!-- 
+<Button
+        android:id="@+id/btnLocalNetWordSeek"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/delete_save_btn"
+        android:gravity="center"
+        android:text="@string/LANSeek"
+        android:textColor="@color/font_color_white"
+        android:textSize="16sp" /> -->
+
+</LinearLayout>

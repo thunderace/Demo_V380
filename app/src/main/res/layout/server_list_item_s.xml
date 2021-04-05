@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        android:id="@+id/serverListItem" 
+        android:layout_width="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_height="50dip" 
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:descendantFocusability= "blocksDescendants"
+        android:background="@drawable/line_background"
+	>
+	 
+	<ImageView android:id="@+id/item_face" android:background="@drawable/device" android:layout_height="30dip" android:layout_width="30dip" android:contentDescription="@null" android:layout_margin="5dip" android:focusable = "false"/>
+
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:gravity="center" android:orientation="vertical">
+			<TextView android:text="@string/nameHint" android:layout_height="30dip" android:textSize="20sp" android:textColor="#000F2A" android:layout_width="match_parent" android:id="@+id/ItemTitleName" android:background="@null" android:gravity="left|center" android:maxLines="1" />
+			<TextView android:text="@string/nameHint" android:layout_height="20dip" android:textSize="12sp" android:textColor="#888888" android:layout_width="match_parent" android:id="@+id/ItemTitleID" android:background="@null" android:gravity="left|center"  android:maxLines="2" />
+	</LinearLayout>
+	 
+
+</LinearLayout>

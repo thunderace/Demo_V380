@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <!-- titile view -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivAreaBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tvAreaTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/areaSelection"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 显示当前选择的区域 -->
+
+    <RelativeLayout
+        android:id="@+id/rlAreaList"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/font_color_white"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tvArea"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/area"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_color_black"
+            android:textSize="16sp" />
+
+        
+        <TextView
+            android:id="@+id/tvAreaAll"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="60dip"
+            android:layout_toRightOf="@id/tvArea"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="2dp"
+            android:text="@null"
+            android:textColor="@color/font_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAreaA"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@id/tvArea"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="@null"
+            android:textColor="@color/font_color_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="45dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/arrow_selector" />
+    </RelativeLayout>
+
+    
+    <Button
+        android:id="@+id/btnAreaSave"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom"
+        android:layout_margin="30dip"
+        android:background="@drawable/delete_save_btn"
+        android:gravity="center"
+        android:text="@string/str_save"
+        android:textColor="@color/font_color_white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- 选择区域列表 -->
+
+    <ListView
+        android:id="@+id/lvArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+    <TextView android:id="@+id/tvAlarmRelecanceFigure" android:layout_width="30dip" android:layout_height="30dip" android:background="@drawable/rounded_image_bg"
+        android:gravity="center" android:text="@null" android:textColor="@color/font_color_black" android:textSize="14sp" android:layout_marginLeft="10dip" 
+        android:layout_marginTop="8dip" android:layout_marginBottom="8dip"/>
+    
+	<TextView android:id="@+id/tvAlarmRelecanceName" android:layout_width="0dip" android:layout_height="40dip" android:layout_weight="2"
+	    android:background="@drawable/btn_relecance_bg_gray" android:gravity="center" android:text="@string/relecanceName" android:textColor="@color/font_color_black" android:textSize="14sp"
+	    android:layout_marginLeft="10dip" android:layout_marginTop="8dip" android:layout_marginBottom="8dip" />
+	
+	<TextView android:id="@+id/tvAlarmRelecanceAddress" android:layout_width="0dip" android:layout_height="40dip" android:layout_weight="3"
+	    android:background="@drawable/btn_relecance_bg_gray" android:gravity="center" android:text="@string/relecanceAddressCode" android:textColor="@color/font_color_black" android:textSize="14sp"
+	    android:layout_marginLeft="10dip" android:layout_marginTop="8dip" android:layout_marginBottom="8dip" />
+	<ImageView android:id="@+id/ivAlarmRelecanceState" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/more_function_btn" android:layout_marginLeft="3dip"
+	    android:contentDescription="@null" android:layout_marginTop="8dip" android:layout_marginBottom="8dip"/>
+	<ImageView android:id="@+id/ivAlarmRelecanceFunction" android:layout_width="40dip" android:layout_height="40dip" android:src="@drawable/more_function_btn" 
+	    android:contentDescription="@null" android:layout_marginTop="8dip" android:layout_marginBottom="8dip"/>
+</LinearLayout>

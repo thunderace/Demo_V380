@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/server_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llTitleDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/btnDateTimeConfigBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/desc"
+            android:gravity="center"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/DatatimeEditViewTitleText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/config_time"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <!-- <Button
+            android:id="@+id/btnDateTimeConfigSave"
+            android:layout_width="60dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/netword_save_btn"
+            android:gravity="center"
+            android:text="@string/btn_save"
+            android:textColor="@color/font_color_white"
+            android:textSize="14sp" /> -->
+            <View 
+                android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dp"
+                />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTitleDateTime" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 显示设备时间 -->
+
+            <LinearLayout
+                android:id="@+id/wifi_ap_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#787878"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/device_time_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvDateTimeNotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/getting_datetime_config"
+                    android:textColor="@color/font_color_white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 设置设备时间 日期 时区 -->
+
+            <TableLayout
+                android:id="@+id/layoutDateTimeConfigPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:gravity="center"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:id="@+id/trDateSetting"
+                    android:layout_width="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_height="50dip"
+                    >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="36"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/set_date"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="49"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/device_time_current"
+                        android:textColor="@color/font_color_gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivDate"
+                        android:layout_width="0dip"
+                        android:layout_height="20dip"
+                        android:layout_weight="15"
+                        android:contentDescription="@string/desc"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/arrow_selector" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/background_gray" />
+
+                <TableRow
+                    android:id="@+id/trTimeSetting"
+                    android:layout_width="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_height="50dip" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="36"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/set_time"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="49"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/device_time_current"
+                        android:textColor="@color/font_color_gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivTime"
+                        android:layout_width="0dip"
+                        android:layout_height="20dip"
+                        android:layout_weight="15"
+                        android:contentDescription="@string/desc"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/arrow_selector" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/background_gray" />
+
+                <TableRow
+                    android:id="@+id/trTimeZone"
+                    android:gravity="left|center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="36"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/lblTimeZoneSetting"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvTimeZone"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="49"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/font_color_gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeZone"
+                        android:layout_width="0dip"
+                        android:layout_height="20dip"
+                        android:layout_weight="15"
+                        android:contentDescription="@string/desc"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/arrow_selector" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="30dip"
+                android:layout_weight="45"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnOneKeySync"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/new_btn_bg_selector2"
+                    android:gravity="center"
+                    android:text="@string/btn_one_key_sync"
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="16sp" />
+                
+                <Button
+                    android:id="@+id/btnDateTimeConfigSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/new_btn_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/font_color_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBarDateTimeConfig"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" /> -->
+
+</RelativeLayout>

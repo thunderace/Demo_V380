@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0085FF" >
+
+        <ImageView
+            android:id="@+id/iv_register_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back" />
+        
+        <ImageView
+            android:id="@+id/iv_register_back2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_back" />
+        
+        <ImageView
+            android:id="@+id/iv_register_back3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_quick_register_phone"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- 手机号码输入框 -->
+
+    <RelativeLayout
+        android:id="@+id/et_phoneNo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/et_register_phoneNO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_input"
+            android:hint="@string/str_mobile_phone"
+            android:paddingLeft="30dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            android:textColorHint="#8b8b8b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_clean_register_account"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/delete_cancel_1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/number_area_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phoneNo_area_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="+86"
+                android:textColor="#8b8b8b" />
+
+            <ImageView
+                android:id="@+id/img_phoneNO_area"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 邮箱注册 -->
+
+    <LinearLayout
+        android:id="@+id/Register_email_set_userinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- 账户输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_email_accout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/Line1_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/et_email_register_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_input"
+                android:hint="@string/enter_mailbox_address"
+                android:paddingLeft="20dp"
+                android:paddingRight="45dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            
+        </RelativeLayout>
+
+        <!-- 郵箱用户名输入框 -->
+        <!-- 已没用 -->
+
+        <RelativeLayout
+            android:id="@+id/et_email_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/et_email_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/str_username"
+                android:paddingLeft="20dp"
+                android:paddingRight="45dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#b9b9b9" />
+        </RelativeLayout>
+
+        <!-- 密码输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_email_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/et_email_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/set_login_password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="65dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_email_register_pwd"
+                android:layout_width="38dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/new_cb_visibility_selector"
+                android:button="@null" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#b9b9b9" />
+        </RelativeLayout>
+
+        <!-- 验证码输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_email_verify_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_email_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/str_verify_code"
+                android:paddingLeft="20dp"
+                android:paddingRight="65dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#b9b9b9" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 用户协议单选框 -->
+
+    <LinearLayout
+        android:id="@+id/user_protocol_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible" >
+
+        <CheckBox
+            android:id="@+id/cb_user_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_agree"
+            android:textColor="@color/background_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_register_protocol"
+            android:textColor="@color/font_color_black" />
+    </LinearLayout>
+
+    <!-- 手机注册设置用户信息 -->
+
+    <LinearLayout
+        android:id="@+id/Register_set_userinfo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/Line1_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <!-- 账户输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_accout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_register_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Line1"
+                android:background="@null"
+                android:hint="@string/str_username"
+                android:paddingLeft="20dp"
+                android:paddingRight="45dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/delete_cancel_1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 密码输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/et_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/set_login_password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="65dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_first_register_pwd"
+                android:layout_width="38dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/new_cb_visibility_selector"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/second_Line3_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b9b9b9" />
+
+        <!-- 二次密码输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_second_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/second_et_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="65dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_second_register_pwd"
+                android:layout_width="38dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/new_cb_visibility_selector"
+                android:button="@null" />
+
+            <ImageView
+                android:id="@+id/second_iv_clean_psw_mobilephone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/cb_second_register_pwd"
+                android:layout_toLeftOf="@+id/cb_second_register_pwd"
+                android:background="@drawable/delete_cancel_1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+        <!-- 二次验证码输入框 -->
+
+        <RelativeLayout
+            android:id="@+id/et_second_verify_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/second_et_register_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/second_verify_code"
+                android:paddingLeft="20dp"
+                android:paddingRight="65dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#b9b9b9" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    更正验证码 
+
+    <RelativeLayout
+        android:id="@+id/et_second_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/second_Line5_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/second_et_register_verify"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="@string/verify_code"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="65dp"
+            android:singleLine="true"
+            android:textColorHint="#8b8b8b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/second_Line6_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+    -->
+
+    <TextView
+        android:id="@+id/txt_Remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/str_register_remark"
+        android:textColor="@color/background_gray"
+        android:visibility="gone" />
+
+    <!-- 顶部手机号码显示 -->
+
+    <LinearLayout
+        android:id="@+id/phoneNo_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/phoneNO_view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_enter"
+            android:textColor="@color/font_color_blue" />
+
+        <TextView
+            android:id="@+id/phoneNO_view_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" null "
+            android:textColor="@color/font_color_blue" />
+
+        <TextView
+            android:id="@+id/phoneNO_view_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Receive_SMS_verify_code"
+            android:textColor="@color/font_color_blue" />
+    </LinearLayout>
+
+    <!-- 验证码 -->
+
+    <RelativeLayout
+        android:id="@+id/et_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_register_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_input"
+            android:hint="@string/verify_code"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColorHint="#8b8b8b"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_get_verify_code"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/verification_code_send"
+            android:text="@string/str_verify_code"
+            android:textColor="#0085FF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 下一步按钮 -->
+
+    <Button
+        android:id="@+id/btn_register_next1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="@string/The_next_step"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_register_next2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="@string/The_next_step"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_register_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="@string/str_register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+    <!-- 邮箱注册分割线 -->
+
+    <Button
+        android:id="@+id/btn_register_by_mailbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="@string/email_register"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_register_by_mobilephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="@string/phone_register"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/or"
+            android:background="@color/background_gray" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="or" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/or"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_change_register_way"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_mailbox_register"
+        android:text="@string/str_mailbox_register"
+        android:textColor="@color/font_color_blue"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

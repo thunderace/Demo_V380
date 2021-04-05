@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/server_bg"
+    android:orientation="vertical" >
+
+    <!-- 顶部栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btnSoundWaveBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/desc"
+            android:gravity="center"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tvSoundWaveConfig"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/planConfig"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/btn_save"
+            android:textColor="@color/text_color_style"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- 准备配置 -->
+
+    <LinearLayout
+        android:id="@+id/llSoundWavePlanConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left|center"
+            android:text="@string/inputDeviceConnectWIFI"
+            android:textColor="@color/font_color_black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105dip"
+            android:orientation="vertical"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/etSoundWaveConfigWifiName"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/edittext_input_blue"
+                android:gravity="left|center_vertical"
+                android:hint="@string/WifiName"
+                android:inputType="none"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/font_color_black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="1dip"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/etSoundWaveConfigWifiPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/edittext_input_blue"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/WifiPassword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/soundWaveCheckBoxPwdHiden"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_alignBottom="@+id/etSoundWaveConfigWifiPassword"
+                    android:layout_alignRight="@+id/etSoundWaveConfigWifiPassword"
+                    android:layout_alignTop="@+id/etSoundWaveConfigWifiPassword"
+                    android:contentDescription="@string/desc"
+                    android:paddingRight="10dip"
+                    android:src="@drawable/netword_show_password" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSoundWaveSave"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_margin="20dip"
+                android:background="@drawable/delete_save_btn"
+                android:gravity="center"
+                android:text="@string/nextStep"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 提示用户用指针轻插设备复位健 -->
+
+    <LinearLayout
+        android:id="@+id/llResetState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/SoundWavePointer"
+            android:textColor="@color/font_color_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc"
+            android:padding="10dip"
+            android:src="@drawable/sound_reset_bg" />
+
+        <Button
+            android:id="@+id/btnSoundWaveSave2"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_margin="20dip"
+            android:background="@drawable/delete_save_btn"
+            android:gravity="center"
+            android:text="@string/nextStep"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 开始声波配置 -->
+
+    <LinearLayout
+        android:id="@+id/llSoundWaveStartConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:text="@string/nearDevcie"
+            android:textColor="#fa0208"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivSoundWaveStartConfig"
+                android:layout_width="150dip"
+                android:layout_height="150dip"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/sound_ware_2" />
+
+            <TextView
+                android:id="@+id/tvSoundWaveStartConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clickSendSoundWave"
+                android:textColor="@color/font_color_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 发送完声波后的提示 -->
+
+    <LinearLayout
+        android:id="@+id/llSoundWaveSeek"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:padding="15dip"
+            android:text="@string/deviceHintUpdate"
+            android:textColor="#f90a20"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSoundWaveSeek"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_margin="20dip"
+                android:background="@drawable/delete_save_btn"
+                android:gravity="center"
+                android:text="@string/nextStep"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 搜索设备 -->
+
+    <FrameLayout
+        android:id="@+id/llSoundWaveSeekDevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.macrovideo.animate.RadarView
+            android:id="@+id/SoundGifView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="bottom|center"
+            android:text="@string/inProcessofSeekDevice"
+            android:textColor="@color/font_color_red"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

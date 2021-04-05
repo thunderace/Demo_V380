@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/font_color_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llTitleVersion"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/btnVersionBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/desc"
+            android:gravity="center"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/DeviceEditViewTitleText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/strDeviceVerInfo"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVersionSave"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete_save_btn"
+            android:gravity="center"
+            android:text="@string/btn_save"
+            android:textColor="@color/text_color_style"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTitleVersion" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvVerNotice"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="@string/getting_user_config"
+                android:textColor="@color/font_color_gray"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="400dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="20dip"
+                    android:text="@string/strAppVersion"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvAPPVer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="APP_1.0.0.0"
+                    android:textColor="@color/font_color_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="20dip"
+                    android:text="@string/strKernalVersion"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvKelVer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="Kel_1.0.0.0"
+                    android:textColor="@color/font_color_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="20dip"
+                    android:text="@string/strHardwareVersion"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvHWVer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="HW_1.0.0.0"
+                    android:textColor="@color/font_color_gray"
+                    android:textSize="16sp" />
+				<LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:layout_marginTop="30dip"
+				    android:layout_marginBottom="20dip"
+				    android:orientation="horizontal"
+				    >
+				    <Button
+                    android:id="@+id/btnNewVersion"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="45dip"
+                    android:background="@drawable/new_btn_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/versionDetection"
+                    android:textColor="@color/font_color_white"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+				</LinearLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBarVersionInfo"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" /> -->
+
+</RelativeLayout>

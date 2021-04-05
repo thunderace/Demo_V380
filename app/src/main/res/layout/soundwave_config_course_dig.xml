@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   
+    
+    >
+    
+  <!-- 步骤教程 -->  
+  <!-- <LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/sound_wave_state_bg"
+    android:layout_margin="20dip">
+    
+    <TextView android:layout_width="match_parent" android:layout_height="50dip" android:text="@string/demoState"
+        android:gravity="left|center" android:layout_marginLeft="5dip" android:textColor="#2955f9" android:textSize="18sp" />
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="8px" android:background="@drawable/device_config_line_bg"  />
+
+    <TextView android:layout_width="match_parent" android:layout_height="30dip" android:text="@string/firstStep" android:textColor="#2955f9"
+        android:textSize="16sp" android:gravity="left|center" android:layout_marginLeft="10dip" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请将手机的扬声器对准设备的麦克风(距离15里面内)"
+        android:textColor="#222222" android:textSize="14sp" android:layout_marginLeft="10dip" />
+    
+    <ImageView android:layout_width="match_parent" android:layout_height="0dip" android:layout_weight="1"
+        android:src="@drawable/sound_wave_course_bg" />
+    
+     <TextView android:layout_width="match_parent" android:layout_height="30dip" android:text="@string/stepTwo" android:textColor="#2955f9"
+        android:textSize="16sp" android:gravity="left|center" android:layout_marginLeft="10dip" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stepTwoState"
+        android:textColor="#222222" android:textSize="14sp" android:layout_marginLeft="10dip" android:layout_marginBottom="5dip" />   
+	</LinearLayout> 
+	
+    <ImageView android:id="@+id/ivClose" android:layout_width="35dip" android:layout_height="35dip" android:src="@drawable/close" android:layout_gravity="right" />
+     --> 
+   
+   <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/background_title"
+       >
+       
+   </LinearLayout>  
+     
+     
+</FrameLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivAlarmFunction"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/phoneAlarmSet"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/server_bg"
+        android:orientation="vertical" >
+
+        <!-- 接收报警信息开关 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="70"
+                android:gravity="left|center_vertical"
+                android:text="@string/alarmReceiveSwitch"
+                android:textColor="@color/font_color_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <com.macrovideo.pull.lib.CheckSwitchButton
+                    android:id="@+id/btnAlarmFunction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+        <!-- 声音开关 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="70"
+                android:gravity="left|center_vertical"
+                android:text="@string/soundSet"
+                android:textColor="@color/font_color_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <com.macrovideo.pull.lib.CheckSwitchButton
+                    android:id="@+id/btnSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+        <!-- 震动开关 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="70"
+                android:gravity="left|center_vertical"
+                android:text="@string/shakeSet"
+                android:textColor="@color/font_color_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <com.macrovideo.pull.lib.CheckSwitchButton
+                    android:id="@+id/btnShake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+    </LinearLayout>
+
+</LinearLayout>

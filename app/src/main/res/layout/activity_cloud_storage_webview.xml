@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btnCloudStorageWebViewBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/desc"
+            android:gravity="center"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/str_cloud_storage"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="40dip"
+            android:layout_height="30dip" />
+    </LinearLayout> -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        
+
+        <WebView
+            android:id="@+id/id_cloud_storage_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/pb_cloud_storage"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        
+        <TextView 
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:text="@string/str_exit"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_white"
+            android:background="#77000000"
+            android:clickable="true"
+            />
+    </FrameLayout>
+
+</LinearLayout>

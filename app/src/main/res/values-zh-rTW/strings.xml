@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc"></string>
+    <string name="country_code">cn</string>
+    <string name="app_name">demo</string>
+    <string name="app_ver">5.6</string>
+    <string name="app_notice">家居監控，生活無憂</string>
+    <string name="alarm_notice">有新的報警提示信息</string>
+    <string name="pull_to_search">下拉搜索本地設備.</string>
+    <string name="pull_to_refresh_pull_label">下拉搜索設備&#8230;</string>
+    <string name="pull_to_refresh_release_label">放開開始搜索設備&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在搜索&#8230;</string>
+    <string name="str_PasswordIsNil">(密碼為空)</string>
+    <string name="str_AcountInfoNil">(未編輯帳護信息，使用默認帳護)</string>
+    <string name="str_login">登錄</string>
+    <string name="str_wifi_list">WIFI 列表</string>
+    <string name="str_secured_type">加密類型:  </string>
+    <string name="str_secured_type_open">開放</string>
+    <string name="str_visible_pwd">顯示密碼</string>
+    <string name="str_hiden_pwd">隱藏密碼</string>
+    <string name="str_secured_with">加密方式：</string>
+    <string name="notice_DevIsNULL">設備ID不能為空</string>
+    <string name="notice_DomainIsNULL">設備地址不能為空</string>
+    <string name="notice_UsernameIsNULL">用戶名不能為空</string>
+    <string name="notice_PortIsNULL">端口不能為空</string>
+    <string name="notice_PasswordIsNULL">密碼不能為空</string>
+    <string name="alert_title_login_failed">登錄失敗!</string>
+    <string name="alert_connect_tips">建議：下拉列表刷新壹下再嘗試連接，並檢查下網酪是否正確連接.</string>
+    <string name="alert_title">提示</string>
+    <string name="alert_btn_OK">確定</string>
+    <string name="alert_btn_Cancel">取消</string>
+    <string name="alert_add_btn_OK">確定添加</string>
+    <string name="alert_add_btn_Cancel">取消</string>
+    <string name="alert_btn_YES">是</string>
+    <string name="alert_btn_NO">否</string>
+    <string name="alert_clear_list">是否清空設備列表？</string>
+    <string name="alert_delete_server">是否刪除設備？ </string>
+    <string name="alert_set_config_ok">更改配置成功</string>
+    <string name="alert_open_setting_view">溫馨提示：設備WIFI模式或配置已經改變；是否需要打開網酪設置，修改您的WIFI連接？</string>
+    <string name="alert_open_setting_view_ap">溫馨提示：前端: 備處於AP熱點模式，如果需要連接它，請點擊“確定”修改妳的WIFI連接配置</string>
+    <string name="alert_get_config_fail">獲取配置失敗</string>
+    <string name="alert_set_config_fail">更改配置失敗</string>
+    <string name="alert_username_is_invalide">用護名不能為空</string>
+    <string name="alert_password_err">原密碼輸入有誤.</string>
+    <string name="alert_password_confirm_err">新密碼兩次輸入不相同.</string>
+    <string name="alert_stop_play">是否停止接收視頻?</string>
+    <string name="alert_station_password_is_null">Station 的密碼不能為空.</string>
+    <string name="alert_ap_name_is_null">AP 名字不能為空.</string>
+    <string name="alert_station_name_is_null">Station 名字不能為空.</string>
+    <string name="result_code_conn_fail">設備連接失敗</string>
+    <string name="login_Result_MR_Server_Busy">服務器正忙，請稍後再試.</string>
+    <string name="login_Result_MR_Server_Disconnet">與前端設備連接已經斷開.</string>
+    <string name="login_Result_ConnectTimeout">連接超時.</string>
+    <string name="notice_Result_ConnectServerFailed">連接設備失敗.</string>
+    <string name="notice_Result_PWD_ERR_AP">AP 密碼要求為空或者大於等於8個字符.</string>
+    <string name="notice_Result_PWD_ERR_Station">Station 密碼要求為空或者大於等於8個字符.</string>
+    <string name="notice_Result_PWD_ERR">密碼要求為空或者大於等於8個字符.</string>
+    <string name="notice_Result_NOPRI">權限不足</string>
+    <string name="notice_Result_UserNoExist">用護不存在.</string>
+    <string name="notice_Result_PWDError">密碼錯誤.</string>
+    <string name="notice_Result_BadResult">數據損壞.</string>
+    <string name="notice_Result_NetError">網酪連接失敗!</string>
+    <string name="notice_Result_Server_Offline">前端設備不在線.</string>
+    <string name="notice_Result_VerifyFailed">"驗證錯誤.</string>
+    <string name="notice_Result_Old_Version">前端設備版本不支持.</string>
+    <string name="toast_last_page">已經是最後壹頁</string>
+    <string name="toast_first_page">已經是第壹頁</string>
+    <string name="toast_add_in_list">已添加到列表</string>
+    <string name="toast_remove_from_list">已從列表刪除</string>
+    <string name="toast_network_unreachable">網酪連接不可用，請檢查網酪設置</string>
+    <string name="toast_list_is_null">設備列表為空, 請添加設備</string>
+    <string name="connecting">正在連接&#8230;</string>
+    <string name="loading">正在加載&#8230;</string>
+    <string name="name">名稱:</string>
+    <string name="server">設備地址:</string>
+    <string name="port">>端 口:</string>
+    <string name="username">用護名:  </string>
+    <string name="password">密 碼:</string>
+    <string name="password_old">原密碼: </string>
+    <string name="password_new">新密碼:</string>
+    <string name="password_confirm">確認密碼:  </string>
+    <string name="autologin">自動登錄</string>
+    <string name="record_info">記住登錄信息</string>
+    <string name="norecord">沒有輸入記錄</string>
+    <string name="nameHint">在這裡輸入壹個名稱</string>
+    <string name="serverHint">請輸入設備地址</string>
+    <string name="portHint">請輸入接收端口</string>
+    <string name="usernameHint">請輸入用護名</string>
+    <string name="passwordHint">請輸入密碼</string>
+    <string name="btn_login">登錄</string>
+    <string name="btn_serverList">設備列表</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_edit">編輯</string>
+    <string name="btn_finish">完成</string>
+    <string name="btn_search">搜索</string>
+    <string name="btn_research">搜索設備</string>
+    <string name="btn_addtolist">添加到列表</string>
+    <string name="btn_IsInlist">已添加到列表</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_save_setting">設置</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_ok">確定</string>
+    <string name="btn_add_qr">二維碼添加</string>
+    <string name="btn_stop_all">停止</string>
+    <string name="btn_stop_play">停止</string>
+    <string name="btn_start_play">播放</string>
+    <string name="btn_one_key_sync">設為手機時間</string>
+    <string name="btn_save_time">設置時間</string>
+    <string name="btn_get_from_list">從本地WIFI中選取</string>
+    <string name="title_add_device">添加設備</string>
+    <string name="title_Edit_device">修改設備</string>
+    <string name="searching">正在搜索設備&#8230;</string>
+    <string name="searchcancel">搜索被取消</string>
+    <string name="has">搜索到</string>
+    <string name="device_found">臺設備</string>
+    <string name="logining">正在登錄&#8230;</string>
+    <string name="Notification_To_Login">設備未登錄&#8230;</string>
+    <string name="Notification_Playing_Chn">正在播放：</string>
+    <string name="str_Notic_Close_APP">是否要退出程序?</string>
+    <string name="str_serverList">設備列表 </string>
+    <string name="notice_RecvDataFailed">連接失敗.</string>
+    <string name="notice_RecvStop">與前端設備連接斷開.</string>
+    <string name="str_Select_To_Play">請選擇播放通道</string>
+    <string name="str_PlayingChn">正在播放通道：</string>
+    <string name="wifi_mode">WIFI 模式: </string>
+    <string name="wifi_mode_ap">AP</string>
+    <string name="wifi_mode_station">Station</string>
+    <string name="wifi_mode_ap_setting">AP模式 (熱點模式，無需外接路由)</string>
+    <string name="wifi_current_mode">當前模式: </string>
+    <string name="wifi_mode_station_setting">Station模式(路由器連接模式)</string>
+    <string name="server_config">設備信息設置</string>
+    <string name="local_config">本地設置:</string>
+    <string name="remote_config">遠程設置:</string>
+    <string name="config_base">設備基本信息</string>
+    <string name="config_network">網酪設置</string>
+    <string name="config_record">錄像設置</string>
+    <string name="config_time">時間設置</string>
+    <string name="config_user">用護管理</string>
+    <string name="config_alarm_prompt">報警設置</string>
+    <string name="station_current_wifi">設置的WIFI: </string>
+    <string name="record_auto_record_title">自動錄像</string>
+    <string name="record_record_open">開啟</string>
+    <string name="record_record_close">關閉</string>
+    <string name="record_alarm_record_title">報警錄像</string>
+    <string name="record_record_full_op">錄像滿盤操作:</string>
+    <string name="record_record_full_op_recorver">覆蓋舊文件</string>
+    <string name="record_record_full_op_stop">停止錄像</string>
+    <string name="date_current">日期:</string>
+    <string name="time_current">時間:</string>
+    <string name="device_time_current">當前設備時間:</string>
+    <string name="set_time">時間設置:</string>
+    <string name="set_date">日期設置:</string>
+    <string name="getting_network_config">正在獲取網酪配置&#8230;</string>
+    <string name="getting_network_config_fail">獲取網酪配置失敗.</string>
+    <string name="getting_record_config">正在獲取錄像配置&#8230;</string>
+    <string name="getting_record_config_fail">取錄像配置失敗.</string>
+    <string name="getting_datetime_config">獲取系統時間失敗.</string>
+    <string name="getting_datetime_config_fail">獲取系統時間失敗.</string>
+    <string name="getting_alarmprompts_config">正在獲取報警和提示設置信息&#8230;</string>
+    <string name="getting_alarmprompts_config_fail">獲取報警和提示設置失敗.</string>
+    <string name="getting_version_info">正在獲取設備版本信息…</string>
+    <string name="getting_version_info_fail">獲取設備版本失敗.</string>
+    <string name="user_info">用護信息</string>
+    <string name="getting_user_config">正在獲取用護配置…</string>
+    <string name="getting_user_config_fail">獲取用護配置失敗.</string>
+    <string name="local_wifi_device_list">本地WIFI設備列表，請選擇.</string>
+    <string name="modify_password">修改密碼</string>
+    <string name="wifi_no_select">請選擇WIFI設備.</string>
+    <string name="disk_size">磁盤空間大小:</string>
+    <string name="disk_use">剩餘磁盤空間:</string>
+    <string name="no_dev_found">沒有發現新設備.</string>
+    <string name="search_finish">列表已刷新.</string>
+    <string name="add_device">新添加設備：</string>
+    <string name="strIDNumber">設備 ID:</string>
+    <string name="strAdvance">高級設置</string>
+    <string name="strDeviceVerInfo">設備升級</string>
+    <string name="strAppVersion">系統軟件版本：</string>
+    <string name="strKernalVersion">系統內核版本：</string>
+    <string name="strHardwareVersion">系統硬件版本：</string>
+    <string name="strVersionDate">創建日期:</string>
+    <string name="btnSelectALL">全選</string>
+    <string name="btnUnSelectALL">反選</string>
+    <string name="btnDelect">刪除</string>
+    <string name="tabDeviceList">設備列表</string>
+    <string name="tabHome">首頁</string>
+    <string name="tabScreenShot">圖片</string>
+    <string name="tabPlayback">回放</string>
+    <string name="tabHelp">幫助</string>
+    <string name="lblSelectDevice">請選擇設備</string>
+    <string name="lblDevice">選中設備: </string>
+    <string name="lblDate">選擇日期:  </string>
+    <string name="lblStartTime">開始時間:</string>
+    <string name="lblEndTime">結束時間: </string>
+    <string name="lblRecType">錄像類型:  </string>
+    <string name="strAll">全部</string>
+    <string name="strAuto">自動錄像</string>
+    <string name="strAlarm">報警錄像</string>
+    <string name="noticNoDeviceSelect">設備沒有選中</string>
+    <string name="noticStartlargeThanEnd">開始時間不能大於結束時間</string>
+    <string name="noticEndLessThanStart">結束時間不能小於開始時間</string>
+    <string name="noticRecConnectFail">搜索失敗：連接設備失敗。</string>
+    <string name="noticRecOKNOFiles">搜索完畢，沒有發現妳要查找的錄像文件</string>
+    <string name="strStartTime">開始時間:  </string>
+    <string name="strTimeLen">時長: </string>
+    <string name="strFileSize">大小：</string>
+    <string name="btnHideList">隱藏列表</string>
+    <string name="btnVisibleList">顯示列表</string>
+    <string name="btnSearchRecFile">搜索文件</string>
+    <string name="strRecFileList">錄像文件列表</string>
+    <string name="btnVersionUpdate">軟件版本更新</string>
+    <string name="btnFunctionManu">軟件功能介紹</string>
+    <string name="strHour">小時</string>
+    <string name="strMin">分鐘</string>
+    <string name="strSec">秒</string>
+    <string name="lblRecordAudioTitle">錄像音頻:</string>
+    <string name="lblRecordFrameSize">錄像分辨率:</string>
+    <string name="lbl1080P">1080P</string>
+    <string name="lbl720P">720P</string>
+    <string name="lblD1">D1</string>
+    <string name="lblVGA">VGA</string>
+    <string name="lblCIF">CIF</string>
+    <string name="lblQVGA">QVGA</string>
+    <string name="lblNOSDCard">設備沒有插入SD卡</string>
+    <string name="lbSDCardWritteErr">SDCard讀寫異常</string>
+    <string name="lblGettingAlarmMsg">正在獲取報警信息&#8230;</string>
+    <string name="lblSmokeAlarm">煙霧報警</string>
+    <string name="lblMotionAlarm">移動報警</string>
+    <string name="lblPIRAlarm">人體感應報警</string>
+    <string name="lblMoreAlarmMsg">下拉加載更多報警信息.</string>
+    <string name="lblLoadingAlarmMsg">正在加載更多&#8230;</string>
+    <string name="pull_to_load_more">下拉加載更多報警信息.</string>
+    <string name="pull_to_refresh_release_load_more">放開開始搜索設備&#8230;</string>
+    <string name="pull_to_refresh_loading_more">正在加載更多&#8230;</string>
+    <string name="lblInputName">在這裡輸入壹個名稱</string>
+    <string name="lblAudioSwitch">語音提示開關：</string>
+    <string name="lblAudioMainSwitch">語音總開關:</string>
+    <string name="lblAlarmAudio">報警語音提示:</string>
+    <string name="lblLanguange">語音提示語言:</string>
+    <string name="lblIOSwitch">外部報警IO:</string>
+    <string name="lblIOMode">外部報警IO工作模式</string>
+    <string name="lblIOModeExternal">外部報警系統</string>
+    <string name="lblIOModeInternal">內部報警系統</string>
+    <string name="lblIOModeManualOff">手動控制關閉輸出</string>
+    <string name="lblIOModeManualOn">手動控制開啟輸入</string>
+    <string name="lblLanguageCN">普通話</string>
+    <string name="lblLanguageEN">英語</string>
+    <string name="lblAlarmMianSwitch">布防/撤防開關:</string>
+    <string name="lblMotionDetect">移動報警:</string>
+    <string name="strAlarmTime">報警時間：</string>
+    <string name="strAlarmType">報警類型：</string>
+    <string name="strMotionAlarm">移動報警</string>
+    <string name="strSmokeAlarm">煙感報警</string>
+    <string name="strPIRAlarm">PIR報警</string>
+    <string name="strRKEAlarm">門禁報警</string>
+    <string name="strGasAlarm">氣體報警</string>
+    <string name="strWarmAlarm">溫度報警</string>
+    <string name="strDemonstrate">演示</string>
+    <string name="strDemonList">演示設備列表</string>
+    <string name="btnHD">高清</string>
+    <string name="btnSmooth">流暢</string>
+    <string name="softwareUpdate">軟件升級</string>
+    <string name="findNowVersion">發現新版本,馬上更新?</string>
+    <string name="btnUpdateNow">更新</string>
+    <string name="btnUpdateLater">以後再說</string>
+    <string name="downWin">下載成功,點擊安裝</string>
+    <string name="downFail">下載失敗</string>
+    <string name="startDown">開始下載</string>
+    <string name="showDown">下載</string>
+    <string name="Downing">正在下載</string>
+    <string name="querySoftwareing">正在查詢版本信息請稍後</string>
+    <string name="notNewVersion">無新版本</string>
+    <string name="dateAbnormal">數據異常</string>
+    <string name="wifiConnect">連接</string>
+    <string name="wifi_is">是</string>
+    <string name="wifi_no">否</string>
+    <string name="wifi_confirm">確定</string>
+    <string name="wifi_off">取消</string>
+    <string name="wifi_start">正在啟動WIFI,請稍後</string>
+    <string name="wifi_start_bt">您的手機WIFI尚未啟動，請先啟動您的手機WIFI並連接您的路由器在進行操作。是否啟動WIFI</string>
+    <string name="connect_device">正在連接設備</string>
+    <string name="connect_device_succeed">連接設備成功</string>
+    <string name="device_model_trade">設備模式切換中</string>
+    <string name="connect_wifiing">正在連接WIFI</string>
+    <string name="device_model_succeed">模式切換成功,請稍後點擊收索按鈕進行查找設備</string>
+    <string name="connect_wifi_off">WIFI連接失敗</string>
+    <string name="connect_server_off">連接服務器失敗</string>
+    <string name="wifi_wpa_wpa2">通過WPA/WPA2進行保護</string>
+    <string name="wifi_wep">通過WEP進行保護</string>
+    <string name="wifi_wpa">通過WPA進行保護</string>
+    <string name="wifi_wpa2">通過WPA2進行保護</string>
+    <string name="wifi_password">請輸入當前WIFI密碼</string>
+    <string name="wifi_refresh">刷新</string>
+    <string name="noticeSDCardNotExist">手機沒有插入存儲卡</string>
+    <string name="noticeScreenShotFail">截圖失敗</string>
+    <string name="noticeScreenShotOK">截圖已保存到存儲卡</string>
+    <string name="noticeFileSaveToAlbumsOK">圖片已保存,可在相冊查看</string>
+    <string name="noticeFileSaveOK">文件已保存到存儲卡</string>
+    <string name="noticeFileSaveFail">文件保存失敗</string>
+    <string name="btnSaveToSDCard">保存圖片</string>
+    <string name="btnSaveingImage">正在保存圖片&#8230;</string>
+    <string name="btnClose">關閉</string>
+    <string name="btnOpen">開啓</string>
+    <string name="strTouchToMoveCam">按住方向鍵或滑動屏幕可以調整鏡頭方向</string>
+    <string name="lblTimeZoneSetting">設置時區:</string>
+    <string name="lblTimeZoneList">時區列表</string>
+    <string name="lblTimeZoneW12">(GMT -12) 埃尼威托克島</string>
+    <string name="lblTimeZoneW11">(GMT -11) 薩摩亞</string>
+    <string name="lblTimeZoneW10">(GMT -10) 夏威夷</string>
+    <string name="lblTimeZoneW9">(GMT -9) 阿拉斯加</string>
+    <string name="lblTimeZoneW8">(GMT -8) 太平洋時間</string>
+    <string name="lblTimeZoneW7">(GMT -7) 山區標準時間</string>
+    <string name="lblTimeZoneW6">(GMT -6) 中部標準時間</string>
+    <string name="lblTimeZoneW5">(GMT -5) 東部時間</string>
+    <string name="lblTimeZoneW4">(GMT -4) 大西洋時間</string>
+    <string name="lblTimeZoneW3">(GMT -3) 巴西利亞</string>
+    <string name="lblTimeZoneW2">(GMT -2) 中大西洋</string>
+    <string name="lblTimeZoneW1">GMT -1) 亞述爾群島</string>
+    <string name="lblTimeZoneZero">(GMT ＋0) 格林威治</string>
+    <string name="lblTimeE1">(GMT +1) 羅馬</string>
+    <string name="lblTimeE2">(GMT +2) 以色列</string>
+    <string name="lblTimeE3">(GMT +3) 莫斯科</string>
+    <string name="lblTimeE4">(GMT +4) 巴庫</string>
+    <string name="lblTimeE5">(GMT +5) 新德裏</string>
+    <string name="lblTimeE6">(GMT +6) Dhakar</string>
+    <string name="lblTimeE7">(GMT +7) 曼谷</string>
+    <string name="lblTimeE8">(GMT +8) 北京</string>
+    <string name="lblTimeE9">(GMT +9) 東京</string>
+    <string name="lblTimeE10">(GMT +10) 悉尼</string>
+    <string name="lblTimeE11">GMT +11) 馬加丹</string>
+    <string name="lblTimeE12">(GMT +12) 惠靈頓</string>
+    <string name="deviceChoose">設備選擇:</string>
+    <string name="QRcodeAddSaveListing">設備已添加到列表</string>
+    <string name="QRcodeAddFail">設備添加失敗</string>
+    <string name="QRcodeListingExist">列表已存在該設備</string>
+    <string name="QRcodeErrorDevice">非設備二維碼</string>
+    <string name="deviceAddSucceed">設備添加成功</string>
+    <string name="deviceAddFail">設備添加失敗</string>
+    <string name="deviceAddEditTextInputType">設備ID不能為空且ID長度不能大於九位數</string>
+    <string name="deviceAlterSucceed">設備修改成功</string>
+    <string name="deviceAlterFail">設備修改失敗</string>
+    <string name="myDevice">我的設備</string>
+    <string name="demoPoint">演示點</string>
+    <string name="QuickConfigWifiDevice">快速配置WIFI設備</string>
+    <string name="deviceID">設備ID號:</string>
+    <string name="inputDeviceID">請輸入設備ID</string>
+    <string name="deviceDelete">刪除成功</string>
+    <string name="nonsupport5GWIFI">* 暫不支持連接5G WIFI</string>
+    <string name="gainWIFIList">正在獲取WIFI列表請稍後</string>
+    <string name="planConfig">準備配置</string>
+    <string name="sendSoundWave">正在發送聲波</string>
+    <string name="startConfig">開始配置</string>
+    <string name="clickSendSoundWave">點擊發送聲波</string>
+    <string name="inProcessOfPlay">正在播放</string>
+    <string name="horizontalPlay">橫屏播放高清視頻效果更佳</string>
+    <string name="FileFirst">當前文件已為第壹個文件</string>
+    <string name="FileFinally">當前文件已為最後文件</string>
+    <string name="AllPlayBack">全部錄像</string>
+    <string name="noDevice">無設備</string>
+    <string name="VideoPlayBack">錄像回放</string>
+    <string name="devcieConfig">設備配置</string>
+    <string name="morefunction">更多功能</string>
+    <string name="phoneAlarmSet">手機報警設置</string>
+    <string name="softwarePassword">軟件密碼</string>
+    <string name="softwareupdate">軟件更新</string>
+    <string name="exitSoftware">退出</string>
+    <string name="deviceName">設備名稱</string>
+    <string name="WifiName">WIFI名稱</string>
+    <string name="WifiPassword">WIFI密碼</string>
+    <string name="voiceTalkback">您現在可以進行語音對講</string>
+    <string name="standardDefinition">標清</string>
+    <string name="videoPlaying">視頻播放</string>
+    <string name="takeACabdidPhotograph">抓拍</string>
+    <string name="inversion">倒置</string>
+    <string name="talkback">對講</string>
+    <string name="monitor">監聽</string>
+    <string name="definition">清晰度</string>
+    <string name="back">退出</string>
+    <string name="sohuDefinition">超清</string>
+    <string name="quickConfig">快速配置</string>
+    <string name="chooseConfigDevice">請選擇需要配置的設備</string>
+    <string name="inputDeviceConnectWIFI">請輸入設備路由器名稱和密碼</string>
+    <string name="deviceDistanceWithWifi">(溫馨提示：請用手機在距離設備3米內進行配置)</string>
+    <string name="nextStep">下壹步</string>
+    <string name="nearDevcie">請將手機靠近設備,並點擊發送聲波按鈕</string>
+    <string name="manualAddDevice">手動添加設備</string>
+    <string name="QRCode">二維碼掃描</string>
+    <string name="WifiQuikConfig">AP快速配置</string>
+    <string name="soundWaveConfig">聲波配置</string>
+    <string name="LANSeek">局域網搜索</string>
+    <string name="alarmPicture">報警圖片</string>
+    <string name="editingDevice">修改設備</string>
+    <string name="deleteDevice">刪除設備</string>
+    <string name="allDeleteDevice">全部刪除</string>
+    <string name="checkAll">全選/反選</string>
+    <string name="alarmMessage">報警信息</string>
+    <string name="wifiList">WIFI列表</string>
+    <string name="demoState">演示說明</string>
+    <string name="firstStep">第壹步</string>
+    <string name="firstStepState">請將手機的揚聲器對準設備的麥克風(距離15裏面內)</string>
+    <string name="stepTwo">第二步</string>
+    <string name="stepTwoState">發送聲波,發送完成後請稍等，當聽到設備發出配置成功的語音提示，點擊下壹步</string>
+    <string name="devicePrepare">設備準備配置</string>
+    <string name="wifiListingFail">WIFI列表獲取失敗</string>
+    <string name="deviceTurn">該設備不支持轉動</string>
+    <string name="AllDeviceDelete">批量刪除</string>
+    <string name="deviceHintUpdate">聽到設備提示配置更新後，點擊下壹步或點擊返回重新發送聲波</string>
+    <string name="deviceSeekFail">設備搜索失敗</string>
+    <string name="inProcessofSeekDevice">正在玩命配置,請耐心等候</string>
+    <string name="SoundWavePointer">請用頂針輕插設備reset鍵,聽到設備聲波配置開啟後點擊下壹步</string>
+    <string name="cancel">取消</string>
+    <string name="try_again">重試</string>
+    <string name="goon">繼續</string>
+    <string name="confirm">確認</string>
+    <string name="lockpattern_recording_incorrect_too_short">至少連接4個點，請重試</string>
+    <string name="lockpattern_error">手勢密碼不對</string>
+    <string name="SoftwareUpdate">檢測更新</string>
+    <string name="SoftwareNewVersion">有新版本更新</string>
+    <string name="SoftwareAPNotUpdate">AP模式下不支持更新</string>
+    <string name="NotNewVersion">無版本更新</string>
+    <string name="SoftwareeVersionNew">已經更新到最新版本</string>
+    <string name="SoftwareversionUpdate">版本更新</string>
+    <string name="NewVersionUpdateOnOrOff">有版本更新,是否進行版本更新?</string>
+    <string name="PhotoManage">相冊</string>
+    <string name="deviceImageDelete">刪除圖片</string>
+    <string name="foundSoftwarePassword">創建密碼</string>
+    <string name="deleteSoftwarePassword">刪除密碼</string>
+    <string name="deleteSoftwarePasswordSucceed">刪除密碼成功</string>
+    <string name="OnPassword">開啟密碼</string>
+    <string name="OffPassword">關閉密碼</string>
+    <string name="alterPassword">修改密碼</string>
+    <string name="inputPasswordErrorMore">您輸入的密碼錯誤次數過多,請稍後再試</string>
+    <string name="inputPasswordError">您輸入的密碼錯誤,還可輸入</string>
+    <string name="passwordOrder">次</string>
+    <string name="leastInputPoint">最少要輸入4個點,請重新輸入</string>
+    <string name="resetInputPassword">重新設置解鎖圖案</string>
+    <string name="affirmPassern">確認解鎖圖案</string>
+    <string name="setPasswordSucceed">設置密碼成功</string>
+    <string name="setPasswordLastDifferent">與上壹次繪制不壹致，請重新繪制</string>
+    <string name="drawDelockingPattern">繪制解鎖圖案</string>
+    <string name="setPasswordPreventSee">設置手勢密碼，防止他人未經授權查看</string>
+    <string name="deviceUpdate">正在進行版本更新,請勿切斷設備電源</string>
+    <string name="signPassword">手勢密碼開關</string>
+    <string name="passwrodOn">手勢密碼開啟</string>
+    <string name="passwrodOff">手勢密碼關閉</string>
+    <string name="passwrodDeleteSucceed">手勢密碼已刪除</string>
+    <string name="anotherName">昵稱:</string>
+    <string name="visitPassword">訪問密碼:</string>
+    <string name="seekHotspot">正在收索熱點</string>
+    <string name="nearbyNotHotspot">附近暫無設備熱點</string>
+    <string name="gainHotspotInformation">正在獲取設備信息</string>
+    <string name="gainHotspotInformationSucceed">設備信息獲取成功,可進行實時預覽或添加到設備列表</string>
+    <string name="addList">添加列表</string>
+    <string name="realTimePreView">實時預覽</string>
+    <string name="bufferPreView">正在緩沖</string>
+    <string name="connectDeviceHotspot">正在連接設備熱點</string>
+    <string name="deviceHotspot">設備熱點</string>
+    <string name="newPasswordAndOldPassword">新舊密碼不能相同</string>
+    <string name="strWanOnline">互聯網在線</string>
+    <string name="strLanOnline">局域網在線</string>
+    <string name="strWanOffline">互聯網離線</string>
+    <string name="strOnlineChecking">正在連接&#8230;</string>
+    <string name="alarmReceiveSwitch">接收報警消息</string>
+    <string name="soundSet">報警提示聲音</string>
+    <string name="shakeSet">報警提示震動</string>
+    <string name="deviceHaveAlarmMsg">有新的報警信息</string>
+    <string name="baiduDevice">設備</string>
+    <string name="deviceAlarmTime">設備報警時間</string>
+    <string name="versionDetection">版本檢測</string>
+    <string name="deleteFail">刪除失敗</string>
+    <string name="appNewVersion">發現新版本</string>
+    <string name="appUpdateOrNot">是否更新軟件</string>
+    <string name="appNoNoticeForThisVer">不在提示該版本</string>
+    <string name="strSmartLink">WIFI智能快配</string>
+    <string name="btnBackToConfig">返回重新配置</string>
+    <string name="preset">預置位</string>
+    <string name="presetTitle">預置位設置與定位</string>
+    <string name="presetOK">位置設定成功</string>
+    <string name="presetFail">位置設定失敗</string>
+    <string name="btnPTZXSet">設定</string>
+    <string name="btnPTZXCall">調用</string>
+    <string name="relecanceLevelHigh">高</string>
+    <string name="relecanceLevelMedium">中</string>
+    <string name="relecanceLevelLow">低</string>
+    <string name="relecanceTypeRKE">門禁</string>
+    <string name="relecanceTypeSmoke">煙霧</string>
+    <string name="relecanceTypeMove">移動</string>
+    <string name="relecanceDeviceGainFail">設備獲取失敗,請您確定您的設備是否觸發。或者您的設備是否已經添加後在重試</string>
+    <string name="relecanceDeviceConfiguration">配置</string>
+    <string name="relecanceAlarmLevel">請選擇報警級別</string>
+    <string name="relecanceAlarmType">請選擇報警類型</string>
+    <string name="relecanceAlarmName">名稱不能為空</string>
+    <string name="relecanceName">名稱</string>
+    <string name="relecanceAddressCode">地址碼</string>
+    <string name="relecanceDeviceList">報警設備列表</string>
+    <string name="relecanceDeviceAdd">正在收索報警設備,請您觸發壹下您要添加的報警設備</string>
+    <string name="relecanceInputName">請輸入報警設備名稱</string>
+    <string name="relecanceType">報警類型</string>
+    <string name="relecanceLevel">報警級別</string>
+    <string name="relecanceSet">管理防區</string>
+    <string name="relecanceInputNameTooLong">您輸入的名字過長,請減短後在重試</string>
+    <string name="relecanceSeekDevice">搜索新設備</string>
+    <string name="relecanceAlterDevice">修改設備</string>
+    <string name="relecanceAddDevice">添加新設備</string>
+    <string name="relecanceGAS">煤气</string>
+    <string name="relecanceOther">其它</string>
+    <string name="relecanceFeeling">烟感</string>
+    <string name="relecanceDeviceSeekListFail">设备获取失败</string>
+    <string name="relecancePreset">预置位关联</string>
+    <string name="relecancePresetOff">取消关联</string>
+    <string name="relecancePresetNot">未关联</string>
+    <string name="relecancePresetNo">关联预置位</string>
+    <string name="relecanceAlarmOffOrOn">报警开关</string>
+    <string name="photoShare">分享</string>
+    <string name="snartLinkHint">提示</string>
+    <string name="snartLinkFailTitle">配置失敗</string>
+    <string name="snartLinkStartHint">配置過程將在80秒內完成，請耐心等待</string>
+    <string name="snartLinkFailHint">設備與WIFI連接信號太弱或者密碼有誤</string>
+    <string name="clicktoloadimage">點擊加載圖片</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松開刷新數據</string>
+    <string name="xlistview_header_hint_loading">正在加載&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新時間：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松開載入更多</string>
+    <string name="areaSelection">區域選擇</string>
+    <string name="areaSelections">區域選擇</string>
+    <string name="area">當前區域:</string>
+    <string name="autoSelect">自動選擇</string>
+    <string name="china">中國大陸</string>
+    <string name="china2">大陸內地</string>
+    <string name="zoneAS1">日本，韓國，台灣，香港，泰國，越南</string>
+    <string name="zoneAS2">馬來西亞,新加坡</string>
+    <string name="zoneAS3">西亞</string>
+    <string name="zoneAS4">南亞印度</string>
+    <string name="zoneNA1">美國</string>
+    <string name="zoneSA1">巴西</string>
+    <string name="zoneEU1">英國</string>
+    <string name="zoneEU2">法國,德國</string>
+    <string name="zoneOA1">澳大利亞,新西蘭</string>
+    <string name="zoneAF1">南非</string>
+    <string name="zoneAF2">埃及,蘇丹</string>
+    <string name="AS1">亞洲1</string>
+    <string name="AS2">亞洲2</string>
+    <string name="AS3">亞洲3</string>
+    <string name="AS4">亞洲4</string>
+    <string name="NA1">北美</string>
+    <string name="SA1">南美</string>
+    <string name="EU1">歐洲1</string>
+    <string name="EU2">歐洲2</string>
+    <string name="OA1">大洋洲</string>
+    <string name="AF1">非洲1</string>
+    <string name="AF2">非洲2</string>
+    <string name="areaSave">保存成功</string>
+    <string name="SDCardFormat">設備SD卡格式化</string>
+    <string name="SDCardNetWordFail">設備網絡連接失敗,請檢查您的網絡再重試</string>
+    <string name="SDCardDeviceReturnFail">獲取設備返回結果失敗</string>
+    <string name="SDCardSucceed">設備SD卡正在格式化,在沒有聽到設備提示格式化完成前，請勿斷開設備電源</string>
+    <string name="SDCardFail">SD卡格式化失敗</string>
+    <string name="SDCardALer">SD卡格式化后,SD裡面德爾文件將全部被刪除，是否進行格式化</string>
+    <string name="deviceWifiOpenFail">軟件無權開啟WIFI，請手動開啟后重試</string>
+
+    <!-- 以下为戴钦雄添加 -->
+    <string name="APSeekFine">AP快速配置</string>
+    <string name="str_menu">菜單</string>
+    <!-- 编辑设备说明 -->
+    <string name="str_note">說明:</string>
+
+    <!-- helpfra 添加幫助選項 -->
+    <string name="str_fra_help">幫助</string>
+
+    <!-- add by dqx 2016年2月1日 功能指导 -->
+    <string name="str_showcase_fra_devicelist1">點擊可以查看演示點</string>
+    <string name="str_showcase_fra_devicelist2">點擊添加設備</string>
+    <string name="str_showcase_fra_configdevice1">點擊選擇設備</string>
+
+    <!-- add by dqx 2016年2月1日popup_window_more2 -->
+    <string name="str_popup_window_more1">刪除</string>
+    <string name="str_popup_window_more2">編輯</string>
+    <string name="str_popup_window_more3">信息</string>
+
+    <!-- add by dqx 2016年2月1日 dialog_add_device_layout -->
+    <string name="str_dialog_add_device_layout1">未配置的新設備</string>
+    <string name="str_dialog_add_device_layout2">(WIFI智能快配:為首次啟動和重置后的設備配置網絡)</string>
+    <string name="str_dialog_add_device_layout3">已連接網絡的設備</string>
+    <string name="str_dialog_add_device_layout4">(手動配置設備請點擊此處)</string>
+
+    <!-- add by dqx 2016年1月30日 -->
+    <string name="str_photo_activity">您未選擇任何圖片</string>
+
+    <!-- add by dqx 2016年1月25日  二维码文字语言适配 -->
+    <string name="str_qr_code">將二維碼/條碼放入框內，即可自動掃描</string>
+    <string name="str_qr_code1">將二維碼/條碼放入框內</string>
+    <string name="str_qr_code2">即可自動掃描</string>
+    <string name="title_scan_device">掃描二維碼</string>
+
+    <!-- 设备网络配置语言适配  dqx 2016年1月25日 -->
+    <string name="str_loading">加載中&#8230;</string>
+    <string name="str_change_to_station">切換至STATION模式</string>
+    <string name="str_change_to_ap">切換至AP模式</string>
+    <string name="str_advanced_setup">高級設置</string>
+    <string name="str_save">保存</string>
+    <string name="str_IP">IP地址:</string>
+    <string name="str_subnet">子網掩碼:</string>
+    <string name="str_default_gateway">默認網關:</string>
+
+    <!-- DeviceNetworkSettingFragment dqx 2016年1月25日 -->
+    <string name="str_mode_unknow">當前設備網絡模式為UNKNOW模式</string>
+    <string name="str_mode_station">當前設備網絡模式為STATION模式</string>
+    <string name="str_mode_ap">當前設備網絡模式為AP模式</string>
+    <string name="str_title_edit">修改</string>
+
+    <!-- NVAlarmMsgListViewActivity -->
+    <string name="str_none_msgs">當前設備暫無新的報警信息</string>
+
+    <!-- 预设位 -->
+    <string name="str_Preset_Position">預設位</string>
+    <string name="str_preset_position">該設備無預設位功能</string>
+
+    <!-- dqx 2016年4月8日  权限提醒 -->
+    <string name="str_permission_camera1">相機權限異常，該功能無法使用</string>
+    <string name="str_permission_camera2">相機權限異常，您需要在[設置-應用-demo-權限]開啟相機權限</string>
+    <string name="str_permission_request">權限請求</string>
+    <string name="str_permission_phone1">關閉電話權限會影響報警信息推送功能正常運作，請在[設置-應用-demo-權限]開啟電話權限</string>
+    <string name="str_permission_neglect">忽略</string>
+    <string name="str_permission_setting">設置密碼</string>
+    <string name="str_permission_setting2">去設置</string>
+    <string name="str_permission_storage1">關閉存儲空間權限會導致程序數據讀取與存儲功能異常，請在[設置-應用-demo-權限]開啟存儲空間權限</string>
+    <string name="str_permission_storage2">存儲空間權限異常，無法存儲/讀取數據，您需要在[設置-應用-demo-權限]中開啟存儲空間權限</string>
+    <string name="str_permission_microphone1">麥克風權限異常，該功能無法使用</string>
+    <string name="str_permission_microphone2">麥克風權限異常，該功能無法使用，您需要在[設置-應用-demo-權限]中開啟麥克風權限</string>
+    <string name="str_permission_location">關閉位置信息權限會影響程序搜索設備/熱點功能，請在[設置-應用-demo-權限]開啟位置信息權限</string>
+    <string name="str_saving">正在保存設置&#8230;</string>
+
+    <!-- 静态IP设置 -->
+    <string name="str_static_ip_config">靜態IP設置</string>
+    <string name="str_ip">IP:</string>
+    <string name="str_subnet_mask">子網掩碼:</string>
+    <string name="str_gateway">網關:</string>
+    <string name="str_main_dns">主DNS:</string>
+    <string name="str_sub_dns">次DNS:</string>
+    <string name="str_null_ip">IP地址不能為空</string>
+    <string name="str_null_subnet">子網掩碼不能為空</string>
+    <string name="str_null_gateway">網關不能為空</string>
+    <string name="str_null_main_dns">主DNS不能為空</string>
+    <string name="str_error_ip">IP地址格式錯誤</string>
+    <string name="str_error_subnet">子網掩碼格式錯誤</string>
+    <string name="str_error_gateway">網關格式錯誤</string>
+    <string name="str_error_main_dns">主DNS格式錯誤</string>
+    <string name="str_error_sub_dns">次DNS格式錯誤</string>
+    <string name="str_auto_config">自動配置</string>
+    <string name="str_manual_config">手動配置</string>
+
+    <!-- 一键布撤防 -->
+    <string name="str_monitor_activate">布防</string>
+    <string name="str_monitor_deactivate">撤防</string>
+    <string name="str_monitor_activate_success">布防成功</string>
+    <string name="str_monitor_activate_fail">布防失敗</string>
+    <string name="str_monitor_deactivate_success">撤防成功</string>
+    <string name="str_monitor_deactivate_fail">撤防失败</string>
+    <string name="str_monitor_activating">正在布防&#8230;</string>
+    <string name="str_monitor_deactivating">正在撤防&#8230;</string>
+
+    <!-- add by dqx 2016年5月16日 -->
+    <string name="str_not_support">設備不支持</string>
+
+    <!-- add by dqx 2016年5月26日 -->
+    <string name="str_hotspot">請打開GPS位置開關，否則應用將獲取不到設備熱點信息</string>
+
+    <!-- dqx 2016年6月8日 -->
+    <string name="str_alarm_time">時間：</string>
+    <string name="date_current2">日期</string>
+    <string name="time_current2">時間</string>
+    <string name="lblDate2">選擇日期</string>
+    <string name="lblStartTime2">開始時間</string>
+    <string name="lblEndTime2">結束時間</string>
+
+    <!-- dqx 2016年6月22日 -->
+    <string name="str_deleting">刪除中&#8230;</string>
+    <string name="str_sharing">分享中&#8230;</string>
+
+     <!-- 谢河明 -->
+    <string name="str_recording">錄像</string>
+    <string name="str_cloud_terrace">雲台</string>
+    <string name="str_position">預設位</string>
+    <string name="str_screenshoot">截圖</string>
+    
+    <!-- add by xie 2016年6月13日 -->
+    <string name="str_quick_register">快速註冊</string>
+    <string name="str_register">註冊</string>
+    <string name="str_mailbox_register">郵箱註冊</string>
+    <string name="hint_password">確認密碼</string>
+    <string name="verify_code">驗證碼(六位數字)</string>
+    <string name="str_verify_code">驗證碼</string>
+    <string name="str_mobile_phone">手機</string>
+    <string name="str_username">用戶</string>
+    <string name="str_quick_register_phone">手機快速註冊</string>
+    
+    <!-- xie 2016-6-20 -->
+    <string name="Please_enter_password">請輸入密碼</string>
+    <string name="Please_enter_username">請輸入用戶名</string>
+    <string name="Confirm">確認</string>
+    <string name="Cancel">取消</string>
+    <string name="Username_or_phoneNo">電話號碼|郵箱</string>
+    <string name="Forget_password">忘記密碼</string>
+    <string name="The_phone_number_can_not_be_empty">電話號碼不能為空</string>
+    <string name="Please_enter_the_correct_phone_number">請輸入正確的電話號碼</string>
+    <string name="The_username_can_not_be_empty">用戶名不能為空</string>
+    <string name="The_password_can_not_be_empty">密碼不能為空</string>
+    <string name="The_verify_code_can_not_be_empty">請輸入正確形式的驗證碼</string>
+    <string name="Verify_code_is_incorrect">驗證碼不正確</string>
+    <string name="Resend">重新發送</string>
+    <string name="Second">秒</string>
+    <string name="The_next_step">下一步</string>
+    <string name="Receive_SMS_verify_code">收到的短信驗證碼</string>
+    <string name="str_enter">請輸入</string>
+    <string name="str_agree">同意</string>
+    <string name="str_register_protocol">demo用戶註冊協議</string>
+    <string name="str_register_remark">備註:密碼由數字、字母、特殊符號或者其中的混合組合所組成的6&#8211;14個字符</string>
+	<string name="str_resetpwd_remark">備註:密碼由數字、字母、特殊符號或者其中的混合組合所組成的6&#8211;14個字符</string>
+	
+    <string name="str_finish">完成</string>
+    <string name="set_new_password">請設置新的登錄密碼</string>
+   
+    <!-- 2016-6-21 xie -->
+    <string name="title_alert">提示消息</string>
+     <string name="entry_experience"><u>本地登錄</u></string>
+    <!-- 2016-6-27 xie -->
+    <string name="verify_codes_is_overtime">驗證碼超時</string>
+    <string name="confirm_correct_password">請輸入6到14位正確形式的密碼</string>
+    <string name="confirm_correct_username">請輸入正確形式的用戶名</string>
+    <string name="password_do_not_match">兩次輸入的密碼不一致</string>
+    <string name="complete_password">請完成密碼輸入</string>
+    <string name="user_isnot_exist">用戶不存在</string>
+     <string name="email_register"><u>通過郵箱註冊</u></string>
+    <string name="title_email_register">郵箱註冊</string>
+    <string name="phone_register"><u>通過手機註冊</u></string>
+    <string name="set_password">設置密碼</string>
+    <string name="str_fast_register"><u>快速註冊</u></string>
+    <string name="set_login_password">請設置登錄密碼</string>
+    <string name="enter_mailbox_address">請輸入郵箱地址</string>
+    <string name="enter_correct_mailbox">請輸入正確形式的郵箱地址</string>
+	<!-- 2016-6-29 -->
+    <string name="update_list_tip">設備列表已是最新</string>
+    <string name="personal_information">個人信息</string>
+    <string name="fail_to_login">用戶名或密碼不正確</string>
+    <string name="login_password">登錄密碼</string>
+    <string name="Security_Settings">安全設置</string>
+    <string name="Account_info">帳戶信息</string>
+    <!-- 2016-6-30 -->
+    <string name="Mailbox">郵箱</string>
+    <string name="change_way">選擇修改方式</string>
+    <string name="Phone_verification">通過手機或郵箱驗證</string>
+    <string name="Old_password">通過舊密碼</string>
+    <string name="Personal_info_newpwd">新密碼</string>
+    <string name="Set_Pwd_tip">密碼有數字、字母、特殊符號或者其中的混合組合所組成的6-14個字符</string>
+    <string name="str_old_pwd">旧密码</string>
+    <!-- 2016-7-1 -->
+    <string name="Edit_Device_Fail">編輯設備失敗</string>
+    <string name="Network_Error">無法連接到服務器，請檢查網絡連接或稍後再試</string>
+    <string name="Phone_exist">手機號已存在</string>
+    <string name="Register_success">註冊成功，兩秒後跳轉至登陸界面</string>
+    <string name="Mail_Is_Exist">郵箱已存在</string>
+    
+    <!-- 2016-7-14 -->
+    <string name="Device_Is_Existence">設備已存在</string>
+    <string name="Update_password">修改密碼成功</string>
+    <string name="second_verify_code">請輸入正確驗證碼</string>
+     
+    <!-- 2016-7-16 -->
+    <string name="Unknown_mistake">未知錯誤，請重新操作</string>
+     
+    <!-- 2016-7-19 -->
+    <string name="Stop_recording">是否停止錄像？</string>
+    
+    <!-- 2016-7-22 -->
+    <string name="UpdatePwd_by_mailbox">通過郵箱修改</string>
+    <string name="UpdatePwd_by_phone">通过手機修改</string>
+    <string name="Mailbox_can_not_be_empty">郵箱不能為空</string>
+    <string name="Please_enter_the_correct_mailbox_address">請輸入正確的郵箱地址</string>
+    <string name="Mailbox_reset_successfully">郵件發送成功，請到郵箱確認修改</string>
+    <string name="User_not_activitated">請到郵箱激活帳號</string>
+    
+    <!-- 2016-7-29 xhm -->
+    <string name="Do_not_need_code">郵箱驗證，無需驗證碼</string>
+    <string name="Delete_device">是否刪除設備？</string>
+    
+    <!-- dqx 2016年6月27日 -->
+    <string name="str_cloud_storage">云存儲服務</string>
+    <string name="str_device_not_bind_service">設備未綁定服務，請綁定服務</string>
+    <string name="str_service_products">服務產品</string>
+    <string name="str_purchase_service">購買服務</string>
+	<string name="str_renew_service">續費服務</string>
+	<string name="str_ask_for_delete">是否刪除？</string>
+    <string name="str_delete_ok">刪除成功</string>
+    <string name="str_delete_fail">刪除失敗</string>
+    
+      <!-- dqx 2016年7月8日 -->
+    <string name="str_login_to_use_function">请先登录后再使用此功能</string>
+    <string name="str_not_bind_service">未绑定</string>
+    <string name="str_has_bind_service">已绑定</string>
+    <string name="str_service_out_of_date">已过期</string>
+    
+    <!-- dqx 2016年7月9日 -->
+    <string name="str_network_error">網絡异常，請稍後重試</string>
+    <string name="str_get_device_list_network_error">網絡异常，獲取用戶設備清單失敗，請稍後重試</string>
+    <string name="str_lastest_list">設備列表已經是最新的</string>
+    <string name="str_401">身份信息過期，請重新登入</string>
+    <string name="str_get_device_list_error">獲取用戶設備列表失敗</string>
+    <string name="str_get_device_server_list_error">獲取賬戶雲服務列表信息失敗</string>
+    <string name="str_get_device_server_info_error">獲取設備綁定的雲服務信息失敗</string>
+    <string name="str_get_device_service_list_size_0">您當前尚未購買任何云服務，請先購買服務</string>
+    <string name="str_device_has_bind_service">設備已綁定服務: </string>
+    <string name="str_device_service_outofdate">設備綁定的服務已過期，請續費或解綁后再綁定其他服務</string>
+    
+    <string name="str_cloud_record_search">雲存儲錄像搜索: </string>
+    <string name="str_bind">綁定</string>
+    <string name="str_unbind">解綁</string>
+    <string name="str_valid_code_get_fail">獲取驗證碼失敗，請稍後重試</string>
+    <string name="str_valid_code_error">驗證碼錯誤</string>
+    <string name="str_valid_code_out_of_date">驗證碼過期</string>
+    <string name="str_get_service_list_fail">獲取服務列表失敗，請檢查您的網絡或者稍後重試</string>
+    <string name="str_service_had_binded_other_device">該雲服務套餐已綁定其他設備</string>
+    <string name="str_device_had_binded_service">該設備已綁定雲服務套餐</string>
+    <string name="str_device_bind_service_fail">設備綁定雲服務失敗</string>
+    <string name="str_device_bind_service_fail_not_support">設備不支持雲服務，綁定失敗</string>
+    <string name="str_valid_code_6_digits">請輸入6位數字驗證碼</string>
+    <string name="str_valid_code_input">請輸入收到的驗證碼：</string>
+    
+    <string name="str_search_cloud_record_files">搜索錄像</string>
+    <string name="str_unbind_service_list">未綁定服務列表</string>
+    <string name="str_unbind_service_fail">解绑云服务套餐失败</string>
+    <string name="str_unbind_service_ok">解綁雲服務套餐失敗</string>
+    <string name="str_bind_service">綁定服務</string>
+    <string name="str_unbind_service">解綁服務</string>
+    <string name="str_connect_to_device_ing">正在連接設備&#8230;</string>
+    <string name="str_connect_to_device_ok">連接設備成功&#8230;</string>
+    <string name="str_connect_to_device_fail">連接設備失敗&#8230;</string>
+    <string name="str_connect_to_server_wait">等待連接服務器&#8230;</string>
+    <string name="str_connect_to_server_ing">正在連接服務器&#8230;</string>
+    <string name="str_connect_to_server_ok">連接服務器成功&#8230;</string>
+    <string name="str_connect_to_server_fail">連接服務器失敗&#8230;</string>
+
+    <string name="str_recording_2">錄像中&#8230;</string>
+    <string name="str_record_ok">錄像完成，錄像文件以保存到SD卡目錄:/SDcard/demo/</string>
+    
+    <string name="str_login_state_false">未登錄</string>
+    <string name="str_server_error">服務器繁忙，請稍後重試</string>
+    <string name="str_get_device_list_server_error">服務器繁忙，獲取用戶設備列表失敗，請稍後重試</string>
+    
+    <string name="str_bind_service_fail">綁定雲服務套餐失敗</string>
+    <string name="str_bind_service_ok">綁定雲服務套餐成功</string>
+    
+    <string name="str_connect_device_fail">連接設備失敗，請稍後重試</string>
+    <string name="str_search_record_file_fail">搜索錄像文件失敗，請稍後重試</string>
+    <string name="str_login_exit">退出當前賬戶</string>
+    <string name="str_app_exit">退出應用</string>
+    
+    <string name="str_is_last_file">當前已是最後一個錄像文件</string>
+    <string name="str_is_first_file">當前已是第一個錄像文件</string>
+    
+    
+    <string name="str_unbind_type">請選擇解綁方式：</string>
+    <string name="str_mail_input">當前用戶為郵箱註冊用戶，點擊“確定”按鈕，將會發送郵件到您的郵箱，請前往郵箱確定解除綁定</string>
+    <string name="str_user_not_set_email">用戶未設置郵箱</string>
+    <string name="str_send_unbind_email_ok">郵件發送成功，請到郵箱進行確認</string>
+    <string name="str_bind_device_error">添加設備失敗</string>
+    <string name="str_user_no_bind_device">當前用戶沒有添加設備</string>
+    
+    <string name="str_other_user_binding_device">用戶正在為該設備綁定雲存儲服務中，請稍後再試</string>
+    
+    <!-- 2016-7-26 xmh-->
+    <string name="Reset_pwd_fail">修改密碼失敗，請稍後再試</string>
+    <string name="Send_code_fail">發送驗證碼失敗，請稍後再試</string>
+    <string name="Login_failed">登錄失敗，請稍後再試</string>
+    <string name="Registration_fail">註冊失敗，請稍後再試</string>
+    <string name="Mailbox_register_successfully">郵件發送成功，請到郵箱激活用戶</string>
+    <string name="Old_pwd_error">舊密碼錯誤</string>
+    <string name="pwd_hint">請輸入八位的WIFI密碼</string>
+    
+    <string name="str_do_not_support_mic">當前設備不支持麥克風功能</string>
+    
+    <string name="str_select">選擇</string>
+    <string name="str_unbind_confirm">解綁雲服務套餐可能導致雲存儲錄像文件被清除，是否解綁？</string>
+    
+    <string name="str_ap_bind401">身份信息錯誤，添加設備到用戶設備列表失敗，請在設備列表頁面搜索設備</string>
+    <string name="str_ap_bind500">服務器繁忙，添加設備到用戶設備列表失敗，請在設備列表頁面搜索設備</string>
+    <string name="str_ap_bind_network_error">網絡錯誤，添加設備到用戶設備列表失敗，請在設備列表頁面搜索設備</string>
+    <string name="str_ap_bind_other_error">添加設備到用戶設備列表失敗，請在設備列表頁面搜索設備</string>
+    
+    <string name="str_device_hotspot_search_device">登錄模式下，手機連接設備熱點搜索設備將不能添加設備到用戶設備列表，請將設備切換至Station模式或使用"本地登錄"模式</string>
+    <string name="str_get_service_info_fail">獲取設備綁定服務信息失敗</string>
+    <string name="str_unbinding_service">解綁中</string>
+    <string name="str_wait_to_play">請等待視頻開始播放後再進行錄像</string>
+    
+    
+    <string name="str_rec_file_exist">錄像文件已存​​在</string>
+    <string name="str_rec_file_download_finish">下載完成</string>
+    <string name="str_rec_file_download">該錄像文件正在下載</string>
+    <string name="str_storage_not_enough">存儲空間不足，無法下載</string>
+    <string name="str_rec_file_download_connecting">連接中</string>
+    <string name="str_rec_file_redownload">重新下載</string>
+    
+    <string name="str_rec_file_cancle1">是否取消正在下載的文件？</string>
+    <string name="str_rec_file_cancle2">請等待下載任務結束或取消所有下載任務後點擊進入錄像回放</string>
+    <string name="str_rec_file_cancle3">同時下載任務過多，請等待</string>
+    <string name="str_rec_file_cancle4">取消下載</string>
+    <string name="str_rec_file_downloading">下載中</string>
+    
+    <string name="str_guide_for_operation">操作指導</string>
+    
+    <string name="str_rec_file_stop_download">停止下載</string>
+    
+    <string name="str_about_app">關於</string>
+    <string name="str_fisheye_mode">模式</string>
+    <string name="str_exit">退出</string>
+    
+    <string name="str_device_pwd">設備密碼</string>
+    <string name="str_device_camera">安裝模式</string>
+    
+    <string name="str_had_send_verify_code">驗證碼已發送至 </string>
+    
+    <!-- 2016.11.01 修改设备密码 -->
+    <string name="str_modify_device_info">設置新密碼</string>
+    <string name="str_security_notice">密碼安全提示</string>
+    <string name="str_notice_pwd_need_set">當前設備未設置密碼，為了您的隱私安全，請設置密碼！</string>
+    
+    <string name="str_adding">添加中&#8230;</string>
+    
+    <!-- 2017-1-6 报警图片列表 -->
+    <string name="str_load_alarm_image_fail">加載圖片失敗，請稍後重試&#8230;</string>
+    
+    <string name="str_alarm_all_day">全天候報警</string>
+    <string name="str_custom_time">自定義時間</string>
+    <string name="str_add_start_time">請添加開始時間</string>
+    <string name="str_add_end_time">請添加結束時間</string>
+    <string name="str_add_custom_time">添加時間</string>
+    <string name="str_next_step">下一步</string>
+    <string name="str_alarm_area">報警區域</string>
+    <string name="str_non_alarm_area">非報警區域</string>
+    <string name="str_select_area_below">請在下方選擇報警區域</string>
+    <string name="str_fail_to_set_time">開始時間與結束時間不能相同</string>
+    <string name="str_device_does_not_support_custom">設備不支持自定義設置，請升級設備</string>
+    <string name="str_time_quantity">時間段已達上限</string>
+    <string name="str_please_login_to_use">請登錄後再使用此功能</string>
+    <string name="str_bind_to_use">該設備未綁定雲服務</string>
+    
+    <string name="str_cloud_storage_record">雲存儲錄像</string>
+    <string name="str_tf_card_record">TF卡錄像</string>
+    <string name="str_turn_on_alarm_switch">請打開布撤防開關</string>
+    
+    <string name="str_clear">清除</string>
+    
+    <string name="str_device_does_not_support_alarm_area">全景設備暫不支持此功能</string>
+    
+    <string name="str_wechat_payment_order">微信支付訂單</string>
+    <string name="str_wechat_confirm_payment">確認支付</string>
+    <string name="str_wechat_payment_tip">對不起， 未能成功跳轉，請手動點擊確認支付</string>
+    <string name="str_wechatpay_successful">支付成功</string>
+    <string name="str_wechatpay_failed">支付失敗</string>
+    <string name="str_wechatpay_canceled">支付取消</string>
+    <string name="str_please_intall_wechat">請安裝微信</string>
+    
+    <string name="str_smartlink_tip">如配置成功後未成功跳轉，請手動返回設備列表</string>
+    
+    <string name="str_skip_ad">跳過</string>
+    
+    <!-- 2017-4-20 xhm -->
+    <string name="str_skip_update_soft">稍後提醒</string>
+    <string name="str_update_soft">立即更新</string>
+    <string name="str_update_sofeware_title">軟件更新提示</string>
+    <string name="str_software_version">版本：</string>
+    <string name="str_message_dialog_btn">知道了</string>
+    
+    <!-- 2017-5-19 -->
+    <string name="str_upload_to_oss">上傳到OSS</string>
+    <string name="str_upload_successfully">上傳成功</string>
+    <string name="str_upload_failed">上傳失敗</string>
+    <!-- <string name="str_is_error_alarm_pic"><u>本圖是否誤報？</u>.</string> -->
+    <string name="str_channels">通道:</string>
+    
+    <!-- 2017-5-25 登录实时预览录音权限申请 -->
+    <string name="str_permission_microphone_login">為了保證您的觀看體驗，請您在[設置-應用-demo-權限]中開啟麥克風權限</string>
+    
+    <!-- 2017-5-31 -->
+   	<string name="str_light_controler">燈控</string>
+   	<string name="str_open_light">開燈</string>
+   	<string name="str_close_light">關燈</string>
+   	<string name="str_auto_light">自動</string>
+   	
+   	<!-- 2017-6-20 -->
+   	<string name="str_HDecodeing">硬解碼</string>
+   	<string name="str_SDecodeing">軟解碼</string>
+   	
+   	<string name="str_Password_Incorrect">密碼設置錯誤</string>
+   	
+   	<!-- 2017-7-3 -->
+   	<string name="str_alipay_intall_tip">未檢測到支付寶客戶端，請安裝後重試。</string>
+   	<string name="str_intall_now">立即安裝</string>
+   	<string name="str_set_password_tip">密碼由6&#8211;30位字符組成，包含至少兩種或兩種以上的字母、數字或半角符號，區分大小寫</string>
+   	<string name="str_Password_is_too_simple">密碼強度太弱，有隱私洩露風險，請重新輸入由多種字符組成的複雜密碼</string>
+   	<string name="str_Password_is_too_short">密碼長度不正確，請重新設置</string>
+   	
+   	<string name="str_is_error_alarm_pic">此圖是否誤報？</string>
+   	<string name="str_is_false_positive">是</string>
+   	<string name="str_is_not_false_positive">否</string>
+   	
+   	<!-- 2017-7-5 -->
+   	<string name="str_false_positive_head">誤報:</string>
+   	<string name="str_false_positive_body1">1.圖片有人，但紅框選中的不是人</string>
+    <string name="str_false_positive_body2">2.圖片沒人，但紅框仍然選中物體</string>
+    
+    <!-- 2017-7-7 -->
+    <string name="str_alarm_area_tip">報警區域不能為空，請重新設置</string>
+    
+    <string name="str_Tips">溫馨提示</string>
+    <string name="str_feedback">您的反饋可改善準確度</string>
+    
+    <!-- 2017-7-10 -->
+    <string name="password_is_empty">密碼不能為空，請重新輸入</string>
+    <!-- Password rule -->
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+""|&#060;&#062;&#064;&#038;</string>
+
+    <!-- 2017-7-21 -->
+    <string name="str_auto_bind_service_tip">恭喜您已购买云套餐\n云套餐绑定到设备即可使用\n是否绑定？</string>
+    <string name="str_ignore_auto_bind">暂不绑定</string>
+    <string name="str_auto_bind_service_now">立即绑定</string>
+    
+    <!-- 2017-7-27 -->
+    <string name="str_ai_snap">人工智能報警圖片</string>
+</resources>

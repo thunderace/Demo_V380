@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_play"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+        <ImageView 
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/device_play"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        >
+        <TextView 
+            android:id="@+id/tv_record_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_black"
+            />
+        <!-- <TextView 
+            android:id="@+id/tv_record_file_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_black"
+            /> -->
+            
+        <ImageView 
+            android:id="@+id/iv_record_file_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/delete_choose_1"
+            android:layout_gravity="right"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+</LinearLayout>

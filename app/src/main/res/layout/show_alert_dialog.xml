@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+	<ImageView 
+	    android:id="@+id/iv_icon"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:src="@drawable/icon"
+	    android:layout_marginTop="20dp"
+	    android:layout_centerHorizontal="true"
+	    />
+	<TextView 
+	    android:id="@+id/tv_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/iv_icon"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="15dp"
+	    android:textColor="@color/font_color_blue"
+	    android:paddingTop="10dp"
+	    android:text="title"
+	    android:paddingBottom="10dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/tv_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="25dp"
+	    android:paddingRight="25dp"
+	    android:paddingBottom="15dp"
+	    android:textColor="@color/font_color_black"
+	    android:layout_below="@id/tv_title"
+	    android:textSize="16sp"
+	    android:text="message"
+	    android:gravity="center"
+	    />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@id/tv_content"
+	    android:visibility="gone"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/btn_no"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="@string/cancel"
+	        android:textSize="16sp"
+	        android:background="@drawable/selector_help_item"
+	        android:textColor="@color/font_color_black"
+	        />
+	    <Button 
+	        android:id="@+id/btn_yes"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_help_item"
+	        android:text="@string/confirm"
+	        android:textSize="16sp"
+	        android:textColor="@color/font_color_black"
+	        />
+	</LinearLayout>
+	    
+	    
+	
+</RelativeLayout>

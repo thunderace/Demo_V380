@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WIFI Config" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:text="Real-time preview" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="Video Playback" />
+
+    <TextView
+        android:id="@+id/tv_device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:text="Device ID：" />
+
+    <EditText
+        android:id="@+id/et_device_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv_device_id" />
+
+    <TextView
+        android:id="@+id/tv_device_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_device_id"
+        android:layout_marginTop="30dp"
+        android:text="Device User：" />
+
+    <EditText
+        android:id="@+id/et_device_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_device_id"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv_device_id" />
+
+    <TextView
+        android:id="@+id/tv_device_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_device_username"
+        android:layout_marginTop="30dp"
+        android:text="Device Password：" />
+
+    <EditText
+        android:id="@+id/et_device_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_device_username"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv_device_id" />
+
+</RelativeLayout>

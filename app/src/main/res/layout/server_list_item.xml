@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/serverListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="120dip"
+        android:layout_height="90dip"
+        android:orientation="vertical" >
+
+        <com.macrovideo.custom.RoundCornerImageView
+            android:id="@+id/item_face"
+            android:layout_width="110dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:background="@drawable/device_list_image_bg"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/item_play"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:src="@drawable/device_play" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:background="@null"
+        android:baselineAligned="false"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ItemTitleName"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:gravity="left|center"
+                android:maxLines="1"
+                android:paddingLeft="5dip"
+                android:text="@string/nameHint"
+                android:textColor="@color/font_color_black"
+                android:textSize="20sp" />
+
+            <!-- 设备状态 -->
+
+            <LinearLayout
+                android:id="@+id/llDeviceState"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivDeviceState"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/lanse" />
+
+                <TextView
+                    android:id="@+id/ItemTitleID"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="@string/strOnlineChecking"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+             >
+			<LinearLayout 
+			    android:id="@+id/ll_more"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_centerInParent="true"
+			    >
+			    <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/more" />
+			</LinearLayout>
+			<!--
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/more" />
+              -->
+            
+			<FrameLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/ll_more"
+			    android:layout_above="@id/ll_more"
+			    >
+			    <ImageView 
+                android:id="@+id/iv_has_alarm_info"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/alarm_bell"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                />
+			</FrameLayout>
+            
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

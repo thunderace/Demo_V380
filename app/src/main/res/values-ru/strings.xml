@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc"></string>
+    <string name="country_code">ru</string>
+    <string name="app_name">demo</string>
+    <string name="app_ver">5.6</string>
+    <string name="app_notice">IP КАМЕРА</string>
+    <string name="alarm_notice">Новые сигналы тревоги</string>
+    <string name="pull_to_search">Потяните вниз для поиска устройств в локальной сети</string>
+    <string name="pull_to_refresh_pull_label">Потяните вниз для обновления списка&#8230;</string>
+    <string name="pull_to_refresh_release_label">Отпустите для поиска устройств в сети&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Поиск&#8230;</string>
+    <string name="str_PasswordIsNil">(Пароль пустой)</string>
+    <string name="str_AcountInfoNil">(Аккаунт не найден, использ. аккаунт по умолчанию)</string>
+    <string name="str_login">Вход</string>
+    <string name="str_WiFi_list">WIFI список</string>
+    <string name="str_secured_type">Тип безопасности: </string>
+    <string name="str_secured_type_open">Открытый</string>
+    <string name="str_visible_pwd">Показать пароль</string>
+    <string name="str_hiden_pwd">Скрыть пароль</string>
+    <string name="str_secured_with">Тип безопасности: </string>
+    <string name="notice_DevIsNULL">ID не может быть пустым</string>
+    <string name="notice_DomainIsNULL">Домен устр-ва не может быть пустым</string>
+    <string name="notice_UsernameIsNULL">Имя не может быть пустым</string>
+    <string name="notice_PortIsNULL">Порт не может быть пустым</string>
+    <string name="notice_PasswordIsNULL">Пароль не может быть пустым</string>
+    <string name="alert_title_login_failed">Ошибка входа!</string>
+    <string name="alert_connect_tips">Совет：проверьте выбранную зону, в дополн. выберите регион и подкл. к сети</string>
+    <string name="alert_title">Тревога!</string>
+    <string name="alert_btn_OK">хорошо</string>
+    <string name="alert_btn_Cancel">Отмена</string>
+    <string name="alert_add_btn_OK">OK добавл.</string>
+    <string name="alert_add_btn_Cancel">Отмена</string>
+    <string name="alert_btn_YES">Да</string>
+    <string name="alert_btn_NO">Нет</string>
+    <string name="alert_clear_list">Удалить всё?</string>
+    <string name="alert_delete_server">Удалить это?</string>
+    <string name="alert_set_config_ok">Обновление конфиг. успешно</string>
+    <string name="alert_open_setting_view">Совет: WIFI режим или конфигурация изменены. Открыть сетевые настройки для изменения?</string>
+    <string name="alert_open_setting_view_ap">Совет: Передняя панель: Устр-во в режиме AP, если Вам нужно подключиться к AP WIFI, нажмите "Подтвердить" для обновления WIFI соединения</string>
+    <string name="alert_get_config_fail">Не удалось получить настройки:</string>
+    <string name="alert_set_config_fail">Не удалось обновить настройки:</string>
+    <string name="alert_username_is_invalide">Пустое Имя польз.</string>
+    <string name="alert_password_err">Неверный исходный пароль.</string>
+    <string name="alert_password_confirm_err">Различные пароли</string>
+    <string name="alert_stop_play">Остановить просмотр?</string>
+    <string name="alert_station_password_is_null">Пароль не может быть пустым</string>
+    <string name="alert_ap_name_is_null">Имя AP не может быть пустым</string>
+    <string name="alert_station_name_is_null">Имя не может быть пустым</string>
+    <string name="result_code_conn_fail">Сбой соединения</string>
+    <string name="login_Result_MR_Server_Busy">Сервер занят, повторите позже.</string>
+    <string name="login_Result_MR_Server_Disconnet">Отключен устройством</string>
+    <string name="login_Result_ConnectTimeout">Время подключения вышло</string>
+    <string name="notice_Result_ConnectServerFailed">Сбой подключения</string>
+    <string name="notice_Result_PWD_ERR_AP">AP пароль не более 8 символов</string>
+    <string name="notice_Result_PWD_ERR_Station">Клиент пароль не более 8 символов</string>
+    <string name="notice_Result_PWD_ERR">Пароль не более 8 символов</string>
+    <string name="notice_Result_NOPRI">Нет прав</string>
+    <string name="notice_Result_UserNoExist">Нет пользователя</string>
+    <string name="notice_Result_PWDError">Неверное имя или пароль</string>
+    <string name="notice_Result_BadResult">Повреждение данных</string>
+    <string name="notice_Result_NetError">Сбой сетев. подключения!</string>
+    <string name="notice_Result_Server_Offline">Устройство не в сети.</string>
+    <string name="notice_Result_VerifyFailed">Неверный проверочный код</string>
+    <string name="notice_Result_Old_Version">Не поддерживается устройством</string>
+    <string name="toast_last_page">Это последн. стр.</string>
+    <string name="toast_first_page">Это первая стр.</string>
+    <string name="toast_add_in_list">Добавлено в список</string>
+    <string name="toast_remove_from_list">Удалено из списка</string>
+    <string name="toast_network_unreachable">Нет подключения к сети, проверьте сеть</string>
+    <string name="toast_list_is_null">Добавьте устройство</string>
+    <string name="connecting">Подключение&#8230;</string>
+    <string name="loading">Загрузка</string>
+    <string name="name">Имя:</string>
+    <string name="server">Адрес:</string>
+    <string name="port">Порт:</string>
+    <string name="username">Имя: </string>
+    <string name="password">Пароль: </string>
+    <string name="password_old">Исходный пароль: </string>
+    <string name="password_new">Новый пароль: </string>
+    <string name="password_confirm">Подтвердить: </string>
+    <string name="autologin">Авто вход</string>
+    <string name="record_info">Запомнить инфо входа</string>
+    <string name="norecord">Нет записи</string>
+    <string name="nameHint">Введите устройство здесь</string>
+    <string name="serverHint">Введите адрес устройства</string>
+    <string name="portHint">Введите порт</string>
+    <string name="usernameHint">Введите имя</string>
+    <string name="passwordHint">Введите пароль</string>
+    <string name="btn_login">Вход</string>
+    <string name="btn_serverList">Список устройств</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_refresh">Обновить</string>
+    <string name="btn_add">Добавить</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="btn_edit">Изменить</string>
+    <string name="btn_finish">Завершить</string>
+    <string name="btn_search">Поиск</string>
+    <string name="btn_research">Поиск устройств</string>
+    <string name="btn_addtolist">Добавить в список</string>
+    <string name="btn_IsInlist">Уже добавлен</string>
+    <string name="btn_save">Сохр.</string>
+    <string name="btn_save_setting">Настройки</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_ok">Подтвердить</string>
+    <string name="btn_add_qr">Доб. QR код</string>
+    <string name="btn_stop_all">Стоп</string>
+    <string name="btn_stop_play">Стоп</string>
+    <string name="btn_start_play">Воспр</string>
+    <string name="btn_one_key_sync">Синхрониз. с временем телефона</string>
+    <string name="btn_save_time">Уст. время</string>
+    <string name="btn_get_from_list">Выберите из локальн. WIFI</string>
+    <string name="title_add_device">Добавить устр-во</string>
+    <string name="title_Edit_device">Изменить устр-во</string>
+    <string name="searching">Поиск устр-ва&#8230;</string>
+    <string name="searchcancel">Отмена поиска</string>
+    <string name="has">Нашли</string>
+    <string name="device_found">устр-ва</string>
+    <string name="logining">Вход&#8230;</string>
+    <string name="Notification_To_Login">Не вошло на устр-во&#8230;</string>
+    <string name="Notification_Playing_Chn">Просмотр： </string>
+    <string name="str_Notic_Close_APP">Выйти ?</string>
+    <string name="str_serverList">Список устр-в</string>
+    <string name="notice_RecvDataFailed">Сбой соединения</string>
+    <string name="notice_RecvStop">Отключен устройством</string>
+    <string name="str_Select_To_Play">Выберите канал</string>
+    <string name="str_PlayingChn">Воспр. канала:</string>
+    <string name="wifi_mode">WIFI режим: </string>
+    <string name="wifi_mode_ap">AP</string>
+    <string name="wifi_mode_station">Клиент</string>
+    <string name="wifi_mode_ap_setting">AP режим(режим точки, не нужен роутер)</string>
+    <string name="wifi_current_mode">Текущий режим: </string>
+    <string name="wifi_mode_station_setting">Режим клиента (связь с роутером)</string>
+    <string name="server_config">Конфиг. устр-ва</string>
+    <string name="local_config">Локальн.настр.:</string>
+    <string name="remote_config">Удален.настр.:</string>
+    <string name="config_base">Основная инфо. устр-ва</string>
+    <string name="config_network">Сеть</string>
+    <string name="config_record">Запись</string>
+    <string name="config_time">Дата и время</string>
+    <string name="config_user">Пользователи</string>
+    <string name="config_alarm_prompt">Тревога</string>
+    <string name="station_current_WiFi">Текущ. WIFI: </string>
+    <string name="record_auto_record_title">Авто запись</string>
+    <string name="record_record_open">Вкл</string>
+    <string name="record_record_close">Выкл</string>
+    <string name="record_alarm_record_title">Трев.запись</string>
+    <string name="record_record_full_op">Действие после заполнеия SD:</string>
+    <string name="record_record_full_op_recorver">Удалять старое</string>
+    <string name="record_record_full_op_stop">Стоп запись</string>
+    <string name="date_current">Дата:</string>
+    <string name="time_current">Время:</string>
+    <string name="device_time_current">Время устр.:</string>
+    <string name="set_time">Настр.времени:</string>
+    <string name="set_date">Настр.даты:</string>
+    <string name="getting_network_config">Получение конфиг. сети&#8230;</string>
+    <string name="getting_network_config_fail">Не удалось получить конфиг.</string>
+    <string name="getting_record_config"> Получение конфиг. записи&#8230;</string>
+    <string name="getting_record_config_fail">Не удалось получить конфиг.</string>
+    <string name="getting_datetime_config">Обновление времени&#8230;</string>
+    <string name="getting_datetime_config_fail">Не удалось обновить время</string>
+    <string name="getting_alarmprompts_config">Получение тревоги и уведомл.&#8230;</string>
+    <string name="getting_alarmprompts_config_fail">Не удалось получить конфиг.</string>
+    <string name="getting_version_info">Получение инфо о версии&#8230;</string>
+    <string name="getting_version_info_fail">Не удалось получить версию</string>
+    <string name="user_info">Инфо о польз.</string>
+    <string name="getting_user_config">Получение конфиг. польз.&#8230;</string>
+    <string name="getting_user_config_fail">Не удалось получить конфиг.</string>
+    <string name="local_wifi_device_list">Выберите WIFI из списка</string>
+    <string name="modify_password">Изменить пароль</string>
+    <string name="WiFi_no_select">Выберите WIFI устр-во</string>
+    <string name="disk_size">SD размер: </string>
+    <string name="disk_use">Осталось: </string>
+    <string name="no_dev_found">Не найдено новых устр-в</string>
+    <string name="search_finish">Список обновлен</string>
+    <string name="add_device">Добавьте устр-во:</string>
+    <string name="strIDNumber">ID устр-ва:</string>
+    <string name="strAdvance">Доп. настройки</string>
+    <string name="strDeviceVerInfo">Обновл. устр-ва</string>
+    <string name="strAppVersion">Сист. app версия:</string>
+    <string name="strKernalVersion">Сист. kernal версия:</string>
+    <string name="strHardwareVersion">Сист. hardware версия:</string>
+    <string name="strVersionDate">Дата:</string>
+    <string name="btnSelectALL">Выбрать всё</string>
+    <string name="btnUnSelectALL">Вернуть всё</string>
+    <string name="btnDelect">Удал.</string>
+    <string name="tabDeviceList">Список устр-в</string>
+    <string name="tabHome">Главная</string>
+    <string name="tabScreenShot">Снимок</string>
+    <string name="tabPlayback">Архив</string>
+    <string name="tabHelp">Помощь</string>
+    <string name="lblSelectDevice">Выберите устр-во</string>
+    <string name="lblDevice">Выберите устр-во: </string>
+    <string name="lblDate">Выберите дату: </string>
+    <string name="lblStartTime">Старт время: </string>
+    <string name="lblEndTime">Стоп время: </string>
+    <string name="lblRecType">Тип записи: </string>
+    <string name="strAll">Все</string>
+    <string name="strAuto">Авто запись</string>
+    <string name="strAlarm">Трев.запись</string>
+    <string name="noticNoDeviceSelect">Устр-во не выбрано</string>
+    <string name="noticStartlargeThanEnd">Время начала должно быть раньше окончания</string>
+    <string name="noticEndLessThanStart">Время окончания должно быть позже начала</string>
+    <string name="noticRecConnectFail">Сбой поиска: сбой подключения</string>
+    <string name="noticRecOKNOFiles">Поиск завершен, нет файлов</string>
+    <string name="strStartTime">Старт время: </string>
+    <string name="strTimeLen">Длит-ть: </string>
+    <string name="strFileSize">Размер:</string>
+    <string name="btnHideList">Скрыть список</string>
+    <string name="btnVisibleList">Последн. поиск</string>
+    <string name="btnSearchRecFile">Поиск файлов</string>
+    <string name="strRecFileList">Список записей</string>
+    <string name="btnVersionUpdate">Обновл.прилож.</string>
+    <string name="btnFunctionManu">Рук-во прилож.</string>
+    <string name="strHour">Час</string>
+    <string name="strMin">Минута</string>
+    <string name="strSec">Секунда</string>
+    <string name="lblRecordAudioTitle">Вкл.аудио:</string>
+    <string name="lblRecordFrameSize">Кач-во записи:</string>
+    <string name="lbl1080P">1080P</string>
+    <string name="lbl720P">720P</string>
+    <string name="lblD1">D1</string>
+    <string name="lblVGA">VGA</string>
+    <string name="lblCIF">CIF</string>
+    <string name="lblQVGA">QVGA</string>
+    <string name="lblNOSDCard">Нет SD карты</string>
+    <string name="lbSDCardWritteErr">Ошибка SD</string>
+    <string name="lblGettingAlarmMsg">Получение инфо о тревоге&#8230;</string>
+    <string name="lblSmokeAlarm">Дым. тревога</string>
+    <string name="lblMotionAlarm">Движение трев.</string>
+    <string name="lblPIRAlarm">ИК тревога</string>
+    <string name="lblMoreAlarmMsg">Потяните вниз для получения инфо.</string>
+    <string name="lblLoadingAlarmMsg">Загрузка доп. инфо.&#8230;</string>
+    <string name="pull_to_load_more">Потяните вниз для получения трев. инфо.</string>
+    <string name="pull_to_refresh_release_load_more">Обновите для получения больше инфо.&#8230;</string>
+    <string name="pull_to_refresh_loading_more">Загрузка&#8230;</string>
+    <string name="lblInputName">Введите имя здесь</string>
+    <string name="lblAudioSwitch">Голосовая подсказка:</string>
+    <string name="lblAudioMainSwitch">Активация голосовой подсказки:</string>
+    <string name="lblAlarmAudio">Тревожн.подсказка:</string>
+    <string name="lblLanguange">Язык голоса:</string>
+    <string name="lblIOSwitch">Внешн. трев. вход:</string>
+    <string name="lblIOMode">Внешн. трев. выход режим:</string>
+    <string name="lblIOModeExternal">Внешн. трев. система</string>
+    <string name="lblIOModeInternal">Внутр. трев. система</string>
+    <string name="lblIOModeManualOff">Ручное управление выходом</string>
+    <string name="lblIOModeManualOn">Ручно управл. входом</string>
+    <string name="lblLanguageCN">Китайск.</string>
+    <string name="lblLanguageEN">Англ.</string>
+    <string name="lblAlarmMianSwitch">Выкл.тревоги:</string>
+    <string name="lblMotionDetect">Детектор движ:</string>
+    <string name="strAlarmTime">Время тревоги:</string>
+    <string name="strAlarmType">Тип тревоги:</string>
+    <string name="strMotionAlarm">Детектор движ</string>
+    <string name="strSmokeAlarm">Дым.тревога</string>
+    <string name="strPIRAlarm">ИК тревога</string>
+    <string name="strRKEAlarm">Контроль доступа трев.</string>
+    <string name="strGasAlarm">Утечка газа трев.</string>
+    <string name="strWarmAlarm">Температур.тревога</string>
+    <string name="strDemonstrate">Демо</string>
+    <string name="strDemonList">Демо список</string>
+    <string name="btnHD">HD</string>
+    <string name="btnSmooth">VGA</string>
+    <string name="softwareUpdate">Обновление прилож.</string>
+    <string name="findNowVersion">Найдена новая версия, обновить?</string>
+    <string name="btnUpdateNow">Обновить</string>
+    <string name="btnUpdateLater">Позже</string>
+    <string name="downWin">Загрузка успешно, нажмите для установки</string>
+    <string name="downFail">Сбой загрузки</string>
+    <string name="startDown">Старт загрузки</string>
+    <string name="showDown">Загрузить</string>
+    <string name="Downing">Загрузка</string>
+    <string name="querySoftwareing">Проверка инфо. о приложении&#8230;</string>
+    <string name="notNewVersion">Нет обновл.</string>
+    <string name="dateAbnormal">Исключ. данных</string>
+    <string name="WiFiConnect">Соедин.</string>
+    <string name="WiFi_is">Да</string>
+    <string name="WiFi_no">Нет</string>
+    <string name="WiFi_confirm">Подтверд.</string>
+    <string name="WiFi_off">Отмена</string>
+    <string name="WiFi_start">Старт WIFI, ждите&#8230;</string>
+    <string name="WiFi_start_bt">У Вас не включен WIFI, включите  WIFI и подключитесь к сети 2.4Ghz WIFI. Хотите включить WIFI?</string>
+    <string name="connect_device">Подключение</string>
+    <string name="connect_device_succeed">Успешное подключение к устр-ву</string>
+    <string name="device_model_trade">Измен.режима устр-ва</string>
+    <string name="connect_WiFiing">Подключ. WIFI</string>
+    <string name="device_model_succeed">Режим изменен, нажмите поиск чтобы найти устр-во</string>
+    <string name="connect_WiFi_off">Сбой подкл. WIFI</string>
+    <string name="connect_server_off">Сбой подкл. устр-ва</string>
+    <string name="WiFi_wpa_wpa2">Шифров. WAP/WAP2</string>
+    <string name="WiFi_wep">Шифров. WEP</string>
+    <string name="WiFi_wpa">Шифров. WPA</string>
+    <string name="WiFi_wpa2">Шифров. WPA2</string>
+    <string name="WiFi_password">Введите WIFI пароль</string>
+    <string name="WiFi_refresh">Обновить</string>
+    <string name="noticeSDCardNotExist">Нет SD карты в телефоне</string>
+    <string name="noticeScreenShotFail">Сбой снимка</string>
+    <string name="noticeScreenShotOK">Снимок сохранен на карте памяти</string>
+    <string name="noticeFileSaveOK">Файл сохранен на карте памяти</string>
+    <string name="noticeFileSaveToAlbumsOK">Изображения сохранены, вы можете просмотреть альбом</string>
+    <string name="noticeFileSaveFail">Сбой сохр. файла</string>
+    <string name="btnSaveToSDCard">Сохранить изображ.</string>
+    <string name="btnSaveingImage">Сохранение&#8230;</string>
+    <string name="btnClose">Вык</string>
+    <string name="btnOpen">Вкл</string>
+    <string name="strTouchToMoveCam">Нажмите кнопку навигации или проведите пальцем по экрану, чтобы контролировать зум, обзор и наклон</string>
+    <string name="lblTimeZoneSetting">Выбор час.пояса:</string>
+    <string name="lblTimeZoneList">Список час.поясов</string>
+    <string name="lblTimeZoneW12">(GMT -12) Eniwetok айленд</string>
+    <string name="lblTimeZoneW11">(GMT -11) самоа</string>
+    <string name="lblTimeZoneW10">(GMT -10) энергии</string>
+    <string name="lblTimeZoneW9">(GMT -9) Аляска</string>
+    <string name="lblTimeZoneW8">(GMT -8) Пасифик time</string>
+    <string name="lblTimeZoneW7">(GMT -7) горное время</string>
+    <string name="lblTimeZoneW6">(GMT -6) Central standard</string>
+    <string name="lblTimeZoneW5">(GMT -5) восточная</string>
+    <string name="lblTimeZoneW4">(GMT -4) в атлантике</string>
+    <string name="lblTimeZoneW3">(GMT -3) бразилиа</string>
+    <string name="lblTimeZoneW2">(GMT -2) срединно - атлантический</string>
+    <string name="lblTimeZoneW1">GMT -1) азорские острова</string>
+    <string name="lblTimeZoneZero">(GMT ＋0) гринвич</string>
+    <string name="lblTimeE1">(GMT +1) роман</string>
+    <string name="lblTimeE2">(GMT +2) израиль</string>
+    <string name="lblTimeE3">(GMT +3) Москва</string>
+    <string name="lblTimeE4">(GMT +4) баку</string>
+    <string name="lblTimeE5">(GMT +5) нью - дели</string>
+    <string name="lblTimeE6">(GMT +6) dhakar</string>
+    <string name="lblTimeE7">(GMT +7) бангкок</string>
+    <string name="lblTimeE8">(GMT +8) пекин, сингапур</string>
+    <string name="lblTimeE9">(GMT +9) токио</string>
+    <string name="lblTimeE10">(GMT +10) сидней</string>
+    <string name="lblTimeE11">GMT +11) в магадане</string>
+    <string name="lblTimeE12">(GMT +12) веллингтон</string>
+    <string name="deviceChoose">Выберите устр-во:</string>
+    <string name="QRcodeAddSaveListing">Добавлено устр-во в список</string>
+    <string name="QRcodeAddFail">Сбой добавления</string>
+    <string name="QRcodeListingExist">Устр-во уже есть в списке</string>
+    <string name="QRcodeErrorDevice">QR код не подходит</string>
+    <string name="deviceAddSucceed">Успешно добавлено устр-во</string>
+    <string name="deviceAddFail">Сбой добавления</string>
+    <string name="deviceAddEditTextInputType">ID не может быть пустым и более 9 симв.</string>
+    <string name="deviceAlterSucceed">Успешно изменено устр-во</string>
+    <string name="deviceAlterFail">Сбой изменения</string>
+    <string name="myDevice">Список устр-в</string>
+    <string name="demoPoint">Демо</string>
+    <string name="QuickConfigWiFiDevice">Быстр. настройка WIFI</string>
+    <string name="deviceID">ID:</string>
+    <string name="inputDeviceID">Введите ID</string>
+    <string name="deviceDelete">Удаление успешно</string>
+    <string name="nonsupport5GWIFI"> Не поддерживает 5G WIFI</string>
+    <string name="gainWIFIList">Обновление списка WIFI, ждите</string>
+    <string name="planConfig">Подготовка к настройке</string>
+    <string name="sendSoundWave">Отправка звук.волны</string>
+    <string name="startConfig">Звуковая конфигурация</string>
+    <string name="clickSendSoundWave">Нажмите для отправки звук.волны</string>
+    <string name="inProcessOfPlay">Воспр.сейчас</string>
+    <string name="horizontalPlay">Смотрите в гориз. плоскости, чтобы получить более четкое видео</string>
+    <string name="FileFirst">Это первый файл</string>
+    <string name="FileFinally">Это последний файл</string>
+    <string name="AllPlayBack">Все записи</string>
+    <string name="noDevice">Нет устр-ва</string>
+    <string name="VideoPlayBack">Архив</string>
+    <string name="devcieConfig">Конфиг.устр-ва</string>
+    <string name="morefunction">Ещё&#8230;</string>
+    <string name="phoneAlarmSet">Трев.уведомление</string>
+    <string name="softwarePassword">Пароль прилож.</string>
+    <string name="softwareupdate">Обновл.прилож.</string>
+    <string name="exitSoftware">Выход</string>
+    <string name="deviceName">Имя устр-ва</string>
+    <string name="WiFiName">WIFI имя (2.4Ghz)</string>
+    <string name="WiFiPassword">WIFI пароль</string>
+    <string name="voiceTalkback">Говорите сейчас</string>
+    <string name="standardDefinition">VGA</string>
+    <string name="videoPlaying">Видео просмотр</string>
+    <string name="takeACabdidPhotograph">Снимок</string>
+    <string name="inversion">Поворот</string>
+    <string name="talkback">Говорить</string>
+    <string name="monitor">Звук</string>
+    <string name="definition">Разрешение</string>
+    <string name="back">Назад</string>
+    <string name="sohuDefinition">HD разреш.</string>
+    <string name="quickConfig">Быстр. AP конфиг</string>
+    <string name="chooseConfigDevice">Выберите устр-во</string>
+    <string name="inputDeviceConnectWIFI">Введите SSID и пароль</string>
+    <string name="deviceDistanceWithWifi">Трогательный совет: пожалуйста, мобильные телефоны на расстоянии 3 м конфигурирования оборудования в</string>
+	<string name="nextStep">След.шаг</string>
+	<string name="APSeekFine">ап быстро настроить</string>
+    <string name="nearDevcie">Поставьте ваш телефон рядом с устр-ом и нажмите послать звук.волну</string>
+    <string name="manualAddDevice">Ручное добавл.</string>
+    <string name="QRCode">Скан. QR код</string>
+    <string name="WiFiQuikConfig">AP быстр.настр.</string>
+    <string name="soundWaveConfig">Настройка звук.волной</string>
+    <string name="LANSeek">Локал. поиск</string>
+    <string name="alarmPicture">Трев.фото</string>
+    <string name="editingDevice">Измен.</string>
+    <string name="deleteDevice">Удал.</string>
+    <string name="allDeleteDevice">Удал.выбран.</string>
+    <string name="checkAll">Выделить/снять выдел. все</string>
+    <string name="alarmMessage">Трев.сообщ.</string>
+    <string name="WiFiList">WIFI список</string>
+    <string name="demoState">Демо инструкц.</string>
+    <string name="firstStep">Первый шаг</string>
+    <string name="firstStepState">Установите динамик телефона рядом с микроф.устр-ва</string>
+    <string name="stepTwo">Второй шаг</string>
+    <string name="stepTwoState">Отправьте звуковую волну, подождите некоторое время после отправки. Когда вы услышали конфигурацию успешной, нажмите следующий шаг</string>
+    <string name="devicePrepare">Устр-во сопряж. для настр-ки</string>
+    <string name="WiFiListingFail">Сбой получения списка WIFI</string>
+    <string name="deviceTurn">Это устр-во не имеет PTZ</string>
+    <string name="AllDeviceDelete">Удалить все</string>
+    <string name="deviceHintUpdate">Когда вы слышали обновления конфигурации, щелкните следующий шаг или назад к последнему шагу, чтобы отправить звуковую волну</string>
+    <string name="deviceSeekFail">Устр-во не найдено</string>
+    <string name="inProcessofSeekDevice">Настройка, ждите</string>
+    <string name="deviceWiFiOpenFail">Нет доступа к настройкам WIFI, включите Wi-Fi вручную и попробуйте еще раз</string>
+    <string name="SoundWavePointer">Пожалуйста, сбросьте устройство с помощью кнопки, нажмите следующий шаг, когда вы слышите конфигурацию звуковой волны</string>
+    <string name="cancel">Отмена</string>
+    <string name="try_again">Попробуйте снова</string>
+    <string name="goon">Продолжить</string>
+    <string name="confirm">Подтведить</string>
+    <string name="lockpattern_recording_incorrect_too_short">Не менее 4 точек, попробуйте снова</string>
+    <string name="lockpattern_error">Неверный шаблон</string>
+    <string name="SoftwareUpdate">Проверить обновл</string>
+    <string name="SoftwareNewVersion">Доступно обновление</string>
+    <string name="SoftwareAPNotUpdate">Нет обновления в режиме AP</string>
+    <string name="NotNewVersion">Нет новой версии</string>
+    <string name="SoftwareeVersionNew">Уже последняя версия</string>
+    <string name="SoftwareversionUpdate">Обновл.прилож.</string>
+    <string name="NewVersionUpdateOnOrOff">Новое обновление доступно, хотите обновить?</string>
+    <string name="PhotoManage">Менеджер снимков</string>
+    <string name="deviceImageDelete">Удалить снимок</string>
+    <string name="foundSoftwarePassword">Создать пароль</string>
+    <string name="deleteSoftwarePassword">Удалить пароль</string>
+    <string name="deleteSoftwarePasswordSucceed">Успешно удален пароль</string>
+    <string name="OnPassword">Включить пароль</string>
+    <string name="OffPassword">Выключить пароль</string>
+    <string name="alterPassword">Изменить пароль</string>
+    <string name="inputPasswordErrorMore">Ввели неверный пароль, попробуйте позже</string>
+    <string name="inputPasswordError">Ввели неверный пароль, попробуйте ещё</string>
+    <string name="passwordOrder">раз</string>
+    <string name="leastInputPoint">Введите как минимум 4 точки</string>
+    <string name="resetInputPassword">Сброс пароля</string>
+    <string name="affirmPassern">Подтверд.шаблон</string>
+    <string name="setPasswordSucceed">Пароль успешно установлен</string>
+    <string name="setPasswordLastDifferent">Различные пароли, попробуйте снова</string>
+    <string name="drawDelockingPattern">Нарисуйте ключ</string>
+    <string name="setPasswordPreventSee">Установить ключ для разблокировки</string>
+    <string name="deviceUpdate">Обновление прошивки, не отключайте питание</string>
+    <string name="signPassword">Выключатель пароля</string>
+    <string name="passwrodOn">Пароль вкл</string>
+    <string name="passwrodOff">Пароль выкл</string>
+    <string name="passwrodDeleteSucceed">Пароль удален</string>
+    <string name="anotherName">Имя:</string>
+    <string name="visitPassword">Пароль:</string>
+    <string name="seekHotspot">Поиск точки доступа</string>
+    <string name="nearbyNotHotspot">Нет точки доступа</string>
+    <string name="gainHotspotInformation">Получение инфо.устр-ва</string>
+    <string name="gainHotspotInformationSucceed">Успешное получение инфо, вы можете просмотреть или добавить в список устройств</string>
+    <string name="addList">Добав.в список</string>
+    <string name="realTimePreView">Просмотр в реал. врем.</string>
+    <string name="bufferPreView">Буферизация</string>
+    <string name="connectDeviceHotspot">Подключение к точке доступа устр-ва</string>
+    <string name="deviceHotspot">Точка устр-ва</string>
+    <string name="newPasswordAndOldPassword">Новый пароль такой же как и старый</string>
+    <string name="strWanOnline">В сети</string>
+    <string name="strLanOnline">В сети LAN</string>
+    <string name="strWanOffline">Не в сети</string>
+    <string name="strOnlineChecking">Подключение&#8230;</string>
+    <string name="alarmReceiveSwitch">Получили инфо тревоги:</string>
+    <string name="soundSet">Уведомл.о тревоге:</string>
+    <string name="shakeSet">Вибро тревога:</string>
+    <string name="deviceHaveAlarmMsg">Новая инфо.тревоги</string>
+    <string name="baiduDevice">Устр-во</string>
+    <string name="deviceAlarmTime">Время трев.сигнала</string>
+    <string name="versionDetection">Проверить новую версию</string>
+    <string name="deleteFail">Сбой удаления</string>
+    <string name="appNewVersion">Новая версия найдена</string>
+    <string name="appUpdateOrNot">Проверить обновление</string>
+    <string name="appNoNoticeForThisVer">Не оповещать</string>
+    <string name="strSmartLink">WIFI - умный связь</string>
+    <string name="btnBackToConfig">Назад и настроить снова</string>
+    <string name="preset">Текущее положение</string>
+    <string name="presetTitle">Предустановки</string>
+    <string name="presetOK">Успешно настроены предустановки</string>
+    <string name="presetFail">Сбой настр-ки предустановки</string>
+    <string name="btnPTZXSet">Уст.пред.</string>
+    <string name="btnPTZXCall">Вызов пред</string>
+    <string name="relecanceLevelHigh">Выс</string>
+    <string name="relecanceLevelMedium">Сред</string>
+    <string name="relecanceLevelLow">Низ</string>
+    <string name="relecanceTypeRKE">Сист. контроля доступа</string>
+    <string name="relecanceTypeSmoke">Дым</string>
+    <string name="relecanceTypeMove">Движ.</string>
+    <string name="relecanceDeviceGainFail">Не удалось получить устройство, пожалуйста, убедитесь, что устройство было активировано</string>
+    <string name="relecanceDeviceConfiguration">Конфигурация</string>
+    <string name="relecanceAlarmLevel">Выберите уровень тревоги</string>
+    <string name="relecanceAlarmType">Выберите тип тревоги</string>
+    <string name="relecanceAlarmName">Имя тревоги не может быть пустым</string>
+    <string name="relecanceName">Имя</string>
+    <string name="relecanceAddressCode">Код адреса</string>
+    <string name="relecanceDeviceList">Список устр-в тревоги</string>
+    <string name="relecanceDeviceAdd">Поиск устройства аварийной сигнализации, необходимо активировать устройство тревоги</string>
+    <string name="relecanceInputName">Введите имя устр-ва тревоги</string>
+    <string name="relecanceType">Тип тревоги</string>
+    <string name="relecanceLevel">Уровень тревоги</string>
+    <string name="relecanceSet">Настр-ка трев.зоны </string>
+    <string name="relecanceInputNameTooLong">Имя длинное, введите снова</string>
+    <string name="relecanceSeekDevice">Поиск нового устр-ва</string>
+    <string name="relecanceAlterDevice">Изменить</string>
+    <string name="relecanceAddDevice">Доб.новое устр-во</string>
+    <string name="relecanceGAS">Газ</string>
+    <string name="relecanceOther">Другое</string>
+    <string name="relecanceFeeling">Темпер.датчик</string>
+    <string name="relecanceDeviceSeekListFail">Не удалось получить устр-во</string>
+    <string name="relecancePreset">Ссылка предустановки</string>
+    <string name="relecancePresetOff">Отменить связь</string>
+    <string name="relecancePresetNot">Нет связи</string>
+    <string name="relecancePresetNo">Связь предуст.</string>
+    <string name="relecanceAlarmOffOrOn">Трев.выкл</string>
+    <string name="photoShare">Поделиться</string>
+    <string name="snartLinkHint">Советы</string>
+    <string name="snartLinkFailTitle">Сбой настройки</string>
+    <string name="snartLinkStartHint">Конфигурация завершится через 80 секунд, подождите</string>
+    <string name="snartLinkFailHint">WIFI слабый или неверный пароль</string>
+    <string name="clicktoloadimage">Нажмите, для загрузки изображения</string>
+    <string name="xlistview_header_hint_normal">Потяните вниз для обновления</string>
+    <string name="xlistview_header_hint_ready">Отпустите, чтобы обновить данные</string>
+    <string name="xlistview_header_hint_loading">Загрузка&#8230;</string>
+    <string name="xlistview_header_last_time">Последний вид:</string>
+    <string name="xlistview_footer_hint_normal">Смотреть ещё</string>
+    <string name="xlistview_footer_hint_ready">Обновить для просмотра ещё</string>
+    <string name="areaSelection">Региональные выбор</string>  <!-- 戴钦雄 网上查找剩余缺失翻译 俄语  2016年6月17日-->
+    <string name="areaSelections">Региональные выбор</string>
+    <string name="area">Нынешней региональной:</string>
+    <string name="autoSelect">Автоматический выбор</string>
+    <string name="china">Материковый Китай</string>
+    <string name="china2">Континент внутренних</string>
+    <string name="zoneAS1">Япония, рк, Тайвань, Гонконг, Таиланд, Вьетнам</string>
+    <string name="zoneAS2">Малайзия, сингапур</string>
+    <string name="zoneAS3">для</string>
+    <string name="zoneAS4">В южной индии</string>
+    <string name="zoneNA1">США</string>
+    <string name="zoneSA1">Бразилия</string>
+    <string name="zoneEU1">Великобритания</string>
+    <string name="zoneEU2">Франция, Германия</string>
+    <string name="zoneOA1">Австралия, Новая Зеландия</string>
+    <string name="zoneAF1">Южная Африка</string>
+    <string name="zoneAF2">Египет, Судан</string>
+    <string name="AS1">В азии1</string>
+    <string name="AS2">В азии2</string>
+    <string name="AS3">В азии3</string>
+    <string name="AS4">В азии4</string>
+    <string name="NA1">В северной америке</string>
+    <string name="SA1">В южной америке</string>
+    <string name="EU1">европейский1</string>
+    <string name="EU2">европейский2</string>
+    <string name="OA1">океания</string>
+    <string name="AF1">В африке1</string>
+    <string name="AF2">В африке2</string>
+    <string name="areaSave">Сохраните успешно</string>
+    <string name="SDCardFormat">Форматирование SD карточка оборудования</string>
+    <string name="SDCardNetWordFail">Оборудование сетевое соединение неудачи, проверьте ваш веб-снова снова пробовать</string>
+    <string name="SDCardDeviceReturnFail">Получить оборудование не возвращает</string>
+    <string name="SDCardSucceed">Оборудование карту SD в форматирование, в не слышал оборудования до завершения форматирования подсказка.Пожалуйста, не отключения питания оборудования</string>
+    <string name="SDCardFail">Форматирование SD карточка провал</string>
+    <string name="SDCardALer">Форматирование SD карту SD после того, как внутри документы будут полностью исключена. Ли форматиров</string>
+
+    
+    <string name="str_menu">меню</string>
+    <!-- 编辑设备说明 -->
+    <string name="str_note">о:</string>
+
+    <!-- helpfra 添加幫助選項 -->
+    <string name="str_fra_help">помочь</string>
+
+    <!-- add by dqx 2016年2月1日 功能指导 -->
+    <string name="str_showcase_fra_devicelist1">Нажмите на презентации можно увидеть, точка</string>
+    <string name="str_showcase_fra_devicelist2">Нажмите кнопку добавления оборудование</string>
+    <string name="str_showcase_fra_configdevice1">Нажмите на выбор оборудования</string>
+
+    <!-- add by dqx 2016年2月1日popup_window_more2 -->
+    <string name="str_popup_window_more1">удалить</string>
+    <string name="str_popup_window_more2">редактор</string>
+    <string name="str_popup_window_more3">информация</string>
+
+    <!-- add by dqx 2016年2月1日 dialog_add_device_layout -->
+    <string name="str_dialog_add_device_layout1">Новое оборудование настройки сети</string>
+    <string name="str_dialog_add_device_layout2">(Wi-fi интеллект быстро дозировки: для первого запуска и восстановление после сети размещения оборудования)</string>
+    <string name="str_dialog_add_device_layout3">Добавить сетевым оборудование</string>
+    <string name="str_dialog_add_device_layout4">(Вручную добавить оборудование ID номер)</string>
+
+    <!-- add by dqx 2016年1月30日 -->
+    <string name="str_photo_activity">Вы не выбрать любое изображение</string>
+
+    <!-- add by dqx 2016年1月25日  二维码文字语言适配 -->
+    <string name="str_qr_code">Будет ErWeiMa/штриховые коды в окно, чтобы в автоматический поиск</string>
+    <string name="str_qr_code1">Будет ErWeiMa/штриховые коды в окно в</string>
+    <string name="str_qr_code2">Можно автоматически сканирование</string>
+    <string name="title_scan_device">Сканирование ErWeiMa</string>
+
+    <!-- 设备网络配置语言适配  dqx 2016年1月25日 -->
+    <string name="str_loading">loading&#8230;</string>
+    <string name="str_change_to_station">Переключитесь на STATION модель</string>
+    <string name="str_change_to_ap">Переключитесь на AP модель</string>
+    <string name="str_advanced_setup">Расширенные настройки</string>
+    <string name="str_save">сохраните</string>
+    <string name="str_IP">IP-адрес:</string>
+    <string name="str_subnet">Маски подсети:</string>
+    <string name="str_default_gateway">Шлюза по умолчанию:</string>
+
+    <!-- DeviceNetworkSettingFragment dqx 2016年1月25日 -->
+    <string name="str_mode_unknow">Оборудование для сетей нынешней модели UNKNOW модель</string>
+    <string name="str_mode_station">Оборудование для сетей нынешней модели STATION модель</string>
+    <string name="str_mode_ap">Оборудование для сетей нынешней модели AP модель</string>
+    <string name="str_title_edit">изменения</string>
+
+    <!-- NVAlarmMsgListViewActivity dqx -->
+    <string name="str_none_msgs">Нынешней оборудование пока без новой информации тревоги</string>
+    
+    <!-- 预设位 -->
+    <string name="str_Preset_Position">Предпосылка бит</string>
+    <string name="str_preset_position">Без этого оборудования предпосылка бит функции</string>
+
+    <!-- dqx 2016年4月8日  权限提醒 -->
+    <string name="str_permission_camera1">Камеру компетенция аномалия, эта функция не использовать</string>
+    <string name="str_permission_camera2">Камеру компетенция аномалия,Необходимо в[настройки-приложения-demo-компетенция]Открыть камеру компетенции</string>
+    <string name="str_permission_request">Компетенция запрос</string>
+    <string name="str_permission_phone1">Закрытие телефон компетенция повлиять на процедур информации тревоги push функции нормального функционирования,Пожалуйста, в[настройки-приложения-demo-компетенция]Открытие телефон компетенции</string>
+    <string name="str_permission_neglect">не</string>
+    <string name="str_permission_setting">пароль</string>
+    <string name="str_permission_setting2">В сет</string>
+    <string name="str_permission_storage1">Закрытие дисковое пространство может привести к компетенции программа чтения данных с хранением аномалия,Необходимо в[настройки-приложения-demo-компетенция]Открытие в кладовку компетенция</string>
+    <string name="str_permission_storage2">Дисковое пространство компетенция аномалия, не хранения/чтения данных,Необходимо в[настройки-приложения-demo-компетенция]Открытие в кладовку компетенция</string>
+    <string name="str_permission_microphone1">Микрофон компетенция аномалия,Эта функция не использовать</string>
+    <string name="str_permission_microphone2">Микрофон компетенция аномалия,Эта функция не использовать,Необходимо в[настройки-приложения-demo-компетенция]Открытие микрофон компетенция</string>
+    <string name="str_permission_location">Закрыт компетенции информацию о местоположении для поиска может влиять на процедур оборудования/" горячих точек "функции,Необходимо в[настройки-приложения-demo-компетенция]Открытие информацию о местоположении компетенция</string>
+    <string name="str_saving">В настоящее время сохранить настройки&#8230;</string>
+
+    <!-- 静态IP设置 -->
+    <string name="str_static_ip_config">Статический IP-конфигурации</string>
+    <string name="str_ip">IP:</string>
+    <string name="str_subnet_mask">Маски подсети:</string>
+    <string name="str_gateway">шлюз:</string>
+    <string name="str_main_dns">Главный DNS:</string>
+    <string name="str_sub_dns">Раз DNS:</string>
+    <string name="str_null_ip">IP Адрес не пуст</string>
+    <string name="str_null_subnet">Маски подсети не пуст</string>
+    <string name="str_null_gateway">Шлюз не пуст</string>
+    <string name="str_null_main_dns">Главный DNS-не пуст</string>
+    <string name="str_error_ip">IP-адрес формат ошибки</string>
+    <string name="str_error_subnet">Маски подсети формат ошибки</string>
+    <string name="str_error_gateway">Ошибка шлюза формат</string>
+    <string name="str_error_main_dns">Основной формат DNS ошибки</string>
+    <string name="str_error_sub_dns">Раз DNS-формат ошибки</string>
+    <string name="str_auto_config">Автоматическое конфигурирование</string>
+    <string name="str_manual_config">Ручной настройки</string>
+
+    <!-- 一键布撤防 -->
+    <string name="str_monitor_activate">развернуть</string>
+    <string name="str_monitor_deactivate">разоружиться</string>
+    <string name="str_monitor_activate_success">Успех развертывания</string>
+    <string name="str_monitor_activate_fail">защита провалилась</string>
+    <string name="str_monitor_deactivate_success">успешное разоружение</string>
+    <string name="str_monitor_deactivate_fail">высылка не</string>
+    <string name="str_monitor_activating">В настоящее время развертывания&#8230;</string>
+    <string name="str_monitor_deactivating">тянут&#8230;</string>
+
+    <!-- add by dqx 2016年5月16日 -->
+    <string name="str_not_support">устройство не поддерживает</string>
+
+    <!-- add by dqx 2016年5月26日 -->
+    <string name="str_hotspot">Пожалуйста, включи GPS положение переключателя, иначе будет не до приобретения оборудования применение горячих информации</string>
+
+    <!-- dqx 2016年6月8日 -->
+    <string name="str_alarm_time">время：</string>
+    <string name="date_current2">дата</string>
+    <string name="time_current2">время</string>
+    <string name="lblDate2">Выберите даты</string>
+    <string name="lblStartTime2">Время начала</string>
+    <string name="lblEndTime2">Время окончания</string>
+
+    <!-- dqx 2016年6月22日 -->
+    <string name="str_deleting">делеция&#8230;</string>
+    <string name="str_sharing">доля в&#8230;</string>
+    
+    <!-- 谢河明 -->
+    <string name="str_recording">запись</string>
+    <string name="str_cloud_terrace">руководитель</string>
+    <string name="str_position">Предварительные настройки</string>
+    <string name="str_screenshoot">Снимок экрана</string>
+
+    <!-- add by xie 2016年6月13日 -->
+    <string name="str_quick_register">Быстрая регистрация</string>
+    <string name="str_register">регистрация</string>
+    <string name="str_mailbox_register">регистрация почты</string>
+    <string name="hint_password">Подтвердите пароль</string>
+    <string name="verify_code">Проверочный код (6 цифр)</string>
+    <string name="str_verify_code">коды</string>
+    <string name="str_mobile_phone">телефон</string>
+    <string name="str_username">пользователь</string>
+    <string name="str_quick_register_phone">Телефон быстрая регистрация</string>
+    
+    <!-- xie 2016-6-20 -->
+    <string name="Please_enter_password">Пожалуйста, введите пароль</string>
+    <string name="Please_enter_username">Пожалуйста, введите свое имя пользователя</string>
+    <string name="Confirm">подтвердить</string>
+    <string name="Cancel">отменен</string>
+    <string name="Username_or_phoneNo">Телефон | Электронная почта</string>
+    <string name="Forget_password">Забыли пароль</string>
+    <string name="The_phone_number_can_not_be_empty">Номер телефона не может быть пустым</string>
+    <string name="Please_enter_the_correct_phone_number">Пожалуйста, введите правильный номер телефона</string>
+    <string name="The_username_can_not_be_empty">Имя пользователя не может быть пустым</string>
+    <string name="The_password_can_not_be_empty">Пароль не может быть пустым</string>
+    <string name="The_verify_code_can_not_be_empty">Пожалуйста, введите правильную форму кода</string>
+    <string name="Verify_code_is_incorrect">Неверный код подтверждения</string>
+    <string name="Resend">Resend</string>
+    <string name="Second">второй</string>
+    <string name="The_next_step">следующий</string>
+    <string name="Receive_SMS_verify_code">Получение SMS код подтверждения</string>
+    <string name="str_enter">Пожалуйста, введите</string>
+    <string name="str_agree">согласны</string>
+    <string name="str_register_protocol">demo Соглашение о регистрации пользователя</string>
+	<string name="str_register_remark">Примечание: Пароль состоит из цифр, букв, специальных символов, или гибридной комбинации из них, состоящий из 6&#8211;14 символов</string>
+	<string name="str_resetpwd_remark">Примечание: Пароль состоит из цифр, букв, специальных символов, или гибридной комбинации из них, состоящий из 6&#8211;14 символов</string>
+	<string name="str_finish">полный</string>
+    <string name="set_new_password">Пожалуйста, установите новый пароль</string>
+    <string name="entry_experience"><u>Локальный вход в систему</u></string>
+    
+    <!-- 2016-6-21 xie -->
+    <string name="title_alert">Подскажите сообщение</string>
+    
+    <!-- 2016-6-27 xie -->
+    <string name="verify_codes_is_overtime">PIN-код Тайм-аут</string>
+    <string name="confirm_correct_password">Пожалуйста, введите 6 до 14 для правильной формы пароля</string>
+    <string name="confirm_correct_username">Пожалуйста, введите правильное имя пользователя</string>
+    <string name="password_do_not_match">Два пароли не совпадают</string>
+    <string name="complete_password">Заполните, пожалуйста, ввод пароля</string>
+    <string name="user_isnot_exist">Пользователь не существует</string>
+    <string name="email_register"><u>По почте заказным письмом</u></string>
+    <string name="title_email_register">регистрация почты</string>
+    <string name="phone_register"><u>Регистрация по телефону:</u></string>
+    <string name="set_password">Установить пароль</string>
+    <string name="str_fast_register"><u>Быстрая регистрация</u></string>
+    <string name="set_login_password">Установить пароль</string>
+    <string name="enter_mailbox_address">Пожалуйста, введите адрес электронной почты</string>
+    <string name="enter_correct_mailbox">Пожалуйста, введите действительный адрес электронной формы</string>
+    <!-- 2016-6-29 xie-->
+    <string name="update_list_tip">Список устройств в актуальном состоянии</string>
+    <string name="personal_information">Персональная информация</string>
+    <string name="fail_to_login">Имя пользователя или неверный пароль</string>
+    <string name="login_password">пароль</string>
+    <string name="Security_Settings">Настройки безопасности</string>
+    <string name="Account_info">информация об учетной записи</string>
+    <!-- 2016-6-30 xie-->
+    <string name="Mailbox">почтовый ящик</string>
+    <string name="change_way">Выберите режим редактирования</string>
+    <string name="Phone_verification">По телефону или по электронной почте подтверждение</string>
+    <string name="Old_password">По старым паролем</string>
+    <string name="Personal_info_newpwd">Новый пароль</string>
+    <string name="Set_Pwd_tip">Пароль состоит из цифр, букв, специальных символов, или гибридной комбинации из них, состоящий из 6&#8211;14 символов</string>
+    <string name="str_old_pwd">Старый пароль</string>
+    <!-- 2016-7-1 xie-->
+    <string name="Edit_Device_Fail">Отказ Редактирование оборудования</string>
+    <string name="Network_Error">Невозможно подключиться к серверу, проверьте подключение к сети или повторите попытку позже</string>
+    <string name="Phone_exist">Номер телефона уже существует</string>
+    <string name="Register_success">Регистрация прошла успешно, через две секунды после скачка на экран входа в систему</string>
+    <string name="Mail_Is_Exist">Электронная почта уже существует</string>
+     
+    <!-- 2016-7-14 -->
+    <string name="Device_Is_Existence">Прибор уже существует</string>
+    <string name="Update_password">Изменение пароля Успех</string>
+    <string name="second_verify_code">Пожалуйста, введите проверочный код</string>
+    
+    <!-- 2016-7-16 -->
+    <string name="Unknown_mistake">Неизвестная ошибка, пожалуйста повторной операции</string>
+    
+    <!-- 2016-7-19 -->
+    <string name="Stop_recording">Независимо от того, чтобы остановить запись？</string>
+    
+    <!-- 2016-7-22 -->
+    <string name="UpdatePwd_by_mailbox">Модифицируя почтовый ящик</string>
+    <string name="UpdatePwd_by_phone">Изменяя свой телефон</string>
+    <string name="Mailbox_can_not_be_empty">Электронная почта не может быть пустым</string>
+    <string name="Please_enter_the_correct_mailbox_address">Пожалуйста, введите действительный адрес электронной почты</string>
+    <string name="Mailbox_reset_successfully">Почта, отправленная успешно, перейдите в почтовый ящик, чтобы подтвердить изменения</string>
+    <string name="User_not_activitated">Пожалуйста, включите почтовый ящик учетной записи</string>
+    
+    <!-- 2016-7-29 xhm -->
+    <string name="Do_not_need_code">Электронная почта проверка, без кода подтверждения</string>
+    <string name="Delete_device">Удалить устройство?</string>
+    
+    <!-- dqx 2016年6月27日 -->
+    <string name="str_cloud_storage">Услуги облачных систем хранения данных</string>
+    <string name="str_device_not_bind_service">Устройство не связывает службу, службу связывания</string>
+    <string name="str_service_products">Сервисные продукты</string>
+    <string name="str_purchase_service">Приобретение услуг</string>
+    <string name="str_renew_service">Продление</string>
+    <string name="str_ask_for_delete">удалять？</string>
+    <string name="str_delete_ok">Успешно удалено</string>
+    <string name="str_delete_fail">Успешно удалено</string>
+
+    <!-- dqx 2016年7月8日 -->
+    <string name="str_login_to_use_function">пожалуйста введите логин, и затем использовать эту функцию</string>
+    <string name="str_not_bind_service">несвязанных услуг</string>
+    <string name="str_has_bind_service">уже обязательной службы</string>
+    <string name="str_service_out_of_date">службы истек</string>
+    
+    <!-- dqx 2016年7月9日 -->
+    <string name="str_network_error">сеть аномалия  ,  попробуйте позже </string>
+    <string name="str_get_device_list_network_error">Сетевые аномалии, получить список пользовательского оборудования не удалось, повторите попытку позже</string>
+    <string name="str_lastest_list">Список устройств в актуальном состоянии</string>
+    <string name="str_401">Идентичность истек, пожалуйста, войдите в систему снова</string>
+    <string name="str_get_device_list_error">Получить список сбоя пользовательского оборудования</string>
+    <string name="str_get_device_server_list_error">Получить список облачных сервисов информация об учетной записи не удалось</string>
+    <string name="str_get_device_server_info_error">Получить информацию о связывании облачный сервис отказавшего устройства</string>
+    <string name="str_get_device_service_list_size_0">Вы в настоящее время не покупают какую-либо услугу облако, пожалуйста, приобрести услугу</string>
+    <string name="str_device_has_bind_service">Устройство связанных с ними услуг: </string>
+    <string name="str_device_service_outofdate">Оборудование для переплёта службы истекло</string>
+    
+    <string name="str_cloud_record_search">Облако хранения видео Поиск: </string>
+    <string name="str_bind">переплет</string>
+    <string name="str_unbind">Разукрупнение</string>
+    <string name="str_valid_code_get_fail">Получить код подтверждения не удалось, повторите попытку позже</string>
+    <string name="str_valid_code_error">коды ошибок</string>
+    <string name="str_valid_code_out_of_date">Проверочный код истек </string>
+    <string name="str_get_service_list_fail">Получить список услуг терпит неудачу, проверьте сеть или повторите попытку позже</string>
+    <string name="str_service_had_binded_other_device">Облачного пакеты услуг, связанные с другими устройствами</string>
+    <string name="str_device_had_binded_service">Устройство связано пакеты облачных услуг</string>
+    <string name="str_device_bind_service_fail">Привязка службы оборудования облако терпит неудачу</string>
+    <string name="str_device_bind_service_fail_not_support">Устройство не поддерживает облачные сервисы, обречена на провал</string>
+    <string name="str_valid_code_6_digits">Пожалуйста, введите проверочный код из шести цифр</string>
+    <string name="str_valid_code_input">Пожалуйста, введите код подтверждения, полученный：</string>
+    
+    <string name="str_search_cloud_record_files">Поиск видео</string>
+    <string name="str_unbind_service_list">Освобожденный список услуг</string>
+    <string name="str_unbind_service_fail">Разукрупнение пакеты облачных услуг терпеть неудачу</string>
+    <string name="str_unbind_service_ok">Разукрупнение облако успех пакеты услуг</string>
+    <string name="str_bind_service">Binding служба</string>
+    <string name="str_unbind_service">Разукрупнение услуги</string>
+    <string name="str_connect_to_device_ing">Подключение устройств&#8230;</string>
+    <string name="str_connect_to_device_ok">Устройство успешно подключено&#8230;</string>
+    <string name="str_connect_to_device_fail">Подключение устройства не удалось&#8230;</string>
+    <string name="str_connect_to_server_wait">Ожидание сервера подключения&#8230;</string>
+    <string name="str_connect_to_server_ing">Подключение к серверу&#8230;</string>
+    <string name="str_connect_to_server_ok">Успешно подключиться к серверу&#8230;</string>
+    <string name="str_connect_to_server_fail">Подключение к серверу не удалось&#8230;</string>
+
+    <string name="str_recording_2">видео&#8230;</string>
+    <string name="str_record_ok">Запись завершена, видео файл был сохранен в каталог SD-карты:/SDcard/demo/</string>
+    
+    <string name="str_login_state_false">не подписанный</string>
+    <string name="str_server_error">Сервер занят, повторите попытку позже</string>
+    <string name="str_get_device_list_server_error">Сервер занят, получить список пользовательского оборудования не удалось, повторите попытку позже</string>
+    
+    <string name="str_bind_service_fail">Связывание пакетов облачных услуг сбой</string>
+    <string name="str_bind_service_ok">Связывание облачных успех пакеты услуг</string>
+    
+    <string name="str_connect_device_fail">Подключенные устройства не удалась, попробуйте еще раз позже</string>
+    <string name="str_search_record_file_fail">Поиск видео файлов не удалось, повторите попытку позже</string>
+    <string name="str_login_exit">Выход из текущего счета</string>
+    <string name="str_app_exit">Выход из приложения</string>
+    
+    <string name="str_is_last_file">В настоящее время является последним Видеофайл</string>
+    <string name="str_is_first_file">В настоящее время это первый видео-файл</string>
+    
+    
+    <string name="str_unbind_type">Пожалуйста, выберите РАЗДЕЛЕНИЯ режим：</string>
+    <string name="str_mail_input">Текущий пользователь является зарегистрированным пользователем почтового ящика, нажмите на кнопку "OK", то сообщение будет отправлено на Ваш почтовый ящик, перейдите в почтовый ящик, чтобы определить отвязать</string>
+    <string name="str_user_not_set_email">Пользователь не установлен почтовый ящик</string>
+    <string name="str_send_unbind_email_ok">Почта успешно отправлено, пожалуйста, напишите для подтверждения</string>
+    <string name="str_bind_device_error">Добавить отказ устройства</string>
+    <string name="str_user_no_bind_device">Текущий пользователь не добавляет устройств</string>
+    
+    <string name="str_other_user_binding_device">Устройство службы связывания, пожалуйста, повторите попытку позже</string>
+    
+    <!-- 2016-7-26 xmh-->
+    <string name="Reset_pwd_fail">Смена пароля не удалась, повторите попытку позже</string>
+    <string name="Send_code_fail">Не удалось отправить код подтверждения，Пожалуйста, повторите попытку позже</string>
+    <string name="Login_failed">Ремонт не может отправить код подтверждения, пожалуйста, повторите попытку позже</string>
+    <string name="Registration_fail">Зарегистрироваться не удалось, повторите попытку позже</string>
+    <string name="Mailbox_register_successfully">Почта успешно отправлено，Пожалуйста, включите почтовый ящик пользователя</string>
+    <string name="Old_pwd_error">Старый пароль неверный</string>
+    <string name="pwd_hint">Пожалуйста, введите восьмизначный пароль для WIFI</string>
+    
+    <string name="str_do_not_support_mic">В настоящее время устройство не поддерживает Mic</string>
+    
+    <string name="str_select">выбрать</string>
+    <string name="str_unbind_confirm">азукрупнение пакетов услуг облако хранения облако может вызвать видео файлы будут удалены, будь то разукрупнение？</string>
+    
+    <string name="str_ap_bind401">Идентификационная информация неверна，Добавление устройства в список устройств пользователя не удалось，Пожалуйста, поиск устройств в странице списка устройства</string>
+    <string name="str_ap_bind500">Сервер занят，Добавление устройства в список устройств пользователя не удалось，Пожалуйста, поиск устройств в странице списка устройства</string>
+    <string name="str_ap_bind_network_error">Ошибка сети，Добавление устройства в список устройств пользователя не удалось，Пожалуйста, поиск устройств в странице списка устройства</string>
+    <string name="str_ap_bind_other_error">Добавление устройства в список устройств пользователя не удалось，Пожалуйста, поиск устройств в странице списка устройства</string>
+    
+    <string name="str_device_hotspot_search_device">Войти режим，Обнаружение Hotspot устройство не может быть добавлен в список，Переключение в режим станции или Используйте режим "Локальный вход в систему"</string>
+    <string name="str_get_service_info_fail">Получить сведения об устройстве связывания службы не удалось</string>
+    <string name="str_unbinding_service">Разукрупнение</string>
+    <string name="str_wait_to_play">Загрузка видео</string>
+    
+    
+    <string name="str_rec_file_exist">Файл уже существует</string>
+    <string name="str_rec_file_download_finish">Загрузить полный</string>
+    <string name="str_rec_file_download">загрузка</string>
+    <string name="str_storage_not_enough">Загрузить отсутствие пространства</string>
+    <string name="str_rec_file_download_connecting">подключение</string>
+    <string name="str_rec_file_redownload">Повторная загрузка</string>
+    
+    <string name="str_rec_file_cancle1">Независимо от того, чтобы отменить этот файл загружается？</string>
+    <string name="str_rec_file_cancle2">Видео скачать, отменить загрузку или ждать завершения загрузки</string>
+    <string name="str_rec_file_cancle3">Скачать задача слишком много, пожалуйста, подождите</string>
+    <string name="str_rec_file_cancle4">Отменить загрузку</string>
+    <string name="str_rec_file_downloading">загрузка</string>
+    
+    <string name="str_guide_for_operation">Инструкция по эксплуатации</string>
+    
+    <string name="str_rec_file_stop_download">Хватит загрузить</string>
+    
+    <string name="str_about_app">О</string>
+    <string name="str_fisheye_mode">режим</string>
+    <string name="str_exit">Выход из</string>
+    
+    <string name="str_device_pwd">Оборудование пароль</string>
+    
+    <string name="str_device_camera">режим установки</string>
+    
+    <string name="str_had_send_verify_code">код проверки было отправлено до </string>
+    
+    <!-- 2016.11.01 修改设备密码 -->
+    <string name="str_modify_device_info">установить новый пароль</string>
+    <string name="str_security_notice">Совет безопасности пароля</string>
+    <string name="str_notice_pwd_need_set">В настоящее время в устройстве не установлен пароль для вашей конфиденциальности, пожалуйста, установите пароль</string>
+
+    <string name="str_adding">Добавить&#8230;</string>
+    
+    <!-- 2017-1-6 报警图片列表 -->
+    <string name="str_load_alarm_image_fail">Не удалось загрузить фотографии, попробуйте позже&#8230;</string>
+    
+    <string name="str_alarm_all_day">Сигнализация в течение всего дня</string>
+    <string name="str_custom_time">Пользовательские время</string>
+    <string name="str_add_start_time">Пожалуйста, добавьте время начала</string>
+    <string name="str_add_end_time">Пожалуйста, добавьте время окончания</string>
+    <string name="str_add_custom_time">Дата добавления</string>
+    <string name="str_next_step">Следующий</string>
+    <string name="str_alarm_area">тревога район</string>
+    <string name="str_non_alarm_area">Область неаварийное</string>
+    <string name="str_select_area_below">Пожалуйста, выберите регион ниже тревоги</string>
+    <string name="str_fail_to_set_time">Время начала и окончания не может быть таким же</string>
+    <string name="str_device_does_not_support_custom">TУстройство не поддерживает пользовательские настройки, обновления оборудования</string>
+    <string name="str_time_quantity">Период достиг предела</string>
+    <string name="str_please_login_to_use">Пожалуйста, войдите в систему, чтобы использовать эту функцию</string>
+    <string name="str_bind_to_use">Устройство не связывает облачных сервисов</string> 
+    
+    <string name="str_cloud_storage_record">Хранения видео Облако</string>
+    <string name="str_tf_card_record">Записи карт TF</string>
+    <string name="str_turn_on_alarm_switch">Открыть обезоруживающей выключатель</string>
+    
+    <string name="str_clear">Очистить</string>
+    
+    <string name="str_device_does_not_support_alarm_area">Устройство не поддерживает эту функцию</string>
+    
+    <string name="str_wechat_payment_order">WeChat платежного поручения</string>
+    <string name="str_wechat_confirm_payment">Подтверждение платежа</string>
+    <string name="str_wechat_payment_tip">К сожалению, нет ни одного успешного интерфейса прыжок, пожалуйста, нажмите на оплату вручную</string>
+    <string name="str_wechatpay_successful">Успешный платеж</string>
+    <string name="str_wechatpay_failed">Неоплата</string>
+    <string name="str_wechatpay_canceled">Платеж отменен</string>
+    <string name="str_please_intall_wechat">Пожалуйста, установите WeChat</string>
+    
+    <string name="str_smartlink_tip">Если конфигурация успешно не удается прыгать</string>
+    
+    <string name="str_skip_ad">скакать</string>
+    
+    <!-- 2017-4-20 xhm -->
+    <string name="str_skip_update_soft">позже напомнить</string>
+    <string name="str_update_soft">Обновить</string>
+    <string name="str_update_sofeware_title">обновления программного обеспечения,подсказки</string>
+    <string name="str_software_version">версия:</string>
+    <string name="str_message_dialog_btn">Знаю</string>
+    
+    <!-- 2017-5-19 -->
+    <string name="str_upload_to_oss">Загрузить в ОSS</string>
+    <string name="str_upload_successfully">Загрузка успешно</string>
+    <string name="str_upload_failed">Ошибка добавления</string>
+    <!-- <string name="str_is_error_alarm_pic"><u>Является ли эта цифра ложная тревога?</u>.</string> -->
+    <string name="str_channels">Канал:</string>
+
+    
+    <!-- 2017-5-25 登录实时预览录音权限申请 -->
+    <string name="str_permission_microphone_login">в целях обеспечения ты смотреть чувства, Необходимо в[настройки-приложения-demo-компетенция]Открытие микрофон компетенция</string>
+    
+    <!-- 2017-5-31 -->
+   	<string name="str_light_controler">свет</string>
+    <string name="str_open_light">открытый</string>
+   	<string name="str_close_light">близко</string>
+   	<string name="str_auto_light">автоматическая</string>
+   	
+   	<!-- 2017-6-12 -->
+   	<string name="str_use_hw_fail">Аппаратное декодирование не удается, повторное использование мягкого декодирования</string>
+   	
+   	<!-- 2017-6-20 -->
+   	<string name="str_HDecodeing">Аппаратное декодирование</string>
+   	<string name="str_SDecodeing">Мягкое декодирование</string>
+   	<string name="str_Password_Incorrect">Установка неправильного пароля</string>
+   	
+   	<!-- 2017-7-3 -->
+   	<string name="str_alipay_intall_tip">Не обнаружено Alipay клиента, необходимо установить повторную попытку</string>
+   	<string name="str_intall_now">Установить</string>
+   	<string name="str_set_password_tip">Биты 6&#8211;30 символов пароля, содержащие, по меньшей мере, двух или более букв, цифр, символов, или половину ширины, чувствительны к регистру</string>
+   	<string name="str_Password_is_too_simple">Сила Пароль слишком слаб, существует риск потери конфиденциальности, пожалуйста, введите пароль из множества сложных символов</string>
+   	<string name="str_Password_is_too_short">Неверный пароль, пожалуйста, повторно установить</string>
+   	
+   	<string name="str_is_error_alarm_pic">Является ли эта цифра ложная тревога?</string>
+   	<string name="str_is_false_positive">Здесь</string>
+   	<string name="str_is_not_false_positive">нет</string>
+   	
+   	<!-- 2017-7-5 -->
+   	<string name="str_false_positive_head">фальшивый:</string>
+   	<string name="str_false_positive_body1">1.Представьте кого-то, но не выбран красный квадратик людей</string>
+    <string name="str_false_positive_body2">2.Нет изображения, но до сих пор красная рамка, выбранные объекты</string>
+    
+    <!-- 2017-7-7 -->
+    <string name="str_alarm_area_tip">Область сигнализации не может быть пустой, сбросьте</string>
+    
+    <string name="str_Tips">чаевые</string>
+    <string name="str_feedback">Ваш отзыв может улучшить точность</string>
+    
+    <!-- 2017-7-10 -->
+    <string name="password_is_empty">Пароль не может быть пустым, пожалуйста, введите</string>
+    <!-- Password rule -->
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+""|&#060;&#062;&#064;&#038;</string>
+
+    <!-- 2017-7-21 -->
+    <string name="str_auto_bind_service_tip">Поздравляем, вы купили пакет облако\nОблако пакет связан с устройством можно использовать\nЯвляется ли оценка？</string>
+    <string name="str_ignore_auto_bind">Временно связать</string>
+    <string name="str_auto_bind_service_now">Связывание немедленно</string>
+    
+    <!-- 2017-7-27 -->
+    <string name="str_ai_snap">AI картинки сигнализации</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/device" />
+
+            <View
+                android:id="@+id/view_center_line"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvDeviceSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/font_color_gray"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/iv_device_update_dot"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_toRightOf="@+id/tvDeviceSelect"
+                android:padding="2dp"
+                android:src="@drawable/device_update_dot"
+                android:visibility="invisible" />
+
+            
+        </RelativeLayout>
+        <ImageView
+             android:id="@+id/ivDeviceSelect"
+             android:layout_width="50dip"
+             android:layout_height="35dip"
+             android:layout_gravity="left|center_vertical"
+             android:contentDescription="@string/desc"
+             android:src="@drawable/play_back_choose_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/background_gray" />
+
+</LinearLayout>

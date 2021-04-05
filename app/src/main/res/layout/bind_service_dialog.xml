@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_title"
+        android:gravity="center"
+        android:text="@string/str_bind_service"
+        android:textColor="@color/font_color_white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_connect_to_device"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:background="#ffffff"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/tv_connect_to_device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/str_connect_to_device_ing"
+            android:textColor="@color/font_color_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_connect_to_device"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/device_status_on" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_connect_to_server"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/tv_connect_to_server"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/str_connect_to_server_wait"
+            android:textColor="@color/font_color_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_connect_to_server"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/device_status_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_gray" />
+    
+    <!-- <Button 
+        android:id="@+id/btn_cancle_or_comfirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_help_item"
+        android:text="取消"
+        android:textColor="@color/font_color_black"
+        android:textSize="16sp"
+        
+        /> -->
+
+</LinearLayout>

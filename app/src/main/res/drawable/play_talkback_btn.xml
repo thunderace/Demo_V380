@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_talk" android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_talk_click" android:state_pressed="true"/>
+
+</selector>

@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc"></string>
+    <string name="country_code">fr</string>
+    <string name="app_name">demo</string>
+    <string name="app_ver">5.6</string>
+    <string name="app_notice">La caméra IP intelligente, la vie intelligente</string>
+    <string name="alarm_notice">Vous avez reçu de nouveaux messages d\'alarme</string>
+    <string name="pull_to_search">Tirer la liste pour chercher les appareils dans le réseau local LAN</string>
+    <string name="pull_to_refresh_pull_label">Tirer la liste pour rafraîchir la liste des appareils&#8230;</string>
+    <string name="pull_to_refresh_release_label">Relâcher pour chercher les appareils dans le réseau local LAN&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Recherche en cours&#8230;</string>
+    <string name="str_PasswordIsNil">(Le mot de passe est vide)</string>
+    <string name="str_AcountInfoNil">(Aucune information de compte trouvée, l\'utilisation du compte par défaut en cours)</string>
+    <string name="str_login">Connexion</string>
+    <string name="str_wifi_list">Liste de WIFI</string>
+    <string name="str_secured_type">Type de chiffrement :</string>
+    <string name="str_secured_type_open">Ouvrir</string>
+    <string name="str_visible_pwd">Afficher le mot de passe</string>
+    <string name="str_hiden_pwd">Cacher le mot de passe</string>
+    <string name="str_secured_with">Méthode de chiffrement:</string>
+    <string name="notice_DevIsNULL">L\'identifiant de l\'appareil ne peut pas être vide</string>
+    <string name="notice_DomainIsNULL">Le champ de l\'appareil ne peut pas être vide</string>
+    <string name="notice_UsernameIsNULL">L\'identifiant ne peut pas être vide</string>
+    <string name="notice_PortIsNULL">L\'interface ne peut pas être vide</string>
+    <string name="notice_PasswordIsNULL">Le mot de passe ne peut pas être vide</string>
+    <string name="alert_title_login_failed">Echec de la connexion !</string>
+    <string name="alert_connect_tips">Astuces : Tirer pour rafraîchir la connexion, et vérifier votre connexion de réseau.</string>
+    <string name="alert_title">Alerte !</string>
+    <string name="alert_btn_OK">Confirmer</string>
+    <string name="alert_btn_Cancel">Annuler</string>
+    <string name="alert_add_btn_OK">Confirmer Ajouter</string>
+    <string name="alert_add_btn_Cancel">Annuler</string>
+    <string name="alert_btn_YES">Oui</string>
+    <string name="alert_btn_NO">Non</string>
+    <string name="alert_clear_list">Supprimer tous les appareils ?</string>
+    <string name="alert_delete_server">Supprimer cet appareil ?</string>
+    <string name="alert_set_config_ok">Mise à jour de configuration réussie.</string>
+    <string name="alert_open_setting_view">Astuces : Mode ou configuration de WIFI modifiée. Voulez-vous ouvrir les paramètres de réseau et mettre à jour votre connexion de WIFI ?</string>
+    <string name="alert_open_setting_view_ap">Astuces : Interface d\'utilisateur : Appareil sous le mode AP, si vous voulez vous connecter en WIFI d\'AP, veuillez cliquer « Confirmer » pour mettre à jour votre connexion de WIFI.</string>
+    <string name="alert_get_config_fail">Incapable d\'obtenir les paramètres de l\'appareil :</string>
+    <string name="alert_set_config_fail">Incapable de mettre à jour les paramètres de l\'appareil :</string>
+    <string name="alert_username_is_invalide">Pas d\'identifiant vide</string>
+    <string name="alert_password_err">Le mot de passe original incorrect.</string>
+    <string name="alert_password_confirm_err">Vous avez codé des mots de passe différents dans le nouveau mot de passe.</string>
+    <string name="alert_stop_play">Arrêter la réception du vidéo ?</string>
+    <string name="alert_station_password_is_null">Le mot de passe de la station ne peut pas être vide.</string>
+    <string name="alert_ap_name_is_null">Le nom de l\'AP ne peut pas être vide.</string>
+    <string name="alert_station_name_is_null"> Le nom de la station ne peut pas être vide.</string>
+    <string name="result_code_conn_fail">Echec de la connexion de l\'appareil</string>
+    <string name="login_Result_MR_Server_Busy">Serveur occupé, veuillez réessayer plus tard.</string>
+    <string name="login_Result_MR_Server_Disconnet">Déconnecté de l\'appareil de l\'interface d\'utilisateur.</string>
+    <string name="login_Result_ConnectTimeout">Le délai d\'attente de connexion est écoulé</string>
+    <string name="notice_Result_ConnectServerFailed">Echec de la connexion de l\'appareil</string>
+    <string name="notice_Result_PWD_ERR_AP">Le mot de passe de l\'AP doit comporter plus de 8 caractères.</string>
+    <string name="notice_Result_PWD_ERR_Station"> Le mot de passe de la station doit comporter plus de 8 caractères.</string>
+    <string name="notice_Result_PWD_ERR"> Le mot de passe doit comporter plus de 8 caractères.</string>
+    <string name="notice_Result_NOPRI">Aucune permission.</string>
+    <string name="notice_Result_UserNoExist">Utilisateur inexistent.</string>
+    <string name="notice_Result_PWDError">Identifiant ou mot de passe incorrect.</string>
+    <string name="notice_Result_BadResult">Corruption des données.</string>
+    <string name="notice_Result_NetError">Echec de la connection du réseau !</string>
+    <string name="notice_Result_Server_Offline">Appareil de l\'interface d\'utilisateur hors ligne.</string>
+    <string name="notice_Result_VerifyFailed">Code de verification incorrect.</string>
+    <string name="notice_Result_Old_Version">Non supporté par la version de l\'appareil de l\'interface d\'utilisateur.</string>
+    <string name="toast_last_page">C\'est la dernière page.</string>
+    <string name="toast_first_page"> C\'est la première page.</string>
+    <string name="toast_add_in_list">Ajouté à la liste</string>
+    <string name="toast_remove_from_list">Supprimé de la liste</string>
+    <string name="toast_network_unreachable">Aucune connexion du réseau, veuillez vérifier votre configuration du réseau</string>
+    <string name="toast_list_is_null">Liste des appareils vide, veuillez ajouter votre appareil</string>
+    <string name="connecting">Connection en cours&#8230;</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="name">Nom :</string>
+    <string name="server">Adresse de l\'appareil :</string>
+    <string name="port">Interface :</string>
+    <string name="username">Identifiant :</string>
+    <string name="password">Mot de passe :</string>
+    <string name="password_old">Mot de passe original :</string>
+    <string name="password_new">Nouveau mot de passe :</string>
+    <string name="password_confirm">Confirmer votre mot de passe :</string>
+    <string name="autologin">Connexion automatique</string>
+    <string name="record_info">Mémoriser les informations de connexion</string>
+    <string name="norecord">Aucun enregistrement des données d\'entrée</string>
+    <string name="nameHint">Veuillez insérer un appareil ici</string>
+    <string name="serverHint">Veuillez saisir l\'adresse de l\'appareil d\'entrée</string>
+    <string name="portHint">Veuillez introduire l\'interface de réception</string>
+    <string name="usernameHint">Veuillez saisir l\'identifiant</string>
+    <string name="passwordHint">Veuillez saisir le mot de passe</string>
+    <string name="btn_login">Connexion</string>
+    <string name="btn_serverList">Liste des appareils</string>
+    <string name="btn_back">Retour</string>
+    <string name="btn_refresh">Rafraîchir</string>
+    <string name="btn_add">Ajouter</string>
+    <string name="btn_delete">Supprimer</string>
+    <string name="btn_edit">Rédiger</string>
+    <string name="btn_finish">Compléter</string>
+    <string name="btn_search">Recherche</string>
+    <string name="btn_research">Chercher l\'appareil</string>
+    <string name="btn_addtolist">Ajouter à la liste</string>
+    <string name="btn_IsInlist">Déjà ajouté à la liste</string>
+    <string name="btn_save">Sauvegarder</string>
+    <string name="btn_save_setting">Paramètres</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="btn_ok">Confirmer</string>
+    <string name="btn_add_qr">Ajouter le code de QR</string>
+    <string name="btn_stop_all">Arrêt</string>
+    <string name="btn_stop_play">Arrêt</string>
+    <string name="btn_start_play">Lecture</string>
+    <string name="btn_one_key_sync">Synchroniser avec l\'heure du telephone portable</string>
+    <string name="btn_save_time">Régler l\'heure</string>
+    <string name="btn_get_from_list">Choisir depuis le WIFI local</string>
+    <string name="title_add_device">Ajouter l\'appareil</string>
+    <string name="title_Edit_device">Modifier l\'appareil</string>
+    <string name="searching">Chercher l\'appareil&#8230;</string>
+    <string name="searchcancel">Annuler la recherche</string>
+    <string name="has">Trouvé</string>
+    <string name="device_found">Appareils</string>
+    <string name="logining">Connexion en cours&#8230;</string>
+    <string name="Notification_To_Login">L\'appareil non connecté&#8230;</string>
+    <string name="Notification_Playing_Chn">Lecture en cours :</string>
+    <string name="str_Notic_Close_APP">Voulez-vous quitter l\'application ?</string>
+    <string name="str_serverList">Liste des appareils</string>
+    <string name="notice_RecvDataFailed">Echec de la connexion.</string>
+    <string name="notice_RecvStop">Déconnecté de l\'appareil de l\'interface d\'utilisateur.</string>
+    <string name="str_Select_To_Play">Veuillez choisir votre chaîne de lecture</string>
+    <string name="str_PlayingChn">Chaîne en cours de lecture :</string>
+    <string name="wifi_mode">Mode WIFI :</string>
+    <string name="wifi_mode_ap">AP</string>
+    <string name="wifi_mode_station">Station</string>
+    <string name="wifi_mode_ap_setting">Mode AP (mode point d\'accès, pas besoin de routeur)</string>
+    <string name="wifi_current_mode">Mode actuel :</string>
+    <string name="wifi_mode_station_setting">Mode station (connexion avec routeur)</string>
+    <string name="server_config">Configurer l\'information de l\'appareil</string>
+    <string name="local_config">Configuration locale :</string>
+    <string name="remote_config">Configuration à distance :</string>
+    <string name="config_base">Information de base de l\'appareil</string>
+    <string name="config_network">Paramètres du réseau</string>
+    <string name="config_record">Paramètres d\'enregistrement</string>
+    <string name="config_time">Réglage de l\'heure</string>
+    <string name="config_user">Gestionnaire d\'utilisateur</string>
+    <string name="config_alarm_prompt">Réglage de l\'alarme</string>
+    <string name="station_current_wifi">WIFI actuel :</string>
+    <string name="record_auto_record_title">Enregistrement automatique :</string>
+    <string name="record_record_open">Ouvrir</string>
+    <string name="record_record_close">Fermer</string>
+    <string name="record_alarm_record_title">Enregistrement de l\'alarme</string>
+    <string name="record_record_full_op">Opération après que la carte SD est pleine :</string>
+    <string name="record_record_full_op_recorver">Supprimer l\'ancien fichier</string>
+    <string name="record_record_full_op_stop">Arrêter l\'enregistrement</string>
+    <string name="date_current">Date :</string>
+    <string name="time_current">Heure :</string>
+    <string name="device_time_current">Heure de l\'appareil :</string>
+    <string name="set_time">Réglage de l\'heure :</string>
+    <string name="set_date">Réglage de la date :</string>
+    <string name="getting_network_config">Obtenir la configuration du réseau&#8230;</string>
+    <string name="getting_network_config_fail">Echec de l\'obtention de la configuration du réseau.</string>
+    <string name="getting_record_config">Obtenir la configuration de l\'enregistrement&#8230;</string>
+    <string name="getting_record_config_fail">Echec de l\'obtention de la configuration de l\'enregistrement.</string>
+    <string name="getting_datetime_config">Mettre à jour l\'heure du système&#8230;</string>
+    <string name="getting_datetime_config_fail">Echec de la mise à jour de l\'heure du système.</string>
+    <string name="getting_alarmprompts_config">Obtenir la configuration de l\'alarme et de la notification&#8230;</string>
+    <string name="getting_alarmprompts_config_fail">Echec de l\'obtention de la configuration de l\'alarme et de la notification.</string>
+    <string name="getting_version_info">Obtenir l\'information de la version&#8230;</string>
+    <string name="getting_version_info_fail">Echec de l\'obtention de l\'information de la version.</string>
+    <string name="user_info">Information de l\'utilisateur</string>
+    <string name="getting_user_config">Obtenir la configuration de l\'utilisateur&#8230;</string>
+    <string name="getting_user_config_fail">Echec de l\'obtention de la configuration de l\'utilisateur.</string>
+    <string name="local_wifi_device_list">Veuillez choisir la liste du WIFI local.</string>
+    <string name="modify_password">Modifier le mot de passe</string>
+    <string name="wifi_no_select">Veuillez choisir l\'appareil de WIFI.</string>
+    <string name="disk_size">Taille du disque :</string>
+    <string name="disk_use">Espace libre du disque :</string>
+    <string name="no_dev_found">Aucun nouveau appareil trouvé.</string>
+    <string name="search_finish">Liste mise à jour.</string>
+    <string name="add_device">Veuillez ajouter le nouveau appareil :</string>
+    <string name="strIDNumber">Identifiant de l\'appareil :</string>
+    <string name="strAdvance">Paramètres avancés</string>
+    <string name="strDeviceVerInfo">Mettre à jour l\'appareil</string>
+    <string name="strAppVersion">Version de l\'application du système :</string>
+    <string name="strKernalVersion">Version du kernel du système :</string>
+    <string name="strHardwareVersion">Version du materiel du système :</string>
+    <string name="strVersionDate">Date de création :</string>
+    <string name="btnSelectALL">Tout sélectionner</string>
+    <string name="btnUnSelectALL">Tout désélectionner</string>
+    <string name="btnDelect">Supprimer</string>
+    <string name="tabDeviceList">Liste des appareils</string>
+    <string name="tabHome">Accueil</string>
+    <string name="tabScreenShot">Image</string>
+    <string name="tabPlayback">Lecture</string>
+    <string name="tabHelp">Aide</string>
+    <string name="lblSelectDevice">Veuillez choisir votre appareil</string>
+    <string name="lblDevice">Choisir l\'appareil :</string>
+    <string name="lblDate">Choisir la date :</string>
+    <string name="lblStartTime">Heure de début :</string>
+    <string name="lblEndTime">Heure de fin :</string>
+    <string name="lblRecType">Type de l\'enregistrement :</string>
+    <string name="strAll">Tout</string>
+    <string name="strAuto">Enregistrement automatique</string>
+    <string name="strAlarm">Enregistrement de l\'alarme</string>
+    <string name="noticNoDeviceSelect">Aucun appareil choisi</string>
+    <string name="noticStartlargeThanEnd">L\'heure de début doit être plus tôt que l\'heure de fin</string>
+    <string name="noticEndLessThanStart">L\'heure de fin doit être plus tard que l\'heure de début</string>
+    <string name="noticRecConnectFail">Echec de la recherche : échec de la connexion de l\'appareil.</string>
+    <string name="noticRecOKNOFiles">Recherche terminée, avez-vous trouvé votre fichier de l\'enregistrement ?</string>
+    <string name="strStartTime">Heure de début :</string>
+    <string name="strTimeLen">Durée :</string>
+    <string name="strFileSize">Taille du fichier :</string>
+    <string name="btnHideList">Liste cachée</string>
+    <string name="btnVisibleList">Liste affichée</string>
+    <string name="btnSearchRecFile">Chercher le fichier</string>
+    <string name="strRecFileList">Enregistrer la liste du fichier</string>
+    <string name="btnVersionUpdate">Mise à jour du logiciel</string>
+    <string name="btnFunctionManu">Instruction de la function du logiciel</string>
+    <string name="strHour">Heure</string>
+    <string name="strMin">Minute</string>
+    <string name="strSec">Seconde</string>
+    <string name="lblRecordAudioTitle">Enregistrement vocal :</string>
+    <string name="lblRecordFrameSize">Résolution de l\'enregistrement :</string>
+    <string name="lbl1080P">1080P</string>
+    <string name="lbl720P">720P</string>
+    <string name="lblD1">D1</string>
+    <string name="lblVGA">VGA</string>
+    <string name="lblCIF">CIF</string>
+    <string name="lblQVGA">QVGA</string>
+    <string name="lblNOSDCard">Aucune carte SD trouvée</string>
+    <string name="lbSDCardWritteErr">Erreur sur la carte SD</string>
+    <string name="lblGettingAlarmMsg">Obtenir l\'information de l\'alarme &#8230;</string>
+    <string name="lblSmokeAlarm">Détecteur de fumée</string>
+    <string name="lblMotionAlarm">Alarme de mouvement</string>
+    <string name="lblPIRAlarm">Alarme de PIR</string>
+    <string name="lblMoreAlarmMsg">Tirer pour charger plus d\'information d\'alarme.</string>
+    <string name="lblLoadingAlarmMsg">Chargement de plus d\'information en cours&#8230;</string>
+    <string name="pull_to_load_more">Tirer pour charger plus d\'information d\'alarme.</string>
+    <string name="pull_to_refresh_release_load_more">Relâcher pour charger plus d\'information d\'alarme&#8230;</string>
+    <string name="pull_to_refresh_loading_more">Chargement en cours&#8230;</string>
+    <string name="lblInputName">Veuillez saisir un nom ici</string>
+    <string name="lblAudioSwitch">Commutateur de l\'invite vocale :</string>
+    <string name="lblAudioMainSwitch">Commutateur principal de l\'invite vocale :</string>
+    <string name="lblAlarmAudio">Invite de l\'alarme :</string>
+    <string name="lblLanguange">Langue de l\'invite vocale :</string>
+    <string name="lblIOSwitch">IO d\'alarme extérieure</string>
+    <string name="lblIOMode">Mode de sortie d\'alarme extérieure :</string>
+    <string name="lblIOModeExternal">Système d\'alarme extérieure</string>
+    <string name="lblIOModeInternal"> Système d\'alarme intérieure </string>
+    <string name="lblIOModeManualOff">Sortie de commande manuelle éteinte</string>
+    <string name="lblIOModeManualOn">Entrée de commande manuelle allumée</string>
+    <string name="lblLanguageCN">Chinois</string>
+    <string name="lblLanguageEN">Anglais</string>
+    <string name="lblAlarmMianSwitch">Commutateur principal de l\'alarme et de l\'annulation d\'alarme :</string>
+    <string name="lblMotionDetect"> Alarme de movement :</string>
+    <string name="strAlarmTime">Heure de l\'alarme :</string>
+    <string name="strAlarmType">Type de l\'alarme :</string>
+    <string name="strMotionAlarm"> Alarme de mouvement</string>
+    <string name="strSmokeAlarm">Détecteur de fumée</string>
+    <string name="strPIRAlarm">Alarme de PIR</string>
+    <string name="strRKEAlarm">Alarme de contrôle d\'accès</string>
+    <string name="strGasAlarm">Alarme de fuite de gaz</string>
+    <string name="strWarmAlarm">Alarme de température</string>
+    <string name="strDemonstrate">Démo</string>
+    <string name="strDemonList">Liste des appareils de démo</string>
+    <string name="btnHD">HD</string>
+    <string name="btnSmooth">Fluide</string>
+    <string name="softwareUpdate">Mise à jour du logiciel</string>
+    <string name="findNowVersion">Nouvelle version trouvée, voulez-vous la mettre à jour maintenant ?</string>
+    <string name="btnUpdateNow">Mise à jour</string>
+    <string name="btnUpdateLater">Plus tard</string>
+    <string name="downWin">Téléchargement réussi, cliquer pour installer</string>
+    <string name="downFail">Echec du téléchargement</string>
+    <string name="startDown">Commencer le téléchargement</string>
+    <string name="showDown">Télécharger</string>
+    <string name="Downing">Téléchargement en cours</string>
+    <string name="querySoftwareing">Vérification de l\'information du logiciel, veuillez patienter</string>
+    <string name="notNewVersion">Aucune mise à jour</string>
+    <string name="dateAbnormal">Donnée anormale</string>
+    <string name="wifiConnect">Connexion</string>
+    <string name="wifi_is">Oui</string>
+    <string name="wifi_no">Non</string>
+    <string name="wifi_confirm">Confirmer</string>
+    <string name="wifi_off">Annuler</string>
+    <string name="wifi_start">Démarrage de WIFI, veuillez patienter</string>
+    <string name="wifi_start_bt">Vous n\'avez pas allumé WIFI sur votre telephone portable, veuillez allumer WIFI et vous connecter à votre routeur. Voulez-vous allumer WIFI ?</string>
+    <string name="connect_device">Connexion de l\'appareil en cours</string>
+    <string name="connect_device_succeed">Connexion à l\'appareil réussie</string>
+    <string name="device_model_trade">Changement du mode de l\'appareil</string>
+    <string name="connect_wifiing">Connexion en WIFI en cours</string>
+    <string name="device_model_succeed">Changement du mode réussi, veuillez cliquer sur le bouton « Recherche » pour chercher l\'appareil</string>
+    <string name="connect_wifi_off">Echec de la connexion de WIFI</string>
+    <string name="connect_server_off">Echec de la connexion de l\'appareil</string>
+    <string name="wifi_wpa_wpa2">Sécurisé par WAP/WAP2</string>
+    <string name="wifi_wep">Sécurisé par WEP</string>
+    <string name="wifi_wpa">Sécurisé par WPA</string>
+    <string name="wifi_wpa2">Sécurisé par WPA2</string>
+    <string name="wifi_password">Veuillez saisir le mot de passe de WIFI</string>
+    <string name="wifi_refresh">Rafraîchir</string>
+    <string name="noticeSDCardNotExist">Aucune carte SD trouvée sur le telephone portable</string>
+    <string name="noticeScreenShotFail">Echec de la capture d\'écran</string>
+    <string name="noticeScreenShotOK">Capture d\'écran sauvegardée sur la carte mémoire</string>
+    <string name="noticeFileSaveOK">Fichier sauvegardé sur la carte mémoire</string>
+    <string name="noticeFileSaveToAlbumsOK">Les images enregistrées, vous pouvez voir l\'album</string>
+    <string name="noticeFileSaveFail">Echec de la sauvegarde du fichier</string>
+    <string name="btnSaveToSDCard">Sauvegarder l\'image</string>
+    <string name="btnSaveingImage">Sauvegarde de l\'image en cours&#8230;</string>
+    <string name="btnClose">Eteindre</string>
+    <string name="btnOpen">Allumer</string>
+    <string name="strTouchToMoveCam">Appuyer sur le bouton « Naviguer » ou déplacer votre doigt sur l\'écran pour contrôler la rotation horizontale et verticale de l\'objectif</string>
+    <string name="lblTimeZoneSetting">Régler le fuseau horaire :</string>
+    <string name="lblTimeZoneList">Liste des fuseaux horaires</string>
+    <string name="lblTimeZoneW12">(GMT -12) Île Eniwetok</string>
+    <string name="lblTimeZoneW11">(GMT -11) Samoa</string>
+    <string name="lblTimeZoneW10">(GMT -10) Hawaï </string>
+    <string name="lblTimeZoneW9">(GMT -9) Alaska</string>
+    <string name="lblTimeZoneW8">(GMT -8) Heure du Pacifique</string>
+    <string name="lblTimeZoneW7">(GMT -7) Heure des Rocheuses</string>
+    <string name="lblTimeZoneW6">(GMT -6) Heure du Centre</string>
+    <string name="lblTimeZoneW5">(GMT -5) Heure de l\'Est</string>
+    <string name="lblTimeZoneW4">(GMT -4) Heure de l\'Atlantique</string>
+    <string name="lblTimeZoneW3">(GMT -3) Brasilia</string>
+    <string name="lblTimeZoneW2">(GMT -2) Mi-Atlantique</string>
+    <string name="lblTimeZoneW1">GMT -1) Açores</string>
+    <string name="lblTimeZoneZero">(GMT ＋0) Greenwich</string>
+    <string name="lblTimeE1">(GMT +1) Roman</string>
+    <string name="lblTimeE2">(GMT +2) Israël</string>
+    <string name="lblTimeE3">(GMT +3) Moscou</string>
+    <string name="lblTimeE4">(GMT +4) Baku</string>
+    <string name="lblTimeE5">(GMT +5) New Delhi</string>
+    <string name="lblTimeE6">(GMT +6) Dakar</string>
+    <string name="lblTimeE7">(GMT +7) Bangkok</string>
+    <string name="lblTimeE8">(GMT +8) Pékin</string>
+    <string name="lblTimeE9">(GMT +9) Tokyo</string>
+    <string name="lblTimeE10">(GMT +10) Sydney</string>
+    <string name="lblTimeE11">(GMT +11) Magadan</string>
+    <string name="lblTimeE12">(GMT +12) Wellington</string>
+    <string name="deviceChoose">Choisir l\'appareil :</string>
+    <string name="QRcodeAddSaveListing">Ajouter l\'appareil à la liste</string>
+    <string name="QRcodeAddFail">Echec de l\'ajout de l\'appareil</string>
+    <string name="QRcodeListingExist">Appareil déjà existé dans la liste</string>
+    <string name="QRcodeErrorDevice">Aucun code QR de l\'appareil</string>
+    <string name="deviceAddSucceed">Appareil ajouté</string>
+    <string name="deviceAddFail">Echec de l\'ajout de l\'appareil</string>
+    <string name="deviceAddEditTextInputType">L\'identifiant de l\'appareil ne peut ni être vide ni dépasser 9 caractères</string>
+    <string name="deviceAlterSucceed">Appareil modifié</string>
+    <string name="deviceAlterFail">Echec de la modification de l\'appareil</string>
+    <string name="myDevice">Mon appareil</string>
+    <string name="demoPoint">Point de démo</string>
+    <string name="QuickConfigWifiDevice">WIFI de configuration rapide</string>
+    <string name="deviceID">Identifiant de l\'appareil :</string>
+    <string name="inputDeviceID">Veuillez saisir l\'identifiant de l\'appareil</string>
+    <string name="deviceDelete">Supprimé</string>
+    <string name="nonsupport5GWIFI">Le WIFI de 5G n\'est pas supporté provisoirement</string>
+    <string name="gainWIFIList">Mise à jour de la liste de WIFI en cours, veuillez patienter</string>
+    <string name="planConfig">Préparation de la configuration</string>
+    <string name="sendSoundWave">Envoi de l\'onde sonore</string>
+    <string name="startConfig">Configuration de l\'onde sonore</string>
+    <string name="clickSendSoundWave">Cliquer pour envoyer l\'onde sonore</string>
+    <string name="inProcessOfPlay">Lecture en cours</string>
+    <string name="horizontalPlay">Vue horizontale pour obtenir une video plus claire</string>
+    <string name="FileFirst">C\'est le premier fichier</string>
+    <string name="FileFinally">C\'est le dernier fichier</string>
+    <string name="AllPlayBack">Tous les fichiers d\'enregistrement</string>
+    <string name="noDevice">Aucun appareil</string>
+    <string name="VideoPlayBack">Lecture de l\'enregistrement</string>
+    <string name="devcieConfig">Configurer l\'appareil</string>
+    <string name="morefunction">Plus de fonctions</string>
+    <string name="phoneAlarmSet">Notification d\'alarme</string>
+    <string name="softwarePassword">Mot de passe du logiciel</string>
+    <string name="softwareupdate">Mise à jour du logiciel</string>
+    <string name="exitSoftware">Quitter le logiciel</string>
+    <string name="deviceName">Nom de l\'appreil</string>
+    <string name="WifiName">Nom de WIFI</string>
+    <string name="WifiPassword">Mot de passe de WIFI</string>
+    <string name="voiceTalkback">Vous pouvez utiliser le talkback maintenant</string>
+    <string name="standardDefinition">Définition standard</string>
+    <string name="videoPlaying">Lecture de la vidéo</string>
+    <string name="takeACabdidPhotograph">Instantané</string>
+    <string name="inversion">Inversion</string>
+    <string name="talkback">Talkback</string>
+    <string name="monitor">Moniteur</string>
+    <string name="definition">Résolution</string>
+    <string name="back">Retour</string>
+    <string name="sohuDefinition">Haute definition (HD)</string>
+    <string name="quickConfig">Configuration rapide</string>
+    <string name="chooseConfigDevice">Veuillez choisir votre appareil</string>
+    <string name="inputDeviceConnectWIFI">Veuillez saisir le SSID et le mot de passe du routeur</string>
+    <string name="deviceDistanceWithWifi">Astuces : Veuillez configure dans 3 mètres à la portée de WIFI du routeur</string>
+    <string name="nextStep">Etape suivante</string>
+    <string name="APSeekFine">AP Configuration rapide</string>
+    <string name="nearDevcie">Veuillez poser votre telephone portable près de l\'appareil et cliquer sur le bouton « Envoyer l\'onde sonore »</string>
+    <string name="manualAddDevice">Ajouter l\'appareil manuellement</string>
+    <string name="QRCode">Scanner le code QR</string>
+    <string name="WifiQuikConfig">Configuration rapide d\'AP</string>
+    <string name="soundWaveConfig">Configuration de l\'onde sonore</string>
+    <string name="LANSeek">Chercher LAN</string>
+    <string name="alarmPicture">Image d\'alarme</string>
+    <string name="editingDevice">Modifier l\'appareil</string>
+    <string name="deleteDevice">Supprimer l\'appareil</string>
+    <string name="allDeleteDevice">Tout supprimer</string>
+    <string name="checkAll">Tout sélectionner / désélectionner</string>
+    <string name="alarmMessage">Message d\'alarme</string>
+    <string name="wifiList">Liste de WIFI</string>
+    <string name="demoState">Instruction de WIFI</string>
+    <string name="firstStep">Première étape</string>
+    <string name="firstStepState">Veuillez poser le haut-parleur de votre téléphone portable près du micro de l\'appareil</string>
+    <string name="stepTwo">Deuxième étape</string>
+    <string name="stepTwoState">Envoi de l\'onde sonore en cours, veuillez patienter un instant. Quand vous entendez l\'accomplissement de la configuration, cliquez sur « Etape suivante ».</string>
+    <string name="devicePrepare">Couplage de l\'appareil pour la configuration</string>
+    <string name="wifiListingFail">Echec de l\'obtention de la liste de WIFI</string>
+    <string name="deviceTurn">Cet appareil ne supporte ni la rotation horizontale ni la rotation verticale</string>
+    <string name="AllDeviceDelete">Supprimer plusieurs appareils</string>
+    <string name="deviceHintUpdate">Quand vous entendez le rafraîchissement de la configuration, cliquez sur « Etape suivante » ou « Retour à la dernière étape » pour envoyer l\'onde sonore.</string>
+    <string name="deviceSeekFail">Echec de la recherché de l\'appareil</string>
+    <string name="inProcessofSeekDevice">Configuration en cours, veuillez patienter</string>
+    <string name="deviceWifiOpenFail">Aucun accès aux paramètres de WIFI, veuillez allumer WIFI manuellement et réessayer</string>
+    <string name="SoundWavePointer">Veuillez réinitialiser l\'appareil en utilisant le PIN, cliquez sur « Etape suivante » quand vous entendez la configuration de l\'onde sonore.</string>
+    <string name="cancel">Annuler</string>
+    <string name="try_again">Réessayer</string>
+    <string name="goon">Continuer</string>
+    <string name="confirm">Confirmer</string>
+    <string name="lockpattern_recording_incorrect_too_short">Connectez-vous au moins aux 4 points, veuillez réessayer</string>
+    <string name="lockpattern_error">Modèle incorrect</string>
+    <string name="SoftwareUpdate">Vérifier la mise à jour</string>
+    <string name="SoftwareNewVersion">Nouvelle mise à jour disponible</string>
+    <string name="SoftwareAPNotUpdate">Mise à jour non supportée sous le mode AP</string>
+    <string name="NotNewVersion">Aucune nouvelle version pour la mise à jour</string>
+    <string name="SoftwareeVersionNew">Vous avez déjà la dernière version</string>
+    <string name="SoftwareversionUpdate">Mise à jour du logiciel</string>
+    <string name="NewVersionUpdateOnOrOff">Nouvelle mise à jour disponible, voulez-vous la mettre à jour ?</string>
+    <string name="PhotoManage">Gestionnaire d\'images</string>
+    <string name="deviceImageDelete">Supprimer l\'image</string>
+    <string name="foundSoftwarePassword">Créer le mot de passe</string>
+    <string name="deleteSoftwarePassword">Supprimer le mot de passe</string>
+    <string name="deleteSoftwarePasswordSucceed">Mot de passe supprimé</string>
+    <string name="OnPassword">Allumer le mot de passe</string>
+    <string name="OffPassword">Eteindre le mot de passe</string>
+    <string name="alterPassword">Modifier le mot de passe</string>
+    <string name="inputPasswordErrorMore">Vous avez saisi le mot de passe incorrect, veuillez réessayer plus tard</string>
+    <string name="inputPasswordError">Vous avez saisi le mot de passe incorrect, vous pouvez encore essayer</string>
+    <string name="passwordOrder">fois</string>
+    <string name="leastInputPoint">Connectez-vous au moins aux 4 points, veuillez vous reconnecter</string>
+    <string name="resetInputPassword">Réinitialiser le modèle</string>
+    <string name="affirmPassern">Confirmer le modèle</string>
+    <string name="setPasswordSucceed">Mot de passe réglé</string>
+    <string name="setPasswordLastDifferent">Modèle different, veuillez réessayer</string>
+    <string name="drawDelockingPattern">Dessiner le modèle de déverrouillage</string>
+    <string name="setPasswordPreventSee">Régler le modèle de déverrouillage, faites attentions au spectateur non autorisé</string>
+    <string name="deviceUpdate">Mise à jour du microprogramme, n\'éteignez pas l\'alimentation électrique</string>
+    <string name="signPassword">Commutateur du modèle</string>
+    <string name="passwrodOn">Modèle allumé</string>
+    <string name="passwrodOff">Modèle éteint</string>
+    <string name="passwrodDeleteSucceed">Modèle supprimé</string>
+    <string name="anotherName">Nom de la caméra :</string>
+    <string name="visitPassword">Mot de passe de visite :</string>
+    <string name="seekHotspot">Recherche du point d\'accès</string>
+    <string name="nearbyNotHotspot">Aucun point d\'accès à proximité</string>
+    <string name="gainHotspotInformation">Obtention de l\'information de l\'appareil en cours</string>
+    <string name="gainHotspotInformationSucceed">Information de l\'appareil obtenue, vous pouvez prévisualiser ou ajouter à la liste de l\'appareil</string>
+    <string name="addList">Ajouter à la liste</string>
+    <string name="realTimePreView">Prévisualisation en temps réel</string>
+    <string name="bufferPreView">Tampon</string>
+    <string name="connectDeviceHotspot">Connexion au point d\'accès de l\'appareil</string>
+    <string name="deviceHotspot">Point d\'accès de l\'appareil</string>
+    <string name="newPasswordAndOldPassword">Le nouveau mot de passe et l\'ancien mot de passe ne peuvent pas être les  mêmes</string>
+    <string name="strWanOnline">WAN en ligne</string>
+    <string name="strLanOnline">LAN en ligne</string>
+    <string name="strWanOffline">Hors ligne</string>
+    <string name="strOnlineChecking">Connexion&#8230;</string>
+    <string name="alarmReceiveSwitch">Information d\'alarme reçue</string>
+    <string name="soundSet">Notification d\'alarme</string>
+    <string name="shakeSet">Vibration d\'alarme</string>
+    <string name="deviceHaveAlarmMsg">Nouvelle information d\'alarme</string>
+    <string name="baiduDevice">Appareil</string>
+    <string name="deviceAlarmTime">Heure de l\'alarme de l\'appareil</string>
+    <string name="versionDetection">Vérifier nouvelle version</string>
+    <string name="deleteFail">Supprimer le fichier</string>
+    <string name="appNewVersion">Nouvelle version trouvée</string>
+    <string name="appUpdateOrNot">Vérifier la mise à jour</string>
+    <string name="appNoNoticeForThisVer">Ne pas m\'avertir</string>
+    <string name="strSmartLink">Configuration rapide de WIFI</string>
+    <string name="btnBackToConfig">Retour pour configure de nouveau</string>
+    <string name="preset">Location de préréglage</string>
+    <string name="presetTitle">Configurer les paramètres et la location de préréglage</string>
+    <string name="presetOK">Configuration de la location de préréglage réussie</string>
+    <string name="presetFail">Echec de la configuration de la location de préréglage</string>
+    <string name="btnPTZXSet">Régler le préréglage</string>
+    <string name="btnPTZXCall">Démarrer le préréglage</string>
+    <string name="relecanceLevelHigh">Haut</string>
+    <string name="relecanceLevelMedium">Moyen</string>
+    <string name="relecanceLevelLow">Bas</string>
+    <string name="relecanceTypeRKE">Système de contrôle d\'accès</string>
+    <string name="relecanceTypeSmoke">Fumée</string>
+    <string name="relecanceTypeMove">Mouvement</string>
+    <string name="relecanceDeviceGainFail">Echec de l\'obtention de l\'appareil, veuillez vérifier si votre appareil est activé.</string>
+    <string name="relecanceDeviceConfiguration">Configuration</string>
+    <string name="relecanceAlarmLevel">Veuillez choisir le niveau d\'alarme</string>
+    <string name="relecanceAlarmType">Veuillez choisir le type d\'alarme</string>
+    <string name="relecanceAlarmName">Nom de l\'alarme ne peut pas être vide</string>
+    <string name="relecanceName">Nom</string>
+    <string name="relecanceAddressCode">Code d\'adresse</string>
+    <string name="relecanceDeviceList">Liste des appareils d\'alarme</string>
+    <string name="relecanceDeviceAdd">Recherche de l\'appareil d\'alarme, veuillez activer votre appareil d\'alarme</string>
+    <string name="relecanceInputName">Veuillez saisir le nom de l\'appareil d\'alarme</string>
+    <string name="relecanceType">Type d\'alarme</string>
+    <string name="relecanceLevel">Niveau d\'alarme</string>
+    <string name="relecanceSet">Configurer la zone d\'alarme</string>
+    <string name="relecanceInputNameTooLong">Nom trop long, veuillez réessayer</string>
+    <string name="relecanceSeekDevice">Recherche du nouvel appareil</string>
+    <string name="relecanceAlterDevice">Modifier l\'appareil</string>
+    <string name="relecanceAddDevice">Ajouter un nouvel appareil</string>
+    <string name="relecanceGAS">Gaz</string>
+    <string name="relecanceOther">Autres</string>
+    <string name="relecanceFeeling">Détecteur de température</string>
+    <string name="relecanceDeviceSeekListFail">Echec de l\'obtention de l\'appareil</string>
+    <string name="relecancePreset">Lier la location de préréglage</string>
+    <string name="relecancePresetOff">Annuler la liaison</string>
+    <string name="relecancePresetNot">Aucune liaison</string>
+    <string name="relecancePresetNo">Préréglage de liaison</string>
+    <string name="relecanceAlarmOffOrOn">Commutateur d\'alarme</string>
+    <string name="photoShare">Partager</string>
+    <string name="snartLinkHint">Astuces</string>
+    <string name="snartLinkFailTitle">Echec de la configuration</string>
+    <string name="snartLinkStartHint">La configuration terminera dans 80 secondes, veuillez patienter</string>
+    <string name="snartLinkFailHint">Signal WIFI faible ou mot de passe incorrect</string>
+    <string name="clicktoloadimage">Cliquer pour charger l\'image</string>
+    <string name="xlistview_header_hint_normal">Tirer pour rafraîchir</string>
+    <string name="xlistview_header_hint_ready">Relâcher pour rafraîchir les données</string>
+    <string name="xlistview_header_hint_loading">Chargement en cours&#8230;</string>
+    <string name="xlistview_header_last_time">Dernière vue :</string>
+    <string name="xlistview_footer_hint_normal">Voir plus</string>
+    <string name="xlistview_footer_hint_ready">Relâcher pour charger plus</string>
+    <string name="areaSelection">Sélection de la zone</string>
+    <string name="areaSelections">Sélection de la zone</string>
+    <string name="area">Région actuelle :</string>
+    <string name="autoSelect">Sélection automatique</string>
+    <string name="china">Chine</string>
+    <string name="china2">Publicité</string>
+    <string name="zoneAS1">Japon, Corée du Sud, Taiwan, Hong Kong, Thaïlande, Vietnam</string>
+    <string name="zoneAS2">Malaisie, Singapour</string>
+    <string name="zoneAS3">Asie de l\'Ouest</string>
+    <string name="zoneAS4">Asie du Sud, Inde</string>
+    <string name="zoneNA1">Etats-Unis</string>
+    <string name="zoneSA1">Brésil</string>
+    <string name="zoneEU1">Angleterre</string>
+    <string name="zoneEU2">France, Allemagne</string>
+    <string name="zoneOA1">Australie, Nouvelle Zélande</string>
+    <string name="zoneAF1">Afrique du Sud</string>
+    <string name="zoneAF2">Egypte, Soudan</string>
+    <string name="AS1">Asie un</string>
+    <string name="AS2">Asie deux</string>
+    <string name="AS3">Asie trois</string>
+    <string name="AS4">Asie quatre</string>
+    <string name="NA1">Amérique du Nord</string>
+    <string name="SA1">Amérique du Sud</string>
+    <string name="EU1">Europe un</string>
+    <string name="EU2">Europe deux</string>
+    <string name="OA1">Océanie</string>
+    <string name="AF1">Afrique un</string>
+    <string name="AF2">Afrique deux</string>
+    <string name="areaSave">Sauvegardé</string>
+    <string name="SDCardFormat">Formater la carte SD</string>
+    <string name="SDCardNetWordFail">Echec de la connexion de l\'équipement au réseau, veuillez vérifier votre réseau et réessayer</string>
+    <string name="SDCardDeviceReturnFail">Echec du retour des résultats depuis l\'équipement</string>
+    <string name="SDCardSucceed">Equipement de la carte SD formaté. Le formatage rapide de l\'équipement ne peut pas être entendu avant l\'accomplissement. Ne pas déconnecter l\'équipement d\'alimentation électrique.</string>
+    <string name="SDCardFail">Echec du formatage de la carte SD</string>
+    <string name="SDCardALer">Si vous formatez la carte SD, tous les fichiers sur la carte SD seront effacés, voulez-vous la formater ?</string>
+    
+    <!-- 以下为 网络翻译 -->
+    <string name="str_menu">Menu</string>
+    <!-- 编辑设备说明 -->
+    <string name="str_note">Note:</string>
+    
+    <!-- helpfra 添加幫助選項 -->
+    <string name="str_fra_help">Aider</string>
+    
+    <!-- add by dqx 2016年2月1日 功能指导 -->
+	<string name="str_showcase_fra_devicelist1">Cliquez sur un point de présentation peut visualiser</string>
+	<string name="str_showcase_fra_devicelist2">Cliquez sur Ajouter un dispositif</string>    
+	<string name="str_showcase_fra_configdevice1">Cliquez sur le dispositif de sélection</string>   
+	 
+    <!-- add by dqx 2016年2月1日popup_window_more2 -->
+    <string name="str_popup_window_more1">Supprimer</string>
+    <string name="str_popup_window_more2">Édition</string>
+    <string name="str_popup_window_more3">Informations</string>
+    
+    <!-- add by dqx 2016年2月1日 dialog_add_device_layout -->
+    <string name="str_dialog_add_device_layout1">De nouveaux dispositifs de configuration de réseau</string>
+    <string name="str_dialog_add_device_layout2">(WIFI intelligent vite avec: pour le dispositif de configuration de réseau pour la première fois de démarrage et de remise à zéro)</string>
+    <string name="str_dialog_add_device_layout3">Ajouter de dispositifs en réseau</string>
+    <string name="str_dialog_add_device_layout4">(Ajouter manuellement le numéro d\'identification de dispositif)</string>
+    
+    <!-- add by dqx 2016年1月30日 -->
+    <string name="str_photo_activity">Vous n\'avez pas le choix de n\'importe quelle image</string>
+    
+    <!-- add by dqx 2016年1月25日  二维码文字语言适配 -->
+    <string name="str_qr_code">Le Code bidimensionnel / code à barres placé dans le cadre, peut être automatiquement de balayage</string>
+    <string name="str_qr_code1">Le Code bidimensionnel / code à barres placé à l\'intérieur du cadre</string>
+    <string name="str_qr_code2">On peut balayer automatiquement</string>
+    <string name="title_scan_device">Le balayage d\'un Code bidimensionnel</string>
+    
+    <!-- 设备网络配置语言适配  dqx 2016年1月25日-->
+    <string name="str_loading">loading&#8230;</string>
+    <string name="str_change_to_station">Passer à STATION Mode</string>
+    <string name="str_change_to_ap">Passer à AP Mode</string>
+    <string name="str_advanced_setup">Paramètres avancés</string>
+    <string name="str_save">Enregistrer</string>
+    <string name="str_IP">IPAdresse:</string>
+    <string name="str_subnet">Masque de sous - réseau:</string>
+    <string name="str_default_gateway">Passerelle par défaut:</string>
+    
+    <!-- DeviceNetworkSettingFragment dqx 2016年1月25日-->
+    <string name="str_mode_unknow">Le modèle actuel des équipements de réseau UNKNOW Mode</string>
+    <string name="str_mode_station">Le modèle actuel des équipements de réseau STATION Mode</string>
+    <string name="str_mode_ap">Le modèle actuel des équipements de réseau AP Mode</string>
+    <string name="str_title_edit">Modifier</string>
+     
+    <!-- NVAlarmMsgListViewActivity dqx  -->
+    <string name="str_none_msgs">Pas de nouveau message d\'alarme de l\'équipement actuel</string>
+    
+    <!-- 预设位 -->
+    <string name="str_Preset_Position">De bits prédéfini</string>
+    <string name="str_preset_position">Le dispositif sans fonction de bit prédéterminée</string>
+    
+    <!-- dqx 2016年4月8日  权限提醒 -->
+    <string name="str_permission_camera1">La caméra de permissions d\'anomalie，Cette fonction ne peut être utilisé</string>
+    <string name="str_permission_camera2">La caméra de permissions d\'anomalie，Vous avez besoin de[Ensemble-Application-demo-Permissions]L\'ouverture de la caméra de permissions</string>
+    <string name="str_permission_request">Une demande d\'autorisation</string>    
+    <string name="str_permission_phone1">Fermer le téléphone sur le programme de poussée d\'informations d\'alarme de la fonction normale de fonctionnement，Vous avez besoin de[Ensemble-Application-demo-Permissions]L\'ouverture de téléphone</string>
+    <string name="str_permission_neglect">Ignorer</string>
+    <string name="str_permission_setting">mot de passe</string>
+    <string name="str_permission_setting2">Pour définir</string>
+    <string name="str_permission_storage1">La fermeture de l\'espace de stockage de données de programme de droits peut conduire à une anomalie de lecture et de fonctions de stockage，Vous avez besoin de[Ensemble-Application-demo-Permissions]Autorisation d\'ouverture de l\'espace de stockage</string>
+    <string name="str_permission_storage2">Anomalie de permissions de l\'espace de stockage, incapable de stockage / de lecture de données，Vous avez besoin de[Ensemble-Application-demo-Permissions]Autorisation d\'ouverture de l\'espace de stockage</string>
+    <string name="str_permission_microphone1">Le microphone de permissions anormale, cette fonction ne peut être utilisé</string>
+    <string name="str_permission_microphone2">Le microphone de permissions anormale, cette fonction ne peut être utilisé, Vous avez besoin de[Ensemble-Application-demo-Permissions]L\'ouverture d\'un microphone</string>
+    <string name="str_permission_location">La fermeture de la permission d\'informations de position L\'appareil de recherche de programme/Point chaud Fonction，Vous avez besoin de[Ensemble-Application-demo-Permissions]Permission d\'ouverture des informations de position</string>
+    <string name="str_saving">à enregistrer la configuration&#8230;</string>
+    
+    <!-- 静态IP设置 -->
+    <string name="str_static_ip_config">Configuration IP statique</string>
+    <string name="str_ip">IP:</string>
+    <string name="str_subnet_mask">Masque de sous - réseau:</string>
+    <string name="str_gateway">Passerelle:</string>
+    <string name="str_main_dns">Principal DNS:</string>
+    <string name="str_sub_dns">Secondaire DNS:</string>
+    <string name="str_null_ip">IP L\'adresse ne peut pas être vide</string>
+    <string name="str_null_subnet">Masque de sous - réseau ne peut pas être vide</string>
+    <string name="str_null_gateway">La passerelle peut être vide</string>
+    <string name="str_null_main_dns">Principal DNS ne peut pas être vide</string>
+    <string name="str_error_ip">IP Adresse mauvais format</string>
+    <string name="str_error_subnet">Masque de sous - réseau mauvais format</string>
+    <string name="str_error_gateway">Passerelle mauvais format</string>
+    <string name="str_error_main_dns">Principal DNS mauvais format</string>
+    <string name="str_error_sub_dns">Secondaire DNS mauvais format</string>
+    <string name="str_auto_config">Configuration automatique</string>
+    <string name="str_manual_config">Configuration manuelle</string>
+    
+    <!-- 一键布撤防  -->
+    <string name="str_monitor_activate">Protection</string>
+    <string name="str_monitor_deactivate">Désarmer</string>
+    <string name="str_monitor_activate_success">Le déploiement réussi</string>
+    <string name="str_monitor_activate_fail">La défense a échoué</string>
+    <string name="str_monitor_deactivate_success">Et de retrait de succès</string>
+    <string name="str_monitor_deactivate_fail">Désarmer l\'échec</string>
+    <string name="str_monitor_activating">Sont déployées&#8230;</string>
+    <string name="str_monitor_deactivating">En train de désarmer&#8230;</string>
+    
+    <!-- add by dqx 2016年5月16日 -->
+    <string name="str_not_support">Dispositif de support de pas</string>
+    
+    <!-- add by dqx 2016年5月26日 -->
+    <string name="str_hotspot">S\'il te plaît, ouvre le commutateur de position GPS，L\'application d\'informations de dispositif à chaud</string>
+    
+    <!-- dqx 2016年6月8日 -->
+    <string name="str_alarm_time">Le temps：</string>
+    <string name="date_current2">Date</string>
+    <string name="time_current2">Le temps</string>
+    <string name="lblDate2">Date de sélection</string>
+    <string name="lblStartTime2">Heure de début</string>
+    <string name="lblEndTime2">Heure de fin</string>
+
+    <!-- dqx 2016年6月22日 -->
+    <string name="str_deleting">Supprimer&#8230;</string>
+    <string name="str_sharing">Partager&#8230;</string>
+
+     <!-- 谢河明 -->
+    <string name="str_recording">Vidéo</string>
+    <string name="str_cloud_terrace">Tête de trépied</string>
+    <string name="str_position">De bits prédéfini</string>
+    <string name="str_screenshoot">Capture d\'écran</string>
+    
+    <!-- add by xie 2016年6月13日 -->
+    <string name="str_quick_register">L\'enregistrement rapide</string>
+    <string name="str_register">Enregistrement</string>
+    <string name="str_mailbox_register">Le registre de courrier électronique</string>
+    <string name="hint_password">Confirmez le mot de passe</string>
+    <string name="verify_code">Le Code de vérification (six chiffres)</string>
+    <string name="str_verify_code">Le Code de vérification</string>
+    <string name="str_mobile_phone">Téléphone mobile</string>
+    <string name="str_username">De l\'utilisateur</string>
+    <string name="str_quick_register_phone">Le téléphone de registre rapide</string>
+    
+    <!-- xie 2016-6-20 -->
+    <string name="Please_enter_password">Veuillez saisir le mot de passe</string>
+    <string name="Please_enter_username">Veuillez entrer un nom d\'utilisateur</string>
+    <string name="Confirm">Confirmation</string>
+    <string name="Cancel">Annuler</string>
+    <string name="Username_or_phoneNo">Téléphone mobile | de boîte aux lettres</string>
+    <string name="Forget_password">J\'ai oublié le mot de passe</string>
+    <string name="The_phone_number_can_not_be_empty">Numéro de téléphone ne peut pas être vide</string>
+    <string name="Please_enter_the_correct_phone_number">Saisissez le numéro de téléphone</string>
+    <string name="The_username_can_not_be_empty">Nom d\'utilisateur ne doit pas être vide</string>
+    <string name="The_password_can_not_be_empty">Le mot de passe ne doit pas être vide</string>
+    <string name="The_verify_code_can_not_be_empty">Saisissez la bonne forme un code de vérification</string>
+    <string name="Verify_code_is_incorrect">Le Code de vérification est incorrecte</string>
+    <string name="Resend">Renvoyer</string>
+    <string name="Second">Secondes</string>
+    <string name="The_next_step">Une étape suivante</string>
+    <string name="Receive_SMS_verify_code">Recevoir un message de code de vérification</string>
+    <string name="str_enter">Veuillez entrer</string>
+    <string name="str_agree">D\'accord.</string>
+    <string name="str_register_protocol">L\'Accord de l\'utilisateur enregistré demo</string>
+	<string name="str_register_remark">Commentaires: le mot de passe par des chiffres, lettres, avec des caractères de combinaison dans laquelle le mélange constitué de symboles spéciaux ou</string>
+	<string name="str_resetpwd_remark">Commentaires: le mot de passe par des chiffres, lettres, avec des caractères de combinaison dans laquelle le mélange constitué de symboles spéciaux ou</string>
+   
+	<string name="str_finish">Finir</string>
+    <string name="set_new_password">Le mot de passe de nouveau</string>
+    
+    <!-- 2016-6-21 xie -->
+    <string name="entry_experience"><u>La connexion locale</u></string>
+    <string name="title_alert">Le message de notification</string>
+    <!-- 2016-6-27 xie -->
+    <string name="verify_codes_is_overtime">Le Code de vérification de temporisation</string>
+    <string name="confirm_correct_password">Saisissez le mot de passe de 6 à 14 pour la forme correcte</string>
+    <string name="confirm_correct_username">S\'il vous plaît, saisissez le nom d\'utilisateur de la forme correcte</string>
+    <string name="password_do_not_match">Deux fois l\'entrée d\'un mot de passe non uniforme</string>
+    <string name="complete_password">Veuillez compléter l\'entrée de mot de passe</string>
+    <string name="user_isnot_exist">L\'utilisateur n\'existe pas</string>
+    <string name="email_register"><u>Par courrier enregistré</u></string>
+    <string name="title_email_register">Le registre de courrier électronique</string>
+    <string name="phone_register"><u>Par l\'intermédiaire d\'un téléphone mobile d\'enregistrement</u></string>
+    <string name="set_password">Le mot de passe</string>
+    <string name="str_fast_register"><u>L\'enregistrement rapide</u></string>
+    <string name="set_login_password">S\'il vous plaît, password Password</string>
+    <string name="enter_mailbox_address">Saisissez l\'adresse de courrier électronique</string>
+    <string name="enter_correct_mailbox">S\'il vous plaît, l\'adresse de courrier électronique d\'entrée de forme correcte</string>
+    <!-- 2016-6-29 xie-->
+    <string name="update_list_tip">C\'est le dernier de la liste de dispositifs</string>
+    <string name="personal_information">Informations personnelles</string>
+    <string name="fail_to_login">Pas de nom d\'utilisateur ou le mot de passe est correcte</string>
+    <string name="login_password">Mot de passe</string>
+    <string name="Security_Settings">Paramètres de sécurité</string>
+    <string name="Account_info">Des informations de compte</string>
+    <!-- 2016-6-30 xie-->
+    <string name="Mailbox">Boîte aux lettres</string>
+    <string name="change_way">Menu Modifier - mode</string>
+    <string name="Phone_verification">Par vérification de téléphone ou l\'adresse de courrier électronique</string>
+    <string name="Old_password">Par l\'intermédiaire de l\'ancien mot de passe</string>
+    <string name="Personal_info_newpwd">Nouveau mot de passe</string>
+    <string name="Set_Pwd_tip">Le mot de passe par des chiffres, lettres, avec des caractères de combinaison dans laquelle le mélange constitué de symboles spéciaux ou</string>
+    <string name="str_old_pwd">Ancien mot de passe</string>
+    <!-- 2016-7-1 xie-->
+    <string name="Edit_Device_Fail">Appareil d\'édition d\'échec</string>
+    <string name="Network_Error">Impossible de se connecter au serveur. Veuillez vérifier la connectivité de réseau ou réessayer plus tard</string>
+    <string name="Phone_exist">Le numéro de téléphone existe déjà</string>
+    <string name="Register_success">Le succès enregistré deux secondes après le saut à l\'interface de connexion</string>
+    <string name="Mail_Is_Exist">Boîte aux lettres existe déjà</string>
+     
+    <!-- 2016-7-14 -->
+    <string name="Device_Is_Existence">Dispositif existe déjà</string>
+    <string name="Update_password">Modifier le mot de passe avec succès</string>
+    <string name="second_verify_code">Veuillez saisir un code de vérification</string>
+    
+    <!-- 2016-7-16 -->
+    <string name="Unknown_mistake">Erreur inconnue, veuillez ré - opération</string>
+    
+    <!-- 2016-7-19 -->
+    <string name="Stop_recording">Veux - tu arrêter de vidéo？</string>
+    
+    <!-- 2016-7-22 -->
+    <string name="UpdatePwd_by_mailbox">Par courrier électronique modifié</string>
+    <string name="UpdatePwd_by_phone">Par l\'intermédiaire d\'un téléphone mobile est modifiée</string>
+    <string name="Mailbox_can_not_be_empty">Boîte aux lettres ne peut pas être vide</string>
+    <string name="Please_enter_the_correct_mailbox_address">Saisissez l\'adresse de courrier électronique correcte</string>
+    <string name="Mailbox_reset_successfully">Le succès de l\'envoi du courrier, veuillez confirmer la modification de boîte aux lettres</string>
+    <string name="User_not_activitated">S\'il vous plaît activer le compte boîte aux lettres</string>
+    
+    <!-- 2016-7-29 xhm -->
+    <string name="Do_not_need_code">Vérification de la boîte aux lettres, sans le Code de vérification</string>
+    <string name="Delete_device">Si la suppression de l\'équipement?</string>
+    
+    <!-- dqx 2016年6月27日 -->
+    <string name="str_cloud_storage">Services de stockage de nuage</string>
+    <string name="str_device_not_bind_service">Non consolidé de l\'équipement de service, s\'il vous plaît, de la liaison de service</string>
+    <string name="str_service_products">Produit de service</string>
+    <string name="str_purchase_service">L\'achat de services</string>
+    <string name="str_renew_service">Frais de services</string>
+    <string name="str_ask_for_delete">Supprimer？</string>
+    <string name="str_delete_ok">Supprimé avec succès</string>
+    <string name="str_delete_fail">Suppression de l\'échec</string>
+
+    <!-- dqx 2016年7月8日 -->
+    <string name="str_login_to_use_function">Veuillez signer avant de l\'utilisation de cette fonction</string>
+    <string name="str_not_bind_service">La liaison de service non</string>
+    <string name="str_has_bind_service">La liaison de service a</string>
+    <string name="str_service_out_of_date">Le Service a été dépassée</string>
+    
+    <!-- dqx 2016年7月9日 -->
+    <string name="str_network_error">Une anomalie de réseau, Veuillez réessayer plus tard.</string>
+    <string name="str_get_device_list_network_error">Une anomalie de réseau, obtenir une liste de l\'équipement utilisateur a échoué. Veuillez réessayer plus tard</string>
+    <string name="str_lastest_list">La liste de dispositifs est déjà plus tard</string>
+    <string name="str_401">Les informations d\'identité dépassée，S\'il vous plaît vous connecter à nouveau</string>
+    <string name="str_get_device_list_error">Obtenir une liste de défaillance de l\'équipement utilisateur</string>
+    <string name="str_get_device_server_list_error">Obtenir une liste de services de cloud computing compte des informations a échoué</string>
+    <string name="str_get_device_server_info_error">Obtenez des renseignements contraignants de service cloud n\'a dispositif</string>
+    <string name="str_get_device_service_list_size_0">Vous n\'êtes pas acheter actuellement un service de cloud, s\'il vous plaît acheter le service</string>
+    <string name="str_device_has_bind_service">L\'appareil est associé des services: </string>
+    <string name="str_device_service_outofdate">Reliure équipement de service a expiré</string>
+    
+    <string name="str_cloud_record_search">Recherche Cloud Storage Vidéo: </string>
+    <string name="str_bind">reliure</string>
+    <string name="str_unbind">dégroupage</string>
+    <string name="str_valid_code_get_fail">Get a échoué un code de vérification, s\'il vous plaît réessayer plus tard</string>
+    <string name="str_valid_code_error">Codes d\'erreur</string>
+    <string name="str_valid_code_out_of_date">Le code de vérification a expiré </string>
+    <string name="str_get_service_list_fail">Obtenir une liste de services échoue, vérifiez votre réseau ou réessayer plus tard </string>
+    <string name="str_service_had_binded_other_device">Les forfaits de services de cloud liés à d\'autres appareils</string>
+    <string name="str_device_had_binded_service">Le dispositif est associé packages de services cloud</string>
+    <string name="str_device_bind_service_fail">Reliure service Matériel nuage échoue</string>
+    <string name="str_device_bind_service_fail_not_support">L\'appareil ne prend pas en charge les services de cloud, est vouée à l\'échec</string>
+    <string name="str_valid_code_6_digits">S\'il vous plaît entrez le code de vérification à six chiffres</string>
+    <string name="str_valid_code_input">S\'il vous plaît entrez le code de vérification reçu：</string>
+    
+    <string name="str_search_cloud_record_files">Vidéo Recherche</string>
+    <string name="str_unbind_service_list">Liste non consolidé des services</string>
+    <string name="str_unbind_service_fail">Un ensemble de services de l\'échec de dissociation de nuage</string>
+    <string name="str_unbind_service_ok">Solution de nuage de services de paquets de succès lié</string>
+    <string name="str_bind_service">La liaison de service</string>
+    <string name="str_unbind_service">La dissociation des services</string>
+    <string name="str_connect_to_device_ing">La connexion de l\'équipement&#8230;</string>
+    <string name="str_connect_to_device_ok">Des dispositifs de connexion réussie&#8230;</string>
+    <string name="str_connect_to_device_fail">Des dispositifs de connexion a échoué&#8230;</string>
+    <string name="str_connect_to_server_wait">En attente de connexion de serveur&#8230;</string>
+    <string name="str_connect_to_server_ing">La connexion au serveur&#8230;</string>
+    <string name="str_connect_to_server_ok">Le serveur de connexion réussie&#8230;</string>
+    <string name="str_connect_to_server_fail">Serveur de connexion a échoué&#8230;</string>
+
+    <string name="str_recording_2">Dans la vidéo&#8230;</string>
+    <string name="str_record_ok">L\'enregistrement est terminé, le fichier vidéo a été enregistré dans le répertoire de la carte SD:/SDcard/demo/</string>
+    
+    <string name="str_login_state_false">Non signé</string>
+    <string name="str_server_error">Le serveur est occupé, s\'il vous plaît réessayer plus tard</string>
+    <string name="str_get_device_list_server_error">Le serveur est occupé, obtenir une liste de l\'équipement utilisateur a échoué, s\'il vous plaît réessayer plus tard</string>
+    
+    <string name="str_bind_service_fail">Reliure des forfaits de services de cloud échouent</string>
+    <string name="str_bind_service_ok">Reliure cloud forfaits de services succès</string>
+    
+    <string name="str_connect_device_fail">Les appareils connectés a échoué, s\'il vous plaît réessayer plus tard</string>
+    <string name="str_search_record_file_fail">Fichiers Recherche vidéo a échoué, s\'il vous plaît réessayer plus tard</string>
+    <string name="str_login_exit">Quittez le compte courant</string>
+    <string name="str_app_exit">Quittez l\'application</string>
+    
+    <string name="str_is_last_file">Est actuellement le dernier fichier vidéo</string>
+    <string name="str_is_first_file">Est actuellement le premier fichier vidéo</string>
+    
+    
+    <string name="str_unbind_type">S\'il vous plaît sélectionner le mode de dégroupage：</string>
+    <string name="str_mail_input">Les utilisateurs enregistrés de la boîte aux lettres de l\'utilisateur courant，Cliquez sur le bouton "OK", le message sera envoyé à votre boîte aux lettres，S\'il vous plaît, aller à la boîte aux lettres de déterminer la levée de la liaison</string>
+    <string name="str_user_not_set_email">L\'utilisateur ne définit pas la boîte aux lettres</string>
+    <string name="str_send_unbind_email_ok">Le succès de l\'envoi du courrier, venez à la boîte aux lettres de confirmation</string>
+    <string name="str_bind_device_error">Ajouter un dispositif de défaillance</string>
+    <string name="str_user_no_bind_device">L\'utilisateur actuel sans ajouter de matériel</string>
+    
+    <string name="str_other_user_binding_device">Dispositif de service liant, s\'il vous plaît réessayer plus tard</string>
+    
+    <!-- 2016-7-26 xmh-->
+    <string name="Reset_pwd_fail">Changer le mot de passe a échoué, s\'il vous plaît réessayer plus tard</string>
+    <string name="Send_code_fail">Échec de l\'envoi d\'un code de vérification, s\'il vous plaît réessayer plus tard</string>
+    <string name="Login_failed">Échec de la connexion, s\'il vous plaît réessayer plus tard</string>
+    <string name="Registration_fail">Inscrivez-vous échoué, s\'il vous plaît réessayer plus tard</string>
+    <string name="Mailbox_register_successfully">Le succès de l\'envoi du courrier, S\'il vous plaît activer la boîte aux lettres de l\'utilisateur</string>
+    <string name="Old_pwd_error">Ancien mot de passe est incorrect</string>
+    <string name="pwd_hint">S\'il vous plaît entrer le mot de passe à huit chiffres pour le WIFI</string>
+    
+    <string name="str_do_not_support_mic">Le dispositif actuel ne prend pas en charge Mic</string>
+    
+    <string name="str_select">sélectionner</string>
+    <string name="str_unbind_confirm">Forfaits de services cloud de stockage en nuage Dégroupage peuvent causer des fichiers vidéo sont effacés, si le dégroupage？</string>
+    
+    <string name="str_ap_bind401">Les informations d\'identité est incorrecte, ajouter le périphérique à l\'appareil de la liste des utilisateurs échoue, rechercher des périphériques dans la page de liste des périphériques</string>
+    <string name="str_ap_bind500">Le serveur est occupé, ajouter le périphérique à l\'appareil de la liste des utilisateurs échoue, rechercher des périphériques dans la page de liste des périphériques</string>
+    <string name="str_ap_bind_network_error">Erreur réseau, ajouter le dispositif au dispositif de la liste des utilisateurs échoue, rechercher les périphériques dans la page de liste des périphériques</string>
+    <string name="str_ap_bind_other_error">Ajouter à la liste des dispositifs d\'équipement utilisateur échoue, rechercher des périphériques dans la page de liste des périphériques</string>
+    
+    <string name="str_device_hotspot_search_device">Mode Connexion，Connectez votre téléphone hotspots de l\'appareil système de recherche ne sera pas ajouté à la liste des abonnés de dispositifs，Votre appareil est en mode de station ou en utilisant le mode "Ouvrir une session localement"</string>
+    <string name="str_get_service_info_fail">Obtenir des informations de service n\'a pas de liaison de l\'appareil</string>
+    <string name="str_unbinding_service">Le dégroupage</string>
+    <string name="str_wait_to_play">Chargement vidéo</string>
+    
+    
+    <string name="str_rec_file_exist">Fichier vidéo existe déjà</string>
+    <string name="str_rec_file_download_finish">Télécharger complète</string>
+    <string name="str_rec_file_download">Le fichier vidéo est en cours de téléchargement</string>
+    <string name="str_storage_not_enough">Le manque d\'espace</string>
+    <string name="str_rec_file_download_connecting">raccordement</string>
+    <string name="str_rec_file_redownload">Re-téléchargement</string>
+    
+    <string name="str_rec_file_cancle1">Que ce soit pour annuler le fichier en cours de téléchargement？</string>
+    <string name="str_rec_file_cancle2">Télécharger la vidéo, annuler le téléchargement ou attendre le téléchargement est terminé</string>
+    <string name="str_rec_file_cancle3">Télécharger tâche trop, s\'il vous plaît attendre</string>
+    <string name="str_rec_file_cancle4">Annuler le téléchargement</string>
+    <string name="str_rec_file_downloading">téléchargement</string>
+    
+    <string name="str_guide_for_operation">Mode d\'emploi</string>
+    
+    <string name="str_rec_file_stop_download">Téléchargements à</string>
+    
+    <string name="str_about_app">Sur</string>
+    <string name="str_fisheye_mode">modalités</string>
+    <string name="str_exit">Sortir de</string>
+    
+    <string name="str_device_pwd">Dispositif mot de passe</string>
+    <string name="str_device_camera">mode d\'installation</string>
+    
+    <string name="str_had_send_verify_code">Le Code de vérification a été envoyé à </string>
+    
+    
+    <!-- 2016.11.01 修改设备密码 -->
+    <string name="str_modify_device_info">Est disposé un nouveau mot de passe</string>
+    <string name="str_security_notice">Mot de passe La sécurité</string>
+    <string name="str_notice_pwd_need_set">Le dispositif actuel n\'est pas défini un mot de passe pour votre vie privée, s\'il vous plaît définir un mot de passe</string>
+    
+    <string name="str_adding">Ajouter&#8230;</string>
+    
+    <!-- 2017-1-6 报警图片列表 -->
+    <string name="str_load_alarm_image_fail">Chargement de l\'image a échoué. Veuillez réessayer plus tard&#8230;</string>
+    
+    <string name="str_alarm_all_day">Alarme toute la journée</string>
+    <string name="str_custom_time">Heure personnalisée</string>
+    <string name="str_add_start_time">Veuillez ajouter l\'heure de début</string>
+    <string name="str_add_end_time">Veuillez ajouter l\'heure de fin</string>
+    <string name="str_add_custom_time">Ajouter du temps</string>
+    <string name="str_next_step">Suivant</string>
+    <string name="str_alarm_area">Zone d\'alarme</string>
+    <string name="str_non_alarm_area">Zone non-alarme</string>
+    <string name="str_select_area_below">S\'il vous plaît sélectionner la région ci-dessous l\'alarme</string>
+    <string name="str_fail_to_set_time">L\'heure de début et de fin ne peut pas être le même</string>
+    <string name="str_device_does_not_support_custom">L\'appareil ne prend pas en charge les paramètres personnalisés, la mise à niveau des équipements</string>
+    <string name="str_time_quantity">Période atteint la limite</string>
+    <string name="str_please_login_to_use">S\'il vous plaît vous connecter pour utiliser cette fonctionnalité</string>
+    <string name="str_bind_to_use">Le dispositif ne lie pas les services de cloud</string> 
+    
+    <string name="str_cloud_storage_record">Stockage vidéo Nuage</string>
+    <string name="str_tf_card_record">Enregistrement sur carte TF</string>
+    <string name="str_turn_on_alarm_switch">Interrupteur désarmement ouvert</string>
+    
+    <string name="str_clear">éliminer</string>
+    
+    <string name="str_device_does_not_support_alarm_area">L\'appareil ne prend pas en charge cette fonctionnalité</string>
+    <string name="str_wechat_payment_order">WeChat ordre de paiement</string>
+    <string name="str_wechat_confirm_payment">Confirmer le paiement</string>
+    <string name="str_wechat_payment_tip">Désolé, il n\'y a pas d\'interface de saut réussi, s\'il vous plaît cliquer sur le paiement manuellement</string>
+    <string name="str_wechatpay_successful">paiement réussie</string>
+    <string name="str_wechatpay_failed">Le défaut de paiement</string>
+    <string name="str_wechatpay_canceled">Paiement annulé</string>
+    <string name="str_please_intall_wechat">S\'il vous plaît installer WeChat</string>
+    
+    <string name="str_smartlink_tip">Si la configuration réussit saut échoue</string>
+    
+    <string name="str_skip_ad">skip</string>
+    
+    <!-- 2017-4-20 xhm -->
+    <string name="str_skip_update_soft">Rappeler plus tard</string>
+    <string name="str_update_soft">Mise à jour immédiate</string>
+    <string name="str_update_sofeware_title">La pointe de mise à jour de logiciel</string>
+    <string name="str_software_version">Version:</string>
+    <string name="str_message_dialog_btn">Je sais</string>
+    
+    <!-- 2017-5-19 -->
+    <string name="str_upload_to_oss">Ajouter à OSS</string>
+    <string name="str_upload_successfully">Ajouter réussie</string>
+    <string name="str_upload_failed">L\'envoi a échoué</string>
+    <!-- <string name="str_is_error_alarm_pic"><u>Ceci est une fausse alarme si la figure?</u>.</string> -->
+    <string name="str_channels">Canal:</string>
+
+    <!-- 2017-5-25 登录实时预览录音权限申请 -->
+    <string name="str_permission_microphone_login">Afin de garantir la Votre Regarder sentir, Vous avez besoin de[Ensemble-Application-demo-Permissions]L\'ouverture d\'un microphone</string>
+    
+    <!-- 2017-5-31 -->
+   	<string name="str_light_controler">La lampe</string>
+    <string name="str_open_light">Ouvrir</string>
+   	<string name="str_close_light">Fermer</string>
+   	<string name="str_auto_light">Automatique</string>
+   	
+   	   	 <!-- 2017-6-12 -->
+   	 <string name="str_use_hw_fail">Le décodage matériel échoue, décodage souple réutilisation</string>
+   	
+   	 <!-- 2017-6-20 -->
+   	 <string name="str_HDecodeing">Le décodage matériel</string>
+   	 <string name="str_SDecodeing">décodage souple</string>
+   	 
+   	 <string name="str_Password_Incorrect">Définition du mot de passe incorrect</string>
+   	 
+   	 <!-- 2017-7-3 -->
+   	<string name="str_alipay_intall_tip">Non détecté client Alipay, S\'il vous plaît installer retry</string>
+   	<string name="str_intall_now">installer maintenant</string>
+   	<string name="str_set_password_tip">Les bits 6&#8211;30 de caractères du mot de passe, comprenant au moins deux ou plusieurs lettres, chiffres, symboles, ou la demi&#8211;largeur, sensible à la casse</string>
+   	<string name="str_Password_is_too_simple">La force du mot de passe est trop faible, il y a le risque de perte de la vie privée, s\'il vous plaît entrer de nouveau votre mot de passe à partir d\'une variété de caractères complexes</string>
+   	<string name="str_Password_is_too_short">Le mot de passe est incorrect, s\'il vous plaît re-set</string>
+   	
+   	<string name="str_is_error_alarm_pic">Ceci est une fausse alarme si la figure?</string>
+   	<string name="str_is_false_positive">il est</string>
+   	<string name="str_is_not_false_positive">aucun</string>
+   	
+   	<!-- 2017-7-5 -->
+   	<string name="str_false_positive_head">faux:</string>
+   	<string name="str_false_positive_body1">1.Imaginez quelqu\'un, mais pas boîte rouge humain sélectionné</string>
+    <string name="str_false_positive_body2">2.Pas d\'image, mais toujours cadre rouge objets sélectionnés</string>
+    
+    <!-- 2017-7-7 -->
+    <string name="str_alarm_area_tip">Zone d\'alarme ne peut être vide, s\'il vous plaît réinitialiser</string>
+    
+    <string name="str_Tips">Conseils</string>
+    <string name="str_feedback">Vos commentaires peuvent améliorer la précision</string>
+    
+    <!-- 2017-7-10 -->
+    <string name="password_is_empty">Le mot de passe ne peut pas être vide, s\'il vous plaît réinscrire</string>
+    <!-- Password rule -->
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+""|&#060;&#062;&#064;&#038;</string>
+    
+    <!-- 2017-7-21 -->
+    <string name="str_auto_bind_service_tip">Félicitations, vous avez acheté un paquet de nuages\nPackage Cloud lié à un dispositif peut être utilisé\nElle est liée？</string>
+    <string name="str_ignore_auto_bind">lier temporairement</string>
+    <string name="str_auto_bind_service_now">Reliure immédiatement</string>
+    
+    <!-- 2017-7-27 -->
+    <string name="str_ai_snap">Images d\'alarme AI</string>
+</resources>

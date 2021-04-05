@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout android:id="@+id/llGifView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        
+    </LinearLayout>
+    -->
+    <!-- 搜索动态图 -->
+
+    <LinearLayout
+        android:id="@+id/layoutIndecationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!--
+     <com.stay.pull.lib.GifView android:id="@+id/gifView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:layout_gravity="center" />
+        -->
+
+        <com.macrovideo.animate.RadarView
+            android:id="@+id/rvQuickConfigSearchingRadar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSettingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/server_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!-- top tool view -->
+
+        <LinearLayout
+            android:id="@+id/llTitleQuickConfig"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/background_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/btnQuickConfigBack"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:contentDescription="@string/desc"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back_btn"
+                android:text="@null" />
+
+            <TextView
+                android:id="@+id/tvConfig"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/quickConfig"
+                android:textColor="@color/font_color_white"
+                android:textSize="18sp" />
+
+            <!-- <Button
+                android:id="@+id/btnConfigWifi"
+                android:layout_width="60dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/netword_save_btn"
+                android:gravity="center"
+                android:text="@string/btn_save"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" /> -->
+                <View 
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    />
+        </LinearLayout>
+
+        <!-- top device select view -->
+
+        <LinearLayout
+            android:id="@+id/layoutDeviceSelectView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/server_bg"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ListView
+                android:id="@+id/lvDeviceSelectView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:visibility="visible" />
+            <!-- 刷新按钮 -->
+
+            <Button
+                android:id="@+id/btnWifiDeviceRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/new_btn_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_refresh"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" />
+            
+            <Button
+                android:id="@+id/btnToSmartLink"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/new_btn_bg_selector"
+                android:gravity="center"
+                android:text="@string/str_wifi_smart_link"
+                android:textColor="@color/font_color_white"
+                android:visibility="gone"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- top wifi select view -->
+
+        <LinearLayout
+            android:id="@+id/layoutWifiSelectView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/server_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/llWifi"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_gray" />
+
+                <EditText
+                    android:id="@+id/etWifiConfigName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/WifiName"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/background_gray" />
+                
+                <RelativeLayout
+                    android:id="@+id/ryWifiPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/etWifiConfigPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/WifiPassword"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/wifiCheckBoxPwdHiden"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignRight="@+id/etWifiConfigPassword"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:paddingRight="10dip"
+                        android:src="@drawable/netword_show_password" />
+                </RelativeLayout>
+
+                
+                <EditText
+                    android:id="@+id/tvWifiConfigPasswordFree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:hint=""
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_gray" />
+                
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvHint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/chooseConfigDevice"
+                android:textColor="@color/font_color_gray"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:visibility="visible" />
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray"
+                />
+            <ListView
+                android:id="@+id/lvWifiListView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scrollbarStyle="outsideInset"
+                android:visibility="visible" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray"
+                />
+            <Button
+                android:id="@+id/btnConfigWifi"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/new_btn_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_save"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarQuickConfig"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llSeekDevice"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="45dip"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/device" />
+
+        <TextView
+            android:id="@+id/tvSeekDevice"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:gravity="center|left"
+            android:textColor="@color/font_color_red"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0085FF" >
+
+        <ImageView
+            android:id="@+id/iv_register_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/play_back_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 账户输入框 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_account" />
+
+        <EditText
+            android:id="@+id/et_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_et_bg_selector"
+            android:hint="用户名/手机号码"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            android:textColorHint="#8b8b8b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_clean_register_account"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/delete_cancel_1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+           >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_account" />
+
+            <EditText
+                android:id="@+id/et_register_verify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/new_et_bg_selector"
+                android:hint="验证码(六位数字)"
+                android:paddingLeft="45dp"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:textColorHint="#8b8b8b"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        
+        <Button 
+            android:id="@+id/btn_get_verify_code"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="验证码"
+            android:textSize="16sp"
+            android:textColor="#0085FF"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/new_verify_bg_selector"
+            />
+    </LinearLayout>
+
+    <!-- 登录按钮 -->
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    
+    <com.macrovideo.pull.lib.CheckSwitchButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/checkswitch_mask"
+        android:layout_margin="5dp"
+        />
+
+</LinearLayout>

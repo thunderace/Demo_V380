@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="#33000000"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    
+    <Button 
+        android:id="@+id/iv_wall_expand_normal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode1_bg_click"
+        android:contentDescription="@null"
+        />
+    <!--  
+    <Button 
+        android:id="@+id/iv_expand_mode1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode2_transparent"
+        android:contentDescription="@null"
+        />
+    <Button 
+        android:id="@+id/iv_expand_mode2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode3_transparent"
+        android:contentDescription="@null"
+        />
+    <Button 
+        android:id="@+id/iv_expand_mode3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode4_transparent"
+        android:contentDescription="@null"
+        />
+    <Button 
+        android:id="@+id/iv_expand_mode4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode5_transparent"
+        android:contentDescription="@null"
+        />
+    -->
+     <Button 
+        android:id="@+id/iv_wall_expand_mode5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode6_transparent"
+        android:contentDescription="@null"
+        />
+     
+     <Button 
+        android:id="@+id/iv_wall_expand_inversion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mode_inversion_transparent"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        />
+  
+</LinearLayout>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0085FF"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_information_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back" />
+        
+        <ImageView
+            android:id="@+id/iv_information_back2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/personal_information"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 账户信息 -->
+
+    <RelativeLayout
+        android:id="@+id/info_accout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/Line1_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <TextView
+            android:id="@+id/info_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="@string/Account_info"
+            android:textColor="#8b8b8b"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/Line2_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 输入手机号码 -->
+
+    <RelativeLayout
+        android:id="@+id/info_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_info_phoneOrmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_phone" />
+
+        <TextView
+            android:id="@+id/txt_account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/str_mobile_phone"
+            android:textColor="@color/font_color_black" />
+
+        <TextView
+            android:id="@+id/txt_info_phoneOrmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            android:text="@string/str_mobile_phone"
+            android:textColor="@color/font_color_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 安全设置 -->
+
+    <RelativeLayout
+        android:id="@+id/info_security_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <TextView
+            android:id="@+id/txt_security"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="@string/Security_Settings"
+            android:textColor="#8b8b8b"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 登录密码修改 -->
+
+    <RelativeLayout
+        android:id="@+id/info_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_phone"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="@string/str_mobile_phone"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_info_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/login_password"
+            android:paddingLeft="15dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            android:textColorHint="@color/font_color_black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_set_newPwd"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:text="@string/str_title_edit"
+            android:textSize="14sp"
+            android:textColor="@color/font_color_sky_blue" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 验证码输入框 -->
+
+    <RelativeLayout
+        android:id="@+id/info_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_info_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_input"
+            android:hint="@string/verify_code"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColorHint="#8b8b8b"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_info_verify_code"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/verification_code_send"
+            android:text="@string/str_verify_code"
+            android:textColor="#0085FF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/info_phone_display_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/str_had_send_verify_code" />
+
+        <TextView
+            android:id="@+id/txt_info_phone_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="123" />
+    </LinearLayout>
+    <!-- 通过手机验证吗确认修改密码 -->
+
+    <RelativeLayout
+        android:id="@+id/newPwd_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/txt_info_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/str_verify_code"
+            android:paddingLeft="20dp"
+            android:paddingRight="65dp"
+            android:singleLine="true"
+            android:textColorHint="@color/font_color_gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b9b9b9" />
+
+        <Button
+            android:id="@+id/btn_info_verifycode"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/verification_code_send"
+            android:text="@string/str_verify_code"
+            android:textColor="#0085FF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- 输入新密码 -->
+
+    <RelativeLayout
+        android:id="@+id/info_newPwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/txt_info_newPwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="@string/Personal_info_newpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="65dp"
+            android:singleLine="true"
+            android:textColorHint="@color/font_color_gray"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/check_passwordType"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/new_cb_visibility_selector"
+            android:button="@null" />
+        <!--
+            <CheckBox
+            android:id="@+id/check_passwordType"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/new_cb_visibility_selector"
+            android:layout_toRightOf="@+id/txt_info_newPwd"
+            android:button="@null" />
+
+        
+
+        <EditText
+            android:id="@+id/txt_info_newPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            
+            android:hint="@string/Personal_info_newpwd"
+            android:textColorHint="@color/font_color_black"
+            android:textSize="14sp" />
+        -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 通过旧密码修改密码 -->
+
+
+    <!-- 输入旧密码 -->
+
+    <RelativeLayout
+        android:id="@+id/info_oldPwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/txt_info_oldPwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:hint="@string/str_old_pwd"
+            android:paddingLeft="20dp"
+            android:paddingRight="65dp"
+            android:singleLine="true"
+            android:textColorHint="@color/font_color_gray"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/check_oldpasswordType"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/new_cb_visibility_selector"
+            android:button="@null" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <!-- 输入新密码 -->
+
+    <RelativeLayout
+        android:id="@+id/info_newPwd2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/txt_info_newPwd2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="@string/Personal_info_newpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="65dp"
+            android:singleLine="true"
+            android:textColorHint="@color/font_color_gray"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/check_passwordType2"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/new_cb_visibility_selector"
+            android:button="@null" />
+        <!--
+            <CheckBox
+            android:id="@+id/check_passwordType"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/new_cb_visibility_selector"
+            android:layout_toRightOf="@+id/txt_info_newPwd"
+            android:button="@null" />
+
+        
+
+        <EditText
+            android:id="@+id/txt_info_newPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="45dp"
+            android:singleLine="true"
+            
+            android:hint="@string/Personal_info_newpwd"
+            android:textColorHint="@color/font_color_black"
+            android:textSize="14sp" />
+        -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b9b9b9" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_info_newPwd_finish1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="@string/Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+    
+     <Button
+        android:id="@+id/btn_info_newPwd_finish2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/new_btn_bg_selector"
+        android:text="@string/Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

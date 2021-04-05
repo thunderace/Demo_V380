@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/server_bg"
+        android:orientation="vertical"
+        android:splitMotionEvents="false" >
+
+        <!-- @android:id/tabcontent 调用系统id -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0"
+            android:orientation="horizontal" />
+
+        <LinearLayout 
+            android:id="@+id/ll_guide_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical"
+            >
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B3B2B2"
+                />
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54dip"
+            android:baselineAligned="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:contentDescription="@string/add_device"
+                    android:src="@drawable/my_device_2" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:gravity="center"
+                    android:text="@string/myDevice"
+                    android:textColor="#0182E2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlayBack"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivPlayBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:contentDescription="@string/add_device"
+                    android:src="@drawable/server_video_1" />
+
+                <TextView
+                    android:id="@+id/tv_playback"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:gravity="center"
+                    android:text="@string/VideoPlayBack"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDeviceSet"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                    
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/ivDeviceSet"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dip"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/add_device"
+                            android:padding="3dp"
+                            android:src="@drawable/server_set_1" />
+
+                        <View 
+                            android:id="@+id/view_center_line"
+                            android:layout_width="1dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"/>
+                        
+                        <ImageView
+                            android:id="@+id/home_iv_device_update_dot"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignLeft="@id/view_center_line"
+                            android:layout_alignStart="@id/view_center_line"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:padding="2dp"
+                            android:src="@drawable/device_update_dot" 
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_device_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dip"
+                        android:gravity="center"
+                        android:text="@string/devcieConfig"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHelp"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:contentDescription="@string/add_device"
+                    android:src="@drawable/server_system_1" />
+
+                <TextView
+                    android:id="@+id/tv_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:gravity="center"
+                    android:text="@string/morefunction"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</TabHost>

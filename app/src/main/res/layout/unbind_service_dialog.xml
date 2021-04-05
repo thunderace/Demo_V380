@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_title"
+        android:gravity="center"
+        android:text="@string/str_unbind_service"
+        android:textColor="@color/font_color_white"
+        android:textSize="18sp" />
+    
+     <!-- <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_unbind_type"
+        android:textSize="16sp"
+        android:textColor="@color/font_color_blue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        /> -->
+    
+    <!-- <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_input"
+        >
+        <LinearLayout 
+            android:id="@+id/ll_type_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/iv_type_phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/radio_select_check"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/str_mobile_phone"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/font_color_gray"
+                android:gravity="left|center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/ll_type_mail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/iv_type_mail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/radio_select_uncheck"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Mailbox"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/font_color_gray"
+                android:gravity="left|center_vertical"
+                />
+        </LinearLayout>
+    </LinearLayout> -->
+    
+    <LinearLayout 
+        android:id="@+id/ll_unbind_from_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+       <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_valid_code_input"
+        android:textSize="16sp"
+        android:textColor="@color/font_color_blue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_connect_to_device"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_input"
+        android:paddingRight="10dp" >
+
+        <EditText
+            android:id="@+id/et_valid_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="@string/verify_code"
+            android:textColor="@color/font_color_gray"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_get_valid_code"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/str_verify_code"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_blue"
+            android:background="@drawable/new_verify_bg_selector"
+            />
+    </LinearLayout> 
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_unbind_from_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+       <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_mail_input"
+        android:textSize="16sp"
+        android:textColor="@color/font_color_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_input"
+        android:paddingRight="10dp" >
+
+        <EditText
+            android:id="@+id/et_mail_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="@string/Mailbox"
+            android:textColor="@color/font_color_gray"
+            android:background="@null"
+            android:textSize="16sp" />
+
+    </LinearLayout> --> 
+    </LinearLayout>
+
+
+
+</LinearLayout>

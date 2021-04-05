@@ -1,0 +1,158 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<style name="AppTheme" parent="android:Theme.Light" />-->
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">  
+  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:backgroundDimEnabled">true</item>     
+        <item name="android:windowCloseOnTouchOutside">false</item>   
+    </style>
+    
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="main_tab_bottom2">
+        <item name="android:textSize">8.0dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+
+        <!-- <item name="android:windowFullscreen">true</item>  注释 by dqx 2016年5月24日 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="popupwindow_relevance_anim">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_anim</item>
+    </style>
+
+    <style name="dialog_add_device_anim">
+        <item name="android:windowEnterAnimation">@anim/shake2</item>
+    </style>
+
+    <style name="popupwindow_more_anim">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_more_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_more_anim_out</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="text_16_666667">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="loginingDlg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置窗口浮动 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置背景颜色 透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+    </style>
+    
+    <!-- dqx 2016年6月4日  设备列表弹出动画 -->
+    <style name="popupwindow_device_list">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_device_list_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_device_list_anim_out</item>
+    </style>
+    
+    <!-- 鱼眼镜头 播放效果选择动画 -->
+    <style name="popupwindow_expand_mode">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_expand_mode_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_expand_mode_out</item>
+    </style>
+    
+    <style name="messageDlg" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->  
+        <item name="android:windowFrame">@null</item>  
+        <!-- 是否浮现在activity之上 -->  
+        <item name="android:windowIsFloating">true</item>  
+        <!-- 半透明 -->  
+        <item name="android:windowIsTranslucent">true</item>  
+        <!-- 无标题 -->  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:background">@android:color/transparent</item>  
+        <!-- 背景透明 -->  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <!-- 模糊 -->  
+        <item name="android:backgroundDimEnabled">true</item>  
+        <!-- 遮罩层 -->  
+        <item name="android:backgroundDimAmount">0.5</item>  
+    </style>
+
+</resources>

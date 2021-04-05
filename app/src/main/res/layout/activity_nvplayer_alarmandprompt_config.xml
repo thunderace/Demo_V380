@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/server_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llTitleAlarmAndDprompt"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/btnAlarmAndPromptBack"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/desc"
+            android:gravity="center"
+            android:src="@drawable/back_btn"
+            android:text="@null"
+            android:textColor="@color/text_color_style"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RecordConfigEditViewTitleText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/config_alarm_prompt"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <!-- <Button
+            android:id="@+id/btnAlarmAndPromptSave"
+            android:layout_width="60dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/netword_save_btn"
+            android:gravity="center"
+            android:text="@string/btn_save"
+            android:textColor="@color/font_color_white"
+            android:textSize="14sp" /> -->
+            <View 
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTitleAlarmAndDprompt"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:id="@+id/layoutAlarmAndPromptPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layoutAlarmSettingPanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/lblAlarmMianSwitch"
+                        android:textColor="@color/font_color_black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="30"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="20dip"
+                        android:orientation="horizontal" >
+
+                        <com.macrovideo.pull.lib.CheckSwitchButton
+                            android:id="@+id/btAlarmMianSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="75"
+                        android:gravity="center|top"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <RadioButton
+                            android:id="@+id/rBtnAlarmMianSwitchEnable"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="30dip"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_style"
+                            android:checked="true"
+                            android:text="@string/record_record_open"
+                            android:textColor="@color/font_color_black" />
+
+                        <RadioButton
+                            android:id="@+id/rBtnAlarmMianSwitchDisable"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_style"
+                            android:checked="false"
+                            android:text="@string/record_record_close"
+                            android:textColor="@color/font_color_black" />
+                    </RadioGroup>
+                    
+                    
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/alarmline1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:background="@color/background_gray" />
+                
+                <LinearLayout 
+                         android:id="@+id/llSetAlarmTime"
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical"
+                         android:visibility="visible" >
+                    
+                    <RelativeLayout                       
+                         android:layout_height="match_parent"
+                         android:layout_width="match_parent"
+                         >
+                        
+                      <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dip"
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnAllTime"
+                                android:layout_width="160dp"
+                                android:layout_height="35dp"
+                                android:gravity="left|center_vertical"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button_style"
+                                android:drawablePadding="5dp"
+                                android:checked="true"
+                                android:text="@string/str_alarm_all_day"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnSetTime"
+                                android:layout_width="160dp"
+                                android:layout_height="35dp"
+                                android:gravity="left|center_vertical"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button_style"
+                                android:drawablePadding="5dp"
+                                android:checked="false"
+                                android:text="@string/str_custom_time"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="14sp" />
+                            
+                        </RadioGroup>
+                        
+                        <ImageView 
+                            android:id="@+id/imgTimeArrow"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="45dp"
+                            android:background="@drawable/arrow_selector2"/>
+                        
+                  
+                     </RelativeLayout>
+                    
+                     <ListView 
+                         android:id="@+id/list_customTime"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"    
+                         android:divider="@null"                  
+                         android:visibility="gone" >
+                     </ListView>
+                    
+                     <RelativeLayout 
+                         android:id="@+id/rlSetTime1"
+                         android:layout_marginTop="10dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone" >
+                        
+                        <CheckBox 
+                             android:id="@+id/CBTime1"
+                             android:layout_width="200dp"
+                             android:layout_height="wrap_content"
+                             android:text="08:30:00 - 11:00:00"
+                             android:layout_marginLeft="20dp"
+                             android:textColor="@color/font_color_black"
+                             android:textSize="14sp"
+                             />
+                        
+                        <ImageView 
+                            android:id="@+id/imgDeleteTime1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon"/>
+                     </RelativeLayout>
+                     
+                     <RelativeLayout 
+                         android:id="@+id/rlSetTime2"
+                         android:layout_marginTop="10dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone" >
+                        
+                        <CheckBox 
+                             android:id="@+id/CBTime2"
+                             android:layout_width="200dp"
+                             android:layout_height="wrap_content"
+                             android:text="08:30:00 - 11:00:00"
+                             android:layout_marginLeft="20dp"
+                             android:textColor="@color/font_color_black"
+                             android:textSize="14sp"
+                             />
+                        
+                        <ImageView 
+                            android:id="@+id/imgDeleteTime2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon"/>
+                     </RelativeLayout>
+                     
+                     <RelativeLayout 
+                         android:id="@+id/rlSetTime3"
+                         android:layout_marginTop="10dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone" >
+                        
+                        <CheckBox 
+                             android:id="@+id/CBTime3"
+                             android:layout_width="200dp"
+                             android:layout_height="wrap_content"
+                             android:text="08:30:00 - 11:00:00"
+                             android:layout_marginLeft="20dp"
+                             android:textColor="@color/font_color_black"
+                             android:textSize="14sp"
+                             />
+                        
+                        <ImageView 
+                            android:id="@+id/imgDeleteTime3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon"/>
+                     </RelativeLayout>
+                     
+                     <RelativeLayout 
+                         android:id="@+id/rl_addTime"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="25dp"
+                         android:visibility="visible" >
+                         
+                     <TextView
+                         android:id="@+id/txt_addTimeSign" 
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginBottom="5dp"
+                         android:text="+"
+                         android:textColor="@color/font_color_black" />
+                     
+                     <TextView 
+                         android:id="@+id/txt_addTime"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:layout_marginLeft="10dp"
+                         android:text="@string/str_add_custom_time"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginBottom="5dp"
+                         android:layout_toRightOf="@+id/txt_addTimeSign"
+                         android:textSize="14sp"
+                         android:visibility="visible"
+                         android:textColor="@color/font_color_black" />
+                     </RelativeLayout>
+                    
+                     
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/background_gray" />
+                
+                <LinearLayout
+                    android:id="@+id/layoutAlarmArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:visibility="visible"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/str_alarm_area"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="30"
+                        android:background="@null"
+                        android:gravity="right|center"
+                        android:layout_marginRight="20dip" 
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                          
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_selector"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="20dp"
+                    	android:layout_marginRight="20dp"
+                    	android:visibility="gone"
+                        android:background="@color/background_gray" />
+                
+                <LinearLayout
+                    android:id="@+id/layoutMotionDetect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/lblMotionDetect"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="30"
+                        android:background="@null"
+                        android:gravity="right|center"
+                        android:layout_marginRight="20dip" 
+                        android:orientation="horizontal" >
+
+                        <com.macrovideo.pull.lib.CheckSwitchButton
+                            android:id="@+id/btMotionDetect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/background_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAudioPromptPanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="100" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/lblAudioMainSwitch"
+                            android:textColor="#222222"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="70"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:orientation="horizontal" >
+
+                            <com.macrovideo.pull.lib.CheckSwitchButton
+                                android:id="@+id/btAudioMianSwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dip" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="0dip"
+                            android:layout_height="50dip"
+                            android:layout_weight="70"
+                            android:gravity="center|top"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnAudioMianSwitchEnable"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="30dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="true"
+                                android:text="@string/record_record_open"
+                                android:textColor="@color/font_color_black" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnAudioMianSwitchDisable"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/record_record_close"
+                                android:textColor="@color/font_color_black" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Alarmaremline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="20dp"
+                    	android:layout_marginRight="20dp"
+                    	android:orientation="vertical"
+                        android:background="@color/background_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutAdudioAlarmPrompt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/lblAlarmAudio"
+                            android:textColor="@color/font_color_black"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="30"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal" >
+
+                            <com.macrovideo.pull.lib.CheckSwitchButton
+                                android:id="@+id/btAlarmAudio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="0dip"
+                            android:layout_height="50dip"
+                            android:layout_weight="70"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnAlarmAudioEnable"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="30dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="true"
+                                android:text="@string/record_record_open"
+                                android:textColor="@color/font_color_black" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnAlarmAudioDisable"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/record_record_close"
+                                android:textColor="@color/font_color_black" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="20dp"
+                    	android:layout_marginRight="20dp"
+                        android:background="@color/background_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutAdudioAlarmLanguage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/lblLanguange"
+                            android:textColor="@color/font_color_black"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnLanguageCN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|center_vertical"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button_style"
+                                android:drawablePadding="5dp"
+                                android:checked="true"
+                                android:text="@string/lblLanguageCN"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnLanguageEN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|center_vertical"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button_style"
+                                android:drawablePadding="5dp"
+                                android:checked="false"
+                                android:text="@string/lblLanguageEN"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/background_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loayoutIOModePanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="50dip"
+                            android:layout_weight="35"
+                            android:gravity="right|center"
+                            android:text="@string/lblIOMode"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="50dip"
+                            android:layout_weight="65" />
+
+                        <ImageView
+                            android:id="@+id/ivIOMode"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="15dip"
+                            android:contentDescription="@null"
+                            android:src="@drawable/play_back_video_back_2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llIOMode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dip"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <RadioGroup
+                            android:id="@+id/rIORadioGroup1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnIOModeExternal"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="30dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/lblIOModeExternal"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnIOModeManualOff"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/lblIOModeManualOff"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rIORadioGroup2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rBtnIOModeInternal"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="30dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/lblIOModeInternal"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rBtnIOModeManualOn"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_button_style"
+                                android:checked="false"
+                                android:text="@string/lblIOModeManualOn"
+                                android:textColor="@color/font_color_black"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+			
+            <Button
+                android:id="@+id/btnAlarmAndPromptSave"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/new_btn_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_save"
+                android:textColor="@color/font_color_white"
+                android:visibility="visible"
+                android:textSize="16sp" />
+            
+                <Button
+                android:id="@+id/btnRelecance"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_margin="20dp"
+                android:background="@drawable/new_btn_bg_selector2"
+                android:gravity="center"
+                android:text="@string/relecanceSet"
+                android:textColor="@color/font_color_blue"
+                android:visibility="gone"
+                android:textSize="16sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBarAlarmAndPromptConfig"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" /> -->
+
+</RelativeLayout>

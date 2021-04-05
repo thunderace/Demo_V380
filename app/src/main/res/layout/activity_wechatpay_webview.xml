@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HSShopWebViewActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Android"
+      android:visibility="gone"
+      />
+ 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        />
+
+    <WebView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       />
+
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/pb_cloud_storage"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        
+        <TextView 
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:text="@string/str_exit"
+            android:textSize="16sp"
+            android:textColor="@color/font_color_white"
+            android:background="#77000000"
+            android:clickable="true"
+            />
+    </FrameLayout>
+    
+</LinearLayout>

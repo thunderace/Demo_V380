@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="120dip"
+        android:layout_height="65dip"
+        android:background="@null">
+
+        <FrameLayout
+            android:layout_width="100dip"
+            android:layout_height="60dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preset_image_bg">
+
+            <com.macrovideo.demo.RoundCornerImageView
+                android:id="@+id/ivPresetImage"
+                android:layout_width="100dip"
+                android:layout_height="60dip"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvPresetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/btnPTZXCall"
+                android:textColor="@color/font_color_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPTZXID"
+                android:layout_width="40dip"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/font_color_green"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dip"
+        android:layout_height="65dip"
+        android:background="@null">
+
+        <FrameLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preset_image_bg_circular">
+
+            <com.macrovideo.demo.RoundCornerImageView
+                android:id="@+id/btnPTZXSet"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/btnPTZXSet"
+                android:textColor="@color/font_color_black"
+                android:textSize="14sp" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="15.0dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_16_666667"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:background="@color/font_color_sky_blue2"
+            android:gravity="center"
+            android:text="@string/title_alert"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/content_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/font_color_white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/message_register"
+                style="@style/text_16_666666"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/font_color_black"
+                android:gravity="center"
+                android:text="验证码不能为空"
+                android:textColor="@color/font_color_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/dialog_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/text_15_ffffff_sdw"
+                android:layout_width="114.0dip"
+                android:layout_height="35.0dip"
+                android:background="@drawable/btn_cancel_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/negativeButton"
+                style="@style/text_15_666666_sdw"
+                android:layout_width="114.0dip"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/btn_cancel_selector"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

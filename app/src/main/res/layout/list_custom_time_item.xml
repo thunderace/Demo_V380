@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/server_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlSetTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <CheckBox
+            android:id="@+id/CBTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_color_black"
+            android:background="@drawable/radio_button_style"
+            android:button="@null"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/txt_startAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/CBTime"
+            android:textColor="@color/font_color_black"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="08:30:00" />
+        
+        <TextView 
+            android:id="@+id/txt_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_startAlarmTime"
+            android:layout_marginLeft="5dp"
+            android:text="-"
+            android:textColor="@color/font_color_black" />
+        
+        <TextView 
+            android:id="@+id/txt_endAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_timeline"
+            android:textColor="@color/font_color_black"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:text="11:00:00" />
+
+        <Button
+            android:id="@+id/imgDeleteTime"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:background="@drawable/btn_delete_alarm_time"
+            android:focusable="false"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

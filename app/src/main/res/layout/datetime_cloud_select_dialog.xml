@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tvDateTimeTitleCloud"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/date_current"
+            android:textColor="@color/font_color_white" />
+
+        <TextView
+            android:id="@+id/tvDateTimeCurrentCloud"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:text="--.--.--"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layoutDatePickerCloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <DatePicker
+                android:id="@+id/mSelectDatePickerCloud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:calendarViewShown="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTimePickerCloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TimePicker
+                android:id="@+id/mSelectTimePickerCloud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:calendarViewShown="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <Button
+            android:id="@+id/btnDatetimeSelectCancelCloud"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/selector_help_item"
+            android:gravity="center"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/font_color_black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDatetimeSelectOKCloud"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/selector_help_item"
+            android:gravity="center"
+            android:text="@string/btn_ok"
+            android:textColor="@color/font_color_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

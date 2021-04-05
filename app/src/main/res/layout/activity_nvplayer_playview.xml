@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#edeffb">
+
+        <!-- center area -->
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null">
+
+            <LinearLayout
+                android:id="@+id/playContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <!-- top play container -->
+
+                <LinearLayout
+                    android:id="@+id/playContainerTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/font_color_white"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/playContainerParent1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/playContainer1background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00FF00"
+                            android:orientation="horizontal"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/playContainer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dip"
+                            android:background="#000000"
+                            android:orientation="horizontal" />
+
+                        <TextureView
+                            android:id="@+id/texture_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/close_but_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:contentDescription="@null"
+                            android:gravity="center"
+                            android:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/spinner_0"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <!-- 添加文字提示用户可以语音对讲了 -->
+
+                        <LinearLayout
+                            android:id="@+id/llPlayTalkback"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dip"
+                                android:gravity="center"
+                                android:text="@string/voiceTalkback"
+                                android:textColor="#f41313"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnRepeat1"
+                            android:layout_width="128dip"
+                            android:layout_height="128dip"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:visibility="gone" />
+
+                        <!-- add by xie 2016 6 6 -->
+
+                        <LinearLayout
+                            android:id="@+id/rlvideoSetting"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/font_color_black"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/btn_Listen"
+                                    android:layout_width="25dip"
+                                    android:layout_height="25dip"
+                                    android:background="@drawable/play_back_sound_btn_new" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <Button
+                                    android:id="@+id/btn_lastDevice"
+                                    android:layout_width="25dip"
+                                    android:layout_height="20dip"
+                                    android:background="@drawable/play_back_lastdevice_btn" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <Button
+                                    android:id="@+id/btn_selectArea"
+                                    android:layout_width="25dip"
+                                    android:layout_height="20dip"
+                                    android:background="@drawable/play_back_nextdevice_btn" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <Button
+                                    android:id="@+id/btn_nextDevice"
+                                    android:layout_width="25dip"
+                                    android:layout_height="20dip"
+                                    android:background="@drawable/play_back_nextdevice_btn" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_definition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dip"
+                                    android:gravity="center"
+                                    android:text="@string/standardDefinition"
+                                    android:textColor="@color/font_color_white" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="right|center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llLandscapeDefinition"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_gravity="right"
+                    android:background="@color/font_color_black"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnSmooth"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@string/standardDefinition"
+                        android:textColor="@color/font_color_white"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/font_color_white" />
+
+                    <Button
+                        android:id="@+id/btnHD"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@string/btnHD"
+                        android:textColor="@color/font_color_white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- top -->
+        <LinearLayout
+            android:id="@+id/linearLayoutTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_title"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <ImageView
+                    android:id="@+id/buttonBackToLogin"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:contentDescription="@null"
+                    android:src="@drawable/back_btn" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/tvPlayDeviceID"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="12"
+                    android:gravity="center"
+                    android:text="@string/videoPlaying"
+                    android:textColor="@color/font_color_white"
+                    android:textSize="18sp" />
+
+                <!-- <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                     >
+
+                    <com.macrovideo.pull.lib.CheckSwitchDecodeCsButton
+                        android:id="@+id/cb_hw_decode_play"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        />
+                </LinearLayout> -->
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivPresetLandscape"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ptzx_face_selector"
+            android:visibility="gone" />
+
+
+        <!-- bootom -->
+        <LinearLayout
+            android:id="@+id/linearLayoutBottomBarPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/RlVertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dip"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_alarmArea_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_area_red"
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:background="@color/font_color_red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/iv_area_red"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="@string/str_alarm_area"
+                            android:textColor="@color/font_color_gray"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_area_gray"
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:background="#33000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/iv_area_gray"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="@string/str_non_alarm_area"
+                            android:textColor="@color/font_color_gray"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alarmArea_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnCanelAllArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_btn_bg_selector"
+                        android:contentDescription="@null"
+                        android:text="@string/str_clear"
+                        android:textColor="@color/font_color_white"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnSelectAllArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_btn_bg_selector"
+                        android:contentDescription="@null"
+                        android:text="@string/btnSelectALL"
+                        android:textColor="@color/font_color_white"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_saveSelectArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/new_btn_bg_selector"
+                    android:text="@string/confirm"
+                    android:textColor="@color/font_color_white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPresetConfig"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btnPresetConfig"
+                            android:layout_width="55dp"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_preset_position_btn"
+                            android:clickable="false"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/buttonScreenShotTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/str_position"
+                            android:textColor="@drawable/play_setting_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_Cloud_Terrace"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_Cloud_Terrace"
+                            android:layout_width="55dp"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_cloud_terrace_btn"
+                            android:clickable="false"
+                            android:contentDescription="@null"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:id="@+id/button_Cloud_TerraceTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/str_cloud_terrace"
+                            android:textColor="@drawable/play_setting_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_ScreenShot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buttonScreenShot"
+                            android:layout_width="55dp"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_back_candid_btn"
+                            android:clickable="false"
+                            android:contentDescription="@null"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:id="@+id/buttonSoundTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/str_screenshoot"
+                            android:textColor="@drawable/play_setting_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/layoutReverse"
+                        android:layout_width="55dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/buttonReverse"
+                            android:layout_width="55dp"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_inversion_btn"
+                            android:clickable="false" />
+
+                        <TextView
+                            android:id="@+id/buttonReverseTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/inversion"
+                            android:textColor="@drawable/play_setting_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMicBtn"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buttonMic"
+                            android:layout_width="55dip"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_talkback_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/buttonMicTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:gravity="center"
+                            android:text="@string/talkback"
+                            android:textColor="@drawable/play_back_candid_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutRecord"
+                        android:layout_width="55dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/buttonImageGQL"
+                            android:layout_width="55dip"
+                            android:layout_height="55dip"
+                            android:background="@drawable/play_recording_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/buttonImageGQLTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:gravity="center"
+                            android:text="@string/str_recording"
+                            android:textColor="@color/font_color_black2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/llLandscape"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="5dip"
+                android:background="@color/font_color_black"
+                android:baselineAligned="false"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="250dip"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <Button
+                            android:layout_width="40dip"
+                            android:layout_height="35dip"
+                            android:background="@drawable/back_btn"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/buttonBackToLogin2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/paly_back_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/back"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/buttonScreenShot2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/cross_screen_paly_back_candid_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/takeACabdidPhotograph"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMicBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buttonMic2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/cross_screen_play_talkback_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/talkback"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/buttonReverse2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/cross_screen_play_inversion_btn" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/inversion"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buttonSound2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:contentDescription="@null"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/monitor"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/buttonImageGQL2"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/play_definition_btn"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="20dip"
+                            android:gravity="center"
+                            android:text="@string/definition"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

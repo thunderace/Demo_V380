@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/server_bg"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <ImageView
+            android:id="@+id/ivAlarmImageMsgback"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="45dp"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="@string/alarmPicture"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlarmImageID"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:textColor="@color/font_color_black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivAlarmImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/desc"
+             />
+
+        <ProgressBar
+            android:id="@+id/progressBarGetingLarge"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView 
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_picture"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+        android:id="@+id/tvAlarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="@string/strAlarmTime"
+        android:textColor="@color/font_color_black"
+        android:textSize="14sp" />
+        
+    </LinearLayout>
+
+    <!-- <TextView
+        android:id="@+id/tvAlarmTime"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@color/background_gray"
+        android:gravity="center"
+        android:text="@string/strAlarmTime"
+        android:textColor="@color/font_color_black"
+        android:textSize="15sp" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnSaveAlarmImage"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_btn_bg_selector"
+            android:gravity="center"
+            android:text="@string/btnSaveToSDCard"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnCancelImageView"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_btn_bg_selector2"
+            android:gravity="center"
+            android:text="@string/btnClose"
+            android:textColor="@color/font_color_blue"
+            android:textSize="16sp" />
+
+        
+    </LinearLayout>
+
+</LinearLayout>

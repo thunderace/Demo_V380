@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/btn_play_closescreen" android:state_pressed="false"/>
+      
+    <item android:drawable="@drawable/btn_play_closescreen_click" android:state_pressed="true"/>  
+ </selector>  

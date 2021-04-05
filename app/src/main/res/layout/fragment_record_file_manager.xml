@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ListView 
+        android:id="@+id/id_record_file_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        
+    </ListView>
+
+    
+    <LinearLayout
+        android:id="@+id/llDeletePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/background_title"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        
+
+        <LinearLayout
+            android:id="@+id/ll_select_all"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivDeleteChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="27dip"
+                android:layout_marginTop="3dip"
+                android:contentDescription="@string/desc"
+                android:gravity="center"
+                android:src="@drawable/delete_choose_btn"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="@string/btnSelectALL"
+                android:textColor="@color/font_color_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delete_record_file"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivDeletePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="27dip"
+                android:layout_marginTop="3dip"
+                android:contentDescription="@string/desc"
+                android:gravity="center"
+                android:src="@drawable/delete_photo_btn"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="@string/btn_delete"
+                android:textColor="@color/font_color_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

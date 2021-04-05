@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:id="@+id/rlSoftwarePassword" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dip" 
+        android:layout_alignParentTop="true"
+        android:background="#F9F9F9"
+         >
+
+      
+        <ImageView android:id="@+id/btnCreatePasswordBack" 
+            android:contentDescription="@string/desc" 
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_2"
+            android:gravity="center"
+			
+            />
+        
+        
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/foundSoftwarePassword"
+            android:textSize="18sp"
+            android:textColor="@color/font_color_blue" />
+
+        <TextView
+            android:id="@+id/text_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:textColor="@color/gesture_cancel_text_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gesture_tip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.macrovideo.lock.LockIndicator
+            android:id="@+id/lock_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" />
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/drawDelockingPattern"
+            android:textColor="@color/font_color_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesture_tip_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/gesture_container"
+        android:layout_marginTop="20dip"
+        android:textColor="#816E6A" />
+
+</RelativeLayout>

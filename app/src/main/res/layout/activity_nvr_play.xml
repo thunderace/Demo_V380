@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nvr_ll_port_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/nvr_ll_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/background_title"
+            android:weightSum="20"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/nvr_btn_back"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/back_btn" />
+
+            <View                 android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2" />
+            
+            <TextView
+                android:id="@+id/nvr_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="12"
+                android:text="playing channel 1"
+                android:textColor="@color/font_color_white"
+                android:textSize="18sp" />
+            
+            <View 
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1" />
+            
+             <com.macrovideo.pull.lib.CheckSwitchDecodeCsButton
+                android:id="@+id/cb_hw_decode_nvr"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nvr_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/nvr_rl_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/nvr_ll_play_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+                <TextureView
+                    android:id="@+id/texture_view_nvr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+                
+
+                <ProgressBar
+                    android:id="@+id/nvr_progressbar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/nvr_rl_bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/nvr_rl_video_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/font_color_black" >
+
+                    <Button
+                        android:id="@+id/nvr_btn_audio"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/play_back_sound_btn_new" />
+
+                    <TextView
+                        android:id="@+id/nvr_tv_definition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="@string/standardDefinition"
+                        android:textColor="@color/font_color_white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nvr_rl_channel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_color_white" >
+
+                    <Button
+                        android:id="@+id/nvr_btn_pre_page"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/nvr_btn_pre_page" />
+
+                    <Button
+                        android:id="@+id/nvr_btn_next_page"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/nvr_btn_next_page" />
+
+                    <LinearLayout
+                        android:id="@+id/nvr_ll_channel_btns"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_toLeftOf="@id/nvr_btn_next_page"
+                        android:layout_toRightOf="@id/nvr_btn_pre_page"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/nvr_btn_channel_1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/nvr_btn_channel"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@drawable/play_setting_txt" />
+
+                        <Button
+                            android:id="@+id/nvr_btn_channel_2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/nvr_btn_channel"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@drawable/play_setting_txt" />
+
+                        <Button
+                            android:id="@+id/nvr_btn_channel_3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/nvr_btn_channel"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@drawable/play_setting_txt" />
+
+                        <Button
+                            android:id="@+id/nvr_btn_channel_4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/nvr_btn_channel"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@drawable/play_setting_txt" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/nvr_ll_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/nvr_ll_channel_btns"
+                    android:layout_weight="1"
+                    android:background="@color/font_color_white"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/nvr_ll_screenshot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/nvr_btn_screenshot"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/nvr_btn_screenshot" />
+
+                        <TextView
+                            android:id="@+id/nvr_tv_screenshot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/str_screenshoot"
+                            android:textColor="@drawable/play_setting_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nvr_ll_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/nvr_btn_record"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/nvr_btn_record" />
+
+                        <TextView
+                            android:id="@+id/nvr_tv_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/str_recording"
+                            android:textColor="@color/font_color_black2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nvr_rl_land_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/font_color_white"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/nvr_rl_land_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/nvr_land_ll_play_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <ProgressBar
+                android:id="@+id/nvr_land_progressbar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/nvr_land_ll_right_bar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_screenshot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/nvr_land_btn_screenshot" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_record"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nvr_land_btn_record" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_audio"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nvr_land_btn_audio" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_hd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nvr_land_btn_hd" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nvr_land_ll_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_pre_page"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/nvr_land_btn_pre_page" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_channel_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nvr_land_btn_channel"
+                android:text="1"
+                android:textColor="@color/font_color_white" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_channel_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/nvr_land_btn_channel"
+                android:text="2"
+                android:textColor="@color/font_color_white" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_channel_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/nvr_land_btn_channel"
+                android:text="3"
+                android:textColor="@color/font_color_white" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_channel_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/nvr_land_btn_channel"
+                android:text="4"
+                android:textColor="@color/font_color_white" />
+
+            <Button
+                android:id="@+id/nvr_land_btn_next_page"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nvr_land_btn_next_page" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_nvr_land_cwb_decode"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:background="@null"
+            android:visibility="gone"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <com.macrovideo.pull.lib.CheckSwitchDecodeButton
+                android:id="@+id/CWB_Decode"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+    
+    
+    <!-- 报警大图显示布局 -->
+    <LinearLayout 
+        android:id="@+id/ll_alarm_large_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/server_bg"
+        android:orientation="vertical"
+        android:visibility="visible"
+         >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal"
+         >
+
+ 
+        <RelativeLayout 
+            android:id="@+id/rlAlarmImageMsgback_N"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+            <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn" />
+            
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/txt_large_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/alarmPicture"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <!-- 
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@color/font_color_white" />
+             -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAlarmImageID_N"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:textColor="@color/font_color_black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:background="@color/font_color_pure_black"
+        android:gravity="center" >
+
+        <com.macrovideo.photo.PhotoView
+            android:id="@+id/ivAlarmImageView_N"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/desc" />
+
+        <ProgressBar
+            android:id="@+id/progressBarGetingLarge_N"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_picture" />
+
+        <TextView
+            android:id="@+id/tvAlarmTime_N"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/strAlarmTime"
+            android:textColor="@color/font_color_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!--
+         <TextView
+        android:id="@+id/tvAlarmTime"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@color/background_gray"
+        android:gravity="center"
+        android:text="@string/strAlarmTime"
+        android:textColor="@color/font_color_black"
+        android:textSize="15sp" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/background_gray_light_F"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/txt_share_N"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/share_alarm_picture"
+                android:gravity="center"
+                android:textColor="@color/font_color_blue"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSaveAlarmImage_N"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/save_alarm_picture"
+                android:gravity="center"
+                android:textColor="@color/font_color_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_below="@+id/ll_share"
+            android:visibility="gone" >
+            
+            <View
+                android:layout_width="match_parent" 
+                android:layout_height="1dp"
+                android:background="@drawable/alarm_pic_dotted_prompt" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/line_false_positive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/ll_share"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+            
+            <View  
+    			android:layout_width="0dp"  
+    			android:layout_weight="3"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="8dp"
+    			android:layout_gravity="center_vertical"
+    			android:layout_height="2dp"  
+    			android:layerType="software"  
+    			android:background="@drawable/alarm_pic_dotted_prompt" />  
+            
+          
+
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:text="@string/str_Tips"
+            	android:textColor="@color/font_color_gray"
+            	android:textSize="11sp"/>
+            
+         
+            
+             <View  
+   			    android:layout_width="0dp"  
+   			    android:layout_weight="3"
+   			    android:layout_marginLeft="8dp"
+   			    android:layout_marginRight="10dp"
+   			    android:layout_gravity="center_vertical"
+    			android:layout_height="2dp"  
+   				android:layerType="software"  
+    			android:background="@drawable/alarm_pic_dotted_prompt" />  
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/ll_upload_oss_N"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/alarm_pic_dotted_prompt"
+            android:layout_above="@+id/txt_false_positive2"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_is_false"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/str_is_error_alarm_pic"
+                android:textColor="@color/font_color_gray"
+                android:textSize="14sp" />
+            
+            <ImageView 
+                android:id="@+id/img_what_is_false_positive"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txt_is_false"
+                android:contentDescription="@null"
+                android:background="@drawable/what_is_false_positive" />
+            
+            <CheckBox
+                android:id="@+id/cb_uploadOss_N"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/checkbox_upload_oss"
+                android:gravity="center"
+                android:textColor="@color/font_color_white"
+                android:button="@null"
+                android:visibility="gone"
+                android:textSize="16sp" />
+            
+            <LinearLayout
+                    android:id="@+id/ll_false_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/txt_false_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/font_color_gray"
+                        android:textSize="16sp"
+                        android:text="@string/str_is_false_positive" />
+                    
+                    <ImageView 
+                        android:id="@+id/img_false_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:contentDescription="@null"
+                        android:background="@drawable/is_not_false_positive" />
+                    
+                    
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/ll_cb_false_positive"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginRight="20dp"
+                 android:orientation="horizontal" >
+
+                 <TextView
+                     android:id="@+id/txt_no_false_positive"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:text="@string/str_is_false_positive"
+                     android:textColor="@color/font_color_blue"
+                     android:textSize="16sp" />
+
+                 <ImageView
+                     android:id="@+id/img_no_false_positive"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/is_not_false_positive"
+                     android:contentDescription="@null"
+                     android:visibility="gone" />
+
+                 <ImageView
+                     android:id="@+id/cb_false_positive"
+                     android:layout_width="25dp"
+                     android:layout_height="25dp"
+                     android:layout_gravity="center_vertical"
+                     android:contentDescription="@null"
+                     android:background="@drawable/checkbox_upload_oss"
+                     android:layout_marginLeft="5dp"
+                     android:button="@null" />
+             </LinearLayout>
+              
+             
+        </RelativeLayout>
+        <TextView 
+                android:id="@+id/txt_false_positive2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/font_color_gray"
+                android:layout_gravity="bottom|center"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="@string/str_feedback"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+     </RelativeLayout>
+    
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_alarm_pic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/server_bg"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal"
+         >
+
+ 
+        <RelativeLayout 
+            android:id="@+id/btnAlarmListBack"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+            <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn" />
+            
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tvAlarmTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/lblSelectDevice"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_reGetAlarmMessage"
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:text="@string/btn_refresh"
+            android:textColor="@color/font_color_white"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <!-- 
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@color/font_color_white" />
+             -->
+        </RelativeLayout>
+        <!-- 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/background_title"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnAlarmListBack"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/tvAlarmTopTitle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lblSelectDevice"
+                android:textColor="@color/font_color_white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_reGetAlarmMessage"
+                android:layout_width="60dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:text="@string/btn_refresh"
+                android:textColor="@color/font_color_white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+ -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:orientation="vertical"
+            android:weightSum="0.8" >
+
+            <com.macrovideo.component.xlistview.XListView
+                android:id="@+id/alarmPullRefreshList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null" />
+
+            <ProgressBar
+                android:id="@+id/alarmSearchingProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/lvAlarmBacktotop"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:contentDescription="@null"
+                    android:src="@drawable/back_to_top" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
